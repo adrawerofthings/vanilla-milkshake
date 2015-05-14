@@ -1,0 +1,1 @@
+!function($){$(document).on("keydown.vanillamilkshake",function(n){var a=!1;37===n.which?a=$(".nav-previous a").attr("href"):39===n.which&&(a=$(".nav-next a").attr("href")),a&&!$("textarea, input").is(":focus")&&(window.location=a)})}(jQuery);
