@@ -1,0 +1,18 @@
+/*
+
+   CLEARS
+
+*/
+
+.clear-none { clear: none; }
+.clear-left { clear: left; }
+.clear-right { clear: right; }
+.clear-both { clear: both; }
+
+/* Nicolas Gallaghers Clearfix solution
+   Ref: http://nicolasgallagher.clear-om/micro-clearfix-hack/ */
+
+.clearfix:before,
+.clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+.clearfix {       *zoom: 1; }

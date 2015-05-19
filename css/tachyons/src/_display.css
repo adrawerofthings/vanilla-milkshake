@@ -1,0 +1,74 @@
+/*
+
+   DISPLAY
+
+   Base:
+    display = display
+
+   Modifiers:
+    n     = none
+    b     = block
+    ib    = inline-block
+    it    = inline-table
+    t     = table
+    tc    = table-cell
+    tr    = table-row
+    tcol  = table-column
+    tcolg = table-column-group
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+.display-none {     display: none; }
+.display-inline {     display: inline; }
+.display-block {     display: block; }
+.display-inlineblock {    display: inline-block; }
+.display-inlinetable {    display: inline-table; }
+.display-table {     display: table; table-layout: fixed; width: 100%; }
+.display-tablerow {    display: table-row; }
+.display-tablecell {    display: table-cell; }
+.display-tablecolumn {  display: table-column; }
+.display-tablecolumngroup { display: table-column-group; }
+
+@media (--breakpoint-not-small) {
+  .display-none-ns {     display: none; }
+  .display-inline-ns {     display: inline; }
+  .display-block-ns {     display: block; }
+  .display-inlineblock-ns {    display: inline-block; }
+  .display-inlinetable-ns {    display: inline-table; }
+  .display-table-ns {     display: table; table-layout: fixed; width: 100%; }
+  .display-tablerow-ns {    display: table-row; }
+  .display-tablecell-ns {    display: table-cell; }
+  .display-tablecolumn-ns {  display: table-column; }
+  .display-tablecolumngroup-ns { display: table-column-group; }
+}
+
+@media (--breakpoint-medium) {
+  .display-none-m {     display: none; }
+  .display-inline-m {     display: inline; }
+  .display-block-m {     display: block; }
+  .display-inlineblock-m {    display: inline-block; }
+  .display-inlinetable-m {    display: inline-table; }
+  .display-table-m {     display: table; table-layout: fixed; width: 100%; }
+  .display-tablerow-m {      display: table-row; }
+  .display-tablecell-m {    display: table-cell; }
+  .display-tablecolumn-m {  display: table-column; }
+  .display-tablecolumngroup-m { display: table-column-group; }
+}
+
+@media (--breakpoint-large) {
+  .display-none-l {     display: none; }
+  .display-inline-l {     display: inline; }
+  .display-block-l {     display: block; }
+  .display-inlineblock-l {    display: inline-block; }
+  .display-inlinetable-l {    display: inline-table; }
+  .display-table-l {     display: table; table-layout: fixed; width: 100%; }
+  .display-tablerow-l {    display: table-row; }
+  .display-tablecell-l {    display: table-cell; }
+  .display-tablecolumn-l {  display: table-column; }
+  .display-tablecolumngroup-l { display: table-column-group; }
+}

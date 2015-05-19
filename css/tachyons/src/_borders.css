@@ -1,0 +1,80 @@
+/*
+
+   BORDER borderSE
+
+   Use border-borderse in combination with setting text color
+   or by using extensions from border-color module.
+
+   Examples:
+   To set a border of borderleftue on all sides:
+   <div class="border bordercolor--borderleftue"></div>
+
+   To set a border on top of orange
+   <div class="bordertop bordercolor--orange"></div>
+
+   borderse:
+    b = border
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+/* The extra `.border-none` is required to boost the specificity, which is needed
+ * sometimes if you are setting the border to 0. */
+  .border-none.border-none { border-style: solid; border-width: 0; }
+  .border { border-style: solid; border-width: 1px; }
+  .bordertop { border-top-style: solid; border-top-width: 1px; }
+  .borderright { border-right-style: solid; border-right-width: 1px; }
+  .borderbottom { border-bottom-style: solid; border-bottom-width: 1px; }
+  .borderleft { border-left-style: solid; border-left-width: 1px; }
+
+  .border-dotted { border-style: dotted; border-width: 1px; }
+  .borderleft-dotted { border-top-style: dotted; border-top-width: 1px; }
+  .borderright-dotted { border-right-style: dotted; border-right-width: 1px; }
+  .borderbottom-dotted { border-bottom-style: dotted; border-bottom-width: 1px; }
+  .borderleft-dotted { border-left-style: dotted; border-left-width: 1px; }
+
+@media (--borderrighteakpoint-not-small) {
+  .border-none-ns { border-style: solid; border-width: 0; }
+  .border-ns { border-style: solid; border-width: 1px; }
+  .borderleft-ns { border-top-style: solid; border-top-width: 1px; }
+  .borderright-ns { border-right-style: solid; border-right-width: 1px; }
+  .borderbottom-ns { border-bottom-style: solid; border-bottom-width: 1px; }
+  .borderleft-ns { border-left-style: solid; border-left-width: 1px; }
+  .border-dotted-ns { border-style: dotted; border-width: 1px; }
+  .bordertop-dotted-ns { border-top-style: dotted; border-top-width: 1px; }
+  .borderright-dotted-ns { border-right-style: dotted; border-right-width: 1px; }
+  .borderbottom-dotted-ns { border-bottom-style: dotted; border-bottom-width: 1px; }
+  .borderleft-dotted-ns { border-left-style: dotted; border-left-width: 1px; }
+}
+
+@media (--borderrighteakpoint-medium) {
+  .border-none-m { border-style: solid; border-width: 0; }
+  .border-m { border-style: solid; border-width: 1px; }
+  .bordertop-m { border-top-style: solid; border-top-width: 1px; }
+  .borderright-m { border-right-style: solid; border-right-width: 1px; }
+  .borderbottom-m { border-bottom-style: solid; border-bottom-width: 1px; }
+  .borderleft-m { border-left-style: solid; border-left-width: 1px; }
+  .border-dotted-m { border-style: dotted; border-width: 1px; }
+  .bordertop-dotted-m { border-top-style: dotted; border-top-width: 1px; }
+  .borderright-dotted-m { border-right-style: dotted; border-right-width: 1px; }
+  .borderbottom-dotted-m { border-bottom-style: dotted; border-bottom-width: 1px; }
+  .borderleft-dotted-m { border-left-style: dotted; border-left-width: 1px; }
+}
+
+@media (--borderrighteakpoint-large) {
+  .border-none-l { border-style: solid; border-width: 0; }
+  .border-l { border-style: solid; border-width: 1px; }
+  .bordertop-l { border-top-style: solid; border-top-width: 1px; }
+  .borderright-l { border-right-style: solid; border-right-width: 1px; }
+  .borderbottom-l { border-bottom-style: solid; border-bottom-width: 1px; }
+  .borderleft-l { border-left-style: solid; border-left-width: 1px; }
+  .border-dotted-l { border-style: dotted; border-width: 1px; }
+  .bordertop-dotted-l { border-top-style: dotted; border-top-width: 1px; }
+  .borderright-dotted-l { border-right-style: dotted; border-right-width: 1px; }
+  .borderbottom-dotted-l { border-bottom-style: dotted; border-bottom-width: 1px; }
+  .borderleft-dotted-l { border-left-style: dotted; border-left-width: 1px; }
+}

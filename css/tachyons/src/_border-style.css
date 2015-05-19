@@ -1,0 +1,40 @@
+/*
+
+   BORDER STYLES
+
+   Base:
+     borderstyle = border-style
+
+   Modifiers:
+     none   = none
+     dotted = dotted
+     solid  = solid
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+ */
+
+.borderstyle-none {   border-style: none; }
+.borderstyle-dotted { border-style: dotted; }
+.borderstyle-solid {  border-style: solid; }
+
+@media (--breakpoint-not-small) {
+  .borderstyle-none-ns {   border-style: none; }
+  .borderstyle-dotted-ns { border-style: dotted; }
+  .borderstyle-solid-ns {  border-style: solid; }
+}
+
+@media (--breakpoint-medium) {
+  .borderstyle-none-m {   border-style: none; }
+  .borderstyle-dotted-m { border-style: dotted; }
+  .borderstyle-solid-m {  border-style: solid; }
+}
+
+@media (--breakpoint-large) {
+  .borderstyle-none-l {   border-style: none; }
+  .borderstyle-dotted-l { border-style: dotted; }
+  .borderstyle-solid-l {  border-style: solid; }
+}

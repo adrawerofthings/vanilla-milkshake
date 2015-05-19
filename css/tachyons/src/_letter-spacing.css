@@ -1,0 +1,27 @@
+/*
+
+   LETTER SPACING
+
+*/
+
+.tracked, .letterspacing--tracked           { letter-spacing:  .16em; }
+.tracked-tight, .letterspacing--tight       { letter-spacing: -.1em; }
+.mega-tracked, .letterspacing--megatracked  { letter-spacing:  .3em; }
+
+@media (--breakpoint-not-small) {
+  .tracked-ns, .letterspacing--tracked-ns           { letter-spacing:  .16em; }
+  .tracked-tight-ns, .letterspacing--tight-ns       { letter-spacing: -.1em; }
+  .mega-tracked-ns, .letterspacing--megatracked-ns  { letter-spacing:  .3em; }
+}
+
+@media (--breakpoint-medium) {
+  .tracked-m, .letterspacing--tracked-m             { letter-spacing:  .16em; }
+  .tracked-tight-m, .letterspacing--tight-m         { letter-spacing: -.1em; }
+  .mega-tracked-m, .letterspacing--megatracked-m    { letter-spacing:  .3em; }
+}
+
+@media (--breakpoint-large) {
+  .tracked-l, .letterspacing--tracked-l             { letter-spacing:  .16em; }
+  .tracked-tight-l, .letterspacing--tight-l         { letter-spacing: -.1em; }
+  .mega-tracked-l, .letterspacing--megatracked-l    { letter-spacing:  .3em; }
+}

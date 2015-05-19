@@ -1,0 +1,91 @@
+ /*
+
+   BORDER COLORS
+
+   Use in cobmination with the _borders.css module
+   Or for more flexibility the _border-styles.css and _border-widths.css modules
+
+   Base:
+     b-- = border
+
+   Modifiers:
+     Add a border color. There is a one to one mapping of color values
+     in the _colors.css module.
+
+ */
+
+.bordercolor--black {        border-color: var(--black); }
+.bordercolor--near-black {   border-color: var(--near-black); }
+.bordercolor--dark-gray {    border-color: var(--dark-gray); }
+.bordercolor--mid-gray {     border-color: var(--mid-gray); }
+.bordercolor--gray {         border-color: var(--gray); }
+.bordercolor--silver {       border-color: var(--silver); }
+.bordercolor--light-silver { border-color: var(--light-silver); }
+.bordercolor--light-gray {   border-color: var(--light-gray); }
+.bordercolor--near-white {   border-color: var(--near-white); }
+.bordercolor--white {        border-color: var(--white); }
+
+.bordercolor--white-10 {   border-color: hsla(0, 0, 100%, .1); }
+.bordercolor--white-20 {   border-color: hsla(0, 0, 100%, .2); }
+.bordercolor--white-25 {   border-color: hsla(0, 0, 100%, .25); }
+.bordercolor--white-30 {   border-color: hsla(0, 0, 100%, .3); }
+.bordercolor--white-40 {   border-color: hsla(0, 0, 100%, .4); }
+.bordercolor--white-50 {   border-color: hsla(0, 0, 100%, .5); }
+.bordercolor--white-60 {   border-color: hsla(0, 0, 100%, .6); }
+.bordercolor--white-70 {   border-color: hsla(0, 0, 100%, .7); }
+.bordercolor--white-75 {   border-color: hsla(0, 0, 100%, .75); }
+.bordercolor--white-80 {   border-color: hsla(0, 0, 100%, .8); }
+.bordercolor--white-90 {   border-color: hsla(0, 0, 100%, .9); }
+
+.bordercolor--black-10 {   border-color: hsla(0, 0, 0,    .1); }
+.bordercolor--black-20 {   border-color: hsla(0, 0, 0,    .2); }
+.bordercolor--black-25 {   border-color: hsla(0, 0, 0,    .25); }
+.bordercolor--black-30 {   border-color: hsla(0, 0, 0,    .3); }
+.bordercolor--black-40 {   border-color: hsla(0, 0, 0,    .4); }
+.bordercolor--black-50 {   border-color: hsla(0, 0, 0,    .5); }
+.bordercolor--black-60 {   border-color: hsla(0, 0, 0,    .6); }
+.bordercolor--black-70 {   border-color: hsla(0, 0, 0,    .7); }
+.bordercolor--black-75 {   border-color: hsla(0, 0, 0,    .75); }
+.bordercolor--black-80 {   border-color: hsla(0, 0, 0,    .8); }
+.bordercolor--black-90 {   border-color: hsla(0, 0, 0,    .9); }
+
+.bordercolor--blue { border-color: var(--blue); }
+.bordercolor--light-blue { border-color: var(--light-blue); }
+.bordercolor--lightest-blue { border-color: var(--lightest-blue); }
+.bordercolor--dark-blue { border-color: var(--dark-blue); }
+.bordercolor--darkest-blue { border-color: var(--darkest-blue); }
+.bordercolor--yellow { border-color: var(--yellow); }
+.bordercolor--light-yellow { border-color: var(--light-yellow); }
+.bordercolor--lightest-yellow { border-color: var(--lightest-yellow); }
+.bordercolor--dark-yellow { border-color: var(--dark-yellow); }
+.bordercolor--darkest-yellow { border-color: var(--darkest-yellow); }
+.bordercolor--orange { border-color: var(--orange); }
+.bordercolor--light-orange { border-color: var(--light-orange); }
+.bordercolor--lightest-orange { border-color: var(--lightest-orange); }
+.bordercolor--dark-orange { border-color: var(--dark-orange); }
+.bordercolor--darkest-orange { border-color: var(--darkest-orange); }
+.bordercolor--red { border-color: var(--red); }
+.bordercolor--light-red { border-color: var(--light-red); }
+.bordercolor--lightest-red { border-color: var(--lightest-red); }
+.bordercolor--dark-red { border-color: var(--dark-red); }
+.bordercolor--darkest-red { border-color: var(--darkest-red); }
+.bordercolor--teal { border-color: var(--teal); }
+.bordercolor--light-teal { border-color: var(--light-teal); }
+.bordercolor--lightest-teal { border-color: var(--lightest-teal); }
+.bordercolor--dark-teal { border-color: var(--dark-teal); }
+.bordercolor--darkest-teal { border-color: var(--darkest-teal); }
+.bordercolor--green { border-color: var(--green); }
+.bordercolor--light-green { border-color: var(--light-green); }
+.bordercolor--lightest-green { border-color: var(--lightest-green); }
+.bordercolor--dark-green { border-color: var(--dark-green); }
+.bordercolor--darkest-green { border-color: var(--darkest-green); }
+.bordercolor--pink { border-color: var(--pink); }
+.bordercolor--light-pink { border-color: var(--light-pink); }
+.bordercolor--lightest-pink { border-color: var(--lightest-pink); }
+.bordercolor--dark-pink { border-color: var(--dark-pink); }
+.bordercolor--darkest-pink { border-color: var(--darkest-pink); }
+.bordercolor--purple { border-color: var(--purple); }
+.bordercolor--light-purple { border-color: var(--light-purple); }
+.bordercolor--lightest-purple { border-color: var(--lightest-purple); }
+.bordercolor--dark-purple { border-color: var(--dark-purple); }
+.bordercolor--darkest-purple { border-color: var(--darkest-purple); }

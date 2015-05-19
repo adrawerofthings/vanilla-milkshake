@@ -1,0 +1,235 @@
+/*
+ *
+ * buttons.css
+ * Simple css utilities for building responsive buttons
+ * Author: mrmrs
+ * License: MIT
+ *
+ *                */
+
+/*
+
+  Base .button class
+
+  Code:
+  <a href="#" class="button">Default button</a>
+
+*/
+
+.button,
+.button:link,
+.button:visited {
+  border-radius: .3em;
+  border-style: solid;
+  border-width: 1px;
+  color: #111;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color .4s, background-color .4s, border .4s;
+}
+
+.button:hover {
+  color: #7FDBFF;
+  border: 1px solid #7FDBFF;
+  transition: background-color .3s, color .3s, border .3s;
+}
+
+.button:active {
+  color: #0074D9;
+  border: 1px solid #0074D9;
+  transition: background-color .3s, color .3s, border .3s;
+}
+
+
+/*
+
+  Sizes
+
+  Small  = .button--small
+  Medium = .button--medium
+  Large  = .button--large
+
+  Code:
+  <a href="#" class="button button--small">
+  <a href="#" class="button button--medium">
+  <a href="#" class="button button--large">
+
+*/
+
+.button--xsmall { font-size: 0.694rem; }
+.button--small { font-size: 0.833rem; }
+.button--medium { font-size: 1rem; }
+.button--large { font-size: 1.2rem; border-radius: .25em!important; }
+.button--xlarge { font-size: 1.44rem; border-radius: .25em!important; }
+
+/*
+
+  Layout utility for responsive buttons
+
+  Code:
+  <a href="#" class="button button--full">
+
+*/
+
+.button--full,
+.button--full:link {
+  border-radius: .25em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
+}
+
+
+/*
+
+  Skins
+
+  * Black & White
+  * Grays
+  * Colors
+
+  Code:
+  <a href="#" class="button button--black">
+  <a href="#" class="button button--white">
+  <a href="#" class="button button--gray">
+  <a href="#" class="button button--gray-dark">
+  <a href="#" class="button button--gray-border">
+  <a href="#" class="button button--blue">
+
+*/
+
+/* BLACK & WHITE */
+
+.button--black,
+.button--black:link,
+.button--black:visited {
+  color: #fff;
+  background-color: #000;
+}
+
+.button--black:hover {
+  color: #fff;
+  background-color: #777;
+  border-color: #777;
+}
+
+.button--black:active {
+  color: #fff;
+  background-color: #999;
+  border-color: #999;
+}
+
+.button--black:hover {
+  background-color: #444;
+}
+
+.button--black {
+  background-color: #000;
+}
+
+.button--gray:link,
+.button--gray:visited, {
+  background-color: #f0f0f0;
+  border-color: #f0f0f0;
+  color: #555;
+}
+
+.button--gray:hover {
+  background-color: #ddd;
+  border-color: #ddd;
+  color: #444;
+}
+
+.button--gray:active {
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #444;
+}
+
+.button--gray-border:link,
+.button--gray-border:visited, {
+  background-color: #fff;
+  border-color: #555;
+  border-width: 2px;
+  color: #555;
+}
+
+.button--gray-border:hover {
+  background-color: #fff;
+  border-color: #ddd;
+  color: #777;
+}
+
+.button--gray-border:active {
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #444;
+}
+
+.button--gray-dark:link,
+.button--gray-dark:visited {
+  background-color: #555;
+  color: #eee;
+}
+
+.button--gray-dark:hover {
+  background-color: #333;
+  border-color: #333;
+  color: #eee;
+}
+
+.button--gray-dark:active {
+  background-color: #777;
+  border-color: #777;
+  color: #eee;
+}
+
+
+/* BLUES */
+
+.button--blue:link,
+.button--blue:visited {
+  color: #fff;
+  background-color: #0074D9;
+}
+
+.button--blue:hover {
+  color: #fff!important;
+  background-color: #0063aa;
+  border-color: #0063aa;
+}
+
+.button--blue:active {
+  color: #fff;
+  background-color: #001F3F;
+  border-color: #001F3F;
+}
+
+.button--animated {
+  background: #f9f9f9;
+  color: #444;
+  border: 4px solid #f1f1f1;
+  padding: .5rem;
+  transition: padding .4s ease-out;
+  transition-delay: .1s;
+}
+
+.button--animated:hover {
+  background: #f9f9f9;
+  border: 4px solid #f1f1f1;
+  padding: .75rem;
+  transition: padding .2s ease-in;
+}
+
+
+
+/* Keep it mobile-first and responsive */
+
+@media screen and (min-width: 32em) {
+  .button--full {
+    max-width: 16em!important;
+  }
+}

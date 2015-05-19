@@ -98,7 +98,7 @@ add_action( 'wp_head', 'vanillamilkshake_javascript_detection', 0 );
 function vanillamilkshake_scripts() {
 
 	// Load Tachyons
-	wp_enqueue_style( 'tachyons', get_template_directory_uri() . '/css/tachyons.css' );
+	wp_enqueue_style( 'tachyons', get_template_directory_uri() . '/css/tachyons/css/tachyons.min.css' );
 
 	// Load our custom stylesheet.
 	wp_enqueue_style( 'vanillamilkshake-style', get_stylesheet_uri() );

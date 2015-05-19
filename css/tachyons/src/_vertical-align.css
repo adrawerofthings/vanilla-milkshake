@@ -1,0 +1,45 @@
+/*
+   VERTICAL ALIGN
+*/
+
+.verticalalign-baseline     { vertical-align: baseline; }
+.verticalalign-sub      { vertical-align: sub; }
+.verticalalign-super      { vertical-align: super; }
+.verticalalign-texttop  { vertical-align: text-top; }
+.verticalalign-textbottom  { vertical-align: text-bottom; }
+.verticalalign-middle      { vertical-align: middle; }
+.verticalalign-top      { vertical-align: top; }
+.verticalalign-bottom      { vertical-align: bottom; }
+
+@media (--breakpoint-not-small) {
+  .verticalalign-baseline-ns     { vertical-align: baseline; }
+  .verticalalign-sub-ns      { vertical-align: sub; }
+  .verticalalign-super-ns      { vertical-align: super; }
+  .verticalalign-texttop-ns  { vertical-align: text-top; }
+  .verticalalign-textbottom-ns  { vertical-align: text-bottom; }
+  .verticalalign-middle-ns      { vertical-align: middle; }
+  .verticalalign-top-ns      { vertical-align: top; }
+  .verticalalign-bottom-ns      { vertical-align: bottom; }
+}
+
+@media (--breakpoint-medium) {
+  .verticalalign-baseline-m     { vertical-align: baseline; }
+  .verticalalign-sub-m      { vertical-align: sub; }
+  .verticalalign-super-m      { vertical-align: super; }
+  .verticalalign-texttop-m  { vertical-align: text-top; }
+  .verticalalign-textbottom-m  { vertical-align: text-bottom; }
+  .verticalalign-middle-m      { vertical-align: middle; }
+  .verticalalign-top-m      { vertical-align: top; }
+  .verticalalign-bottom-m      { vertical-align: bottom; }
+}
+
+@media (--breakpoint-large) {
+  .verticalalign-baseline-l     { vertical-align: baseline; }
+  .verticalalign-sub-l      { vertical-align: sub; }
+  .verticalalign-super-l      { vertical-align: super; }
+  .verticalalign-texttop-l  { vertical-align: text-top; }
+  .verticalalign-textbottom-l  { vertical-align: text-bottom; }
+  .verticalalign-middle-l      { vertical-align: middle; }
+  .verticalalign-top-l      { vertical-align: top; }
+  .verticalalign-bottom-l      { vertical-align: bottom; }
+}

@@ -1,0 +1,47 @@
+/*
+
+   TEXT TRANSFORM
+
+*/
+
+.texttransform-capitalize { text-transform: capitalize; }
+.texttransform-lowercase { text-transform: lowercase; }
+.texttransform-none { text-transform: none; }
+.texttransform-uppercase,
+.caps {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+@media (--breakpoint-not-small) {
+  .texttransform-capitalize-ns { text-transform: capitalize; }
+  .texttransform-lowercase-ns { text-transform: lowercase; }
+  .texttransform-none-ns { text-transform: none; }
+  .texttransform-uppercase-ns,
+  .caps-ns {
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+}
+
+@media (--breakpoint-medium) {
+  .texttransform-capitalize-m { text-transform: capitalize; }
+  .texttransform-lowercase-m { text-transform: lowercase; }
+  .texttransform-none-m { text-transform: none; }
+  .texttransform-uppercase-m,
+  .caps-m {
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+}
+
+@media (--breakpoint-large) {
+  .texttransform-capitalize-l { text-transform: capitalize; }
+  .texttransform-lowercase-l { text-transform: lowercase; }
+  .texttransform-none-l { text-transform: none; }
+  .texttransform-uppercase-l,
+  .caps-l {
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+}
