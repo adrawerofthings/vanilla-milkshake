@@ -10,10 +10,20 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header margintop-0 marginbottom-large ">
-				<h1 class="page-title margintop-0 sans-serif f3 black-30"><?php printf( __( 'Search Results for: %s', 'vanillamilkshake' ), get_search_query() ); ?></h1>
+			<header class="page-header margintop-none marginbottom-large ">
+				<h1 class="page-title margintop-none sans-serif f3 black-30"><?php printf( __( 'Search Results for: %s', 'vanillamilkshake' ), get_search_query() ); ?></h1>
 			</header><!-- .page-header -->
-			<div class="height-0025 background-lightgray marginbottom-large"></div>
+			<div class="height-0025 backgroundcolor-light-gray marginbottom-large"></div>
+
+			<?php if ( is_paged() ) :
+				// Previous/next page navigation.
+				the_posts_pagination( array(
+					'prev_text'          => __( '&#8592;', 'vanillamilkshake' ),
+					'next_text'          => __( '&#8594;', 'vanillamilkshake' ),
+					'mid_size'			 => 2,
+					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'vanillamilkshake' ) . ' </span>',
+				) );
+			endif; ?>
 
 			<?php
 			// Start the loop.
@@ -32,8 +42,9 @@ get_header(); ?>
 
 			// Previous/next page navigation.
 			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'vanillamilkshake' ),
-				'next_text'          => __( 'Next page', 'vanillamilkshake' ),
+				'prev_text'          => __( '&#8592;', 'vanillamilkshake' ),
+				'next_text'          => __( '&#8594;', 'vanillamilkshake' ),
+				'mid_size'			 => 2,
 				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'vanillamilkshake' ) . ' </span>',
 			) );
 

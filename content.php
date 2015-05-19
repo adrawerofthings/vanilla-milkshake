@@ -10,7 +10,7 @@
 
 	<header class="entry-header position-relative">
 		<?php
-			the_title( sprintf( '<h2 class="entry-title f4 b sans-serif margintop-0 marginbottom-xsmall"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
+			the_title( sprintf( '<h2 class="entry-title f4 b sans-serif margintop-none marginbottom-xsmall"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 
 			$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 

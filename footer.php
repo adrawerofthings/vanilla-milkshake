@@ -8,7 +8,7 @@
 	</div><!-- .site-content -->
 	<div class="height-0025 background-lightgray marginvertical-large width-100p clear-both display-none-ns"></div>
 
-	<div id="sidebar" class="sidebar width-30p-ns paddingtop-xsmall float-left clear-right dimmed xsmall-m xxsmall-l">
+	<div id="sidebar" class="sidebar width-30p-ns paddingtop-medium float-left clear-right dimmed-ns xsmall-m xxsmall-l">
 		<?php get_sidebar(); ?>
 	</div>
 

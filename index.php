@@ -23,6 +23,16 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 
+			<?php if ( is_paged() ) :
+				// Previous/next page navigation.
+				the_posts_pagination( array(
+					'prev_text'          => __( '&#8592;', 'vanillamilkshake' ),
+					'next_text'          => __( '&#8594;', 'vanillamilkshake' ),
+					'mid_size'			 => 2,
+					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'vanillamilkshake' ) . ' </span>',
+				) );
+			endif; ?>
+
 			<?php
 			// Start the loop.
 			while ( have_posts() ) : the_post();

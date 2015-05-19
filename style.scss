@@ -73,6 +73,7 @@ h3 {
 .widget-title {
     font-weight: normal;
     font-style: italic;
+    margin-top: 0.25rem;
 }
 hr {
   border: 1px dotted #EEE;
@@ -86,7 +87,7 @@ ul {
 li {
   margin-bottom: 0.5rem;
 }
-li:before { 
+ul li:before { 
     content: "\25AA";
     display: block;
     color: #999;
@@ -96,10 +97,6 @@ li:before {
     top: 0;
     position: relative;
 }
-li.comment:before {
-  content: "";
-  display: none;
-};
 .comment-body {
   margin-bottom: 1rem;
 }
@@ -187,7 +184,7 @@ input, textarea {
   font-size: 0.80rem;
 }
 .pagination {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .page-numbers {
   padding: 0.5rem;
@@ -237,6 +234,8 @@ input, textarea {
     font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
     background-color: #FFF;
     padding: 0.5em 0.8em;
+    text-transform: none;
+    color: #333;
   }
 
   .button:hover {

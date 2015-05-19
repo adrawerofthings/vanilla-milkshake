@@ -10,7 +10,7 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h2 class="page-title f4 b sans-serif margintop-0">
+					<h2 class="page-title f4 b sans-serif margintop-none">
 						<?php _e( 'Oops! That page can&rsquo;t be found.', 'vanillamilkshake' ); ?>
 					</h2>
 				</header><!-- .page-header -->

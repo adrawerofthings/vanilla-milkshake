@@ -52,24 +52,24 @@ function vanillamilkshake_entry_meta() {
 
 	if ( 'post' == get_post_type() ) {
 		if ( is_singular() || is_multi_author() ) {
-			printf( '<div class="byline marginbottom-medium"><span class="author vcard"><span class="screen-reader-text">%1$s </span><span class="lightgray">&#9670;</span> <a class="url fn n" href="%2$s">%3$s</a></span></div><div class="marginvertical-medium height-00125 background-lightgray"></div>',
+			printf( '<div class="byline marginbottom-medium"><span class="author vcard"><span class="screen-reader-text">%1$s </span><span class="light-gray">&#9670;</span> <a class="url fn n" href="%2$s">%3$s</a></span></div><div class="marginvertical-medium height-00125 background-light-gray"></div>',
 				_x( 'Author', 'Used before post author name.', 'vanillamilkshake' ),
 				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 				get_the_author()
 			);
 		}
 
-		$categories_list = get_the_category_list( _x( ' <span class="lightgray">&#9656;</span> ', 'Used between list items, there is a space after the comma.', 'vanillamilkshake' ) );
+		$categories_list = get_the_category_list( _x( ' <span class="light-gray">&#9656;</span> ', 'Used between list items, there is a space after the comma.', 'vanillamilkshake' ) );
 		if ( $categories_list && vanillamilkshake_categorized_blog() ) {
-			printf( '<span class="cat-links xsmall"><span class="screen-reader-text">%1$s </span><span class="lightgray"> &#9656;</span> %2$s</span>',
+			printf( '<span class="cat-links xsmall"><span class="screen-reader-text">%1$s </span><span class="light-gray"> &#9656;</span> %2$s</span>',
 				_x( 'Categories', 'Used before category names.', 'vanillamilkshake' ),
 				$categories_list
 			);
 		}
 
-		$tags_list = get_the_tag_list( '', _x( ' <span class="lightgray">&#9656;</span> ', 'Used between list items, there is a space after the comma.', 'vanillamilkshake' ) );
+		$tags_list = get_the_tag_list( '', _x( ' <span class="light-gray">&#9656;</span> ', 'Used between list items, there is a space after the comma.', 'vanillamilkshake' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links xsmall"><span class="screen-reader-text">%1$s </span><span class="lightgray"> &#9656;</span> %2$s</span>',
+			printf( '<span class="tags-links xsmall"><span class="screen-reader-text">%1$s </span><span class="light-gray"> &#9656;</span> %2$s</span>',
 				_x( 'Tags', 'Used before tag names.', 'vanillamilkshake' ),
 				$tags_list
 			);
