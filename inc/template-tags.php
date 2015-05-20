@@ -52,7 +52,7 @@ function vanillamilkshake_entry_meta() {
 
 	if ( 'post' == get_post_type() ) {
 		if ( is_singular() || is_multi_author() ) {
-			printf( '<div class="byline marginbottom-medium"><span class="author vcard"><span class="screen-reader-text">%1$s </span><span class="light-gray">&#9670;</span> <a class="url fn n" href="%2$s">%3$s</a></span></div><div class="marginvertical-medium height-00125 background-light-gray"></div>',
+			printf( '<div class="byline marginbottom-medium"><span class="author vcard"><span class="screen-reader-text">%1$s </span><span class="light-gray">&#9670;</span> <a class="url fn n" href="%2$s">%3$s</a></span></div><div class="marginvertical-medium height-00125 backgroundcolor-light-gray"></div>',
 				_x( 'Author', 'Used before post author name.', 'vanillamilkshake' ),
 				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 				get_the_author()

@@ -6,7 +6,7 @@
  */
 ?>
 	</div><!-- .site-content -->
-	<div class="height-0025 background-lightgray marginvertical-large width-100p clear-both display-none-ns"></div>
+	<div class="height-0025 backgroundcolor-light-gray margintop-large marginbottom-small width-100p clear-both display-none-ns"></div>
 
 	<div id="sidebar" class="sidebar width-30p-ns paddingtop-medium float-left clear-right dimmed-ns xsmall-m xxsmall-l">
 		<?php get_sidebar(); ?>
