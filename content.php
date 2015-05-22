@@ -6,7 +6,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="clear-both clearfix marginbottom-large">
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'clear-both clearfix marginbottom-large' ); ?>>
 
 	<header class="entry-header position-relative">
 		<?php
@@ -56,10 +56,7 @@
 				) );
 			else :
 				/* translators: %s: Name of current post */
-				the_excerpt( sprintf(
-					__( 'Continue reading %s', 'vanillamilkshake' ),
-					the_title( '<span class="screen-reader-text">', '</span>', false )
-				) );
+				the_excerpt();
 
 				wp_link_pages( array(
 					'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'vanillamilkshake' ) . '</span>',
@@ -69,6 +66,12 @@
 					'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'vanillamilkshake' ) . ' </span>%',
 					'separator'   => '<span class="screen-reader-text">, </span>',
 				) );
+
+				/* link for manual excerpt, wish this was automatic and not manually added here :( */
+				if ( has_excerpt() ) {
+					$readmorestring =  __( 'Continue reading', 'vanillamilkshake' );					
+		         	printf( '<p class="clear-both"><a href="' . esc_url( get_permalink() ) . '" class="more-link">' . $readmorestring . '<span class="screen-reader-text">' . get_the_title() . '</span></a><p>' );
+				}
 			endif;
 		?>
 
