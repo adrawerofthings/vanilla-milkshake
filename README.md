@@ -13,23 +13,26 @@
 ## Theme features
 
 - Responsive design
-- Modern typography
 - Customizable colors
-- Image-friendly excerpts
+- Best-of-class typography defaults
+- Treats text and images equally (the latter doesn't dominate)
+- Media-rich excerpts
+- Short loading times
+- No external font or Javascript dependencies (works behind the Great Firewall)
 - Accessibility enhanced
 - Translation ready
+- Easy to extend and build upon
 
 ## See the theme in action
 
 - [88 Bar](http://88-bar.com/): a group blog about Chinese tech, media and design.
+- [MBA Mondays Illustrated](http://www.mba-mondays-illustrated.com): business 101 for startups by Fred Wilson.
 
 ## Notes for theme developers
 
 - *style.scss* actually doesn't use any SASS syntax; it's named such so that Codekit will minify them into *style.css*.
 - Vanilla Milkshake currently uses the default, Wordpress-generated search and comment forms. (In case you were wondering where those were.)
+- There is a custom, media-rich excerpt function (see inc/rich-excerpt.php), which has been tested with my blog and the theme test blog but may still have a bug or two.
 - To build this theme, I used the [Twenty Fifteen](https://github.com/WordPress/WordPress/tree/master/wp-content/themes/twentyfifteen) theme as my starting point, and then stripped out as many custom functions and templates as I deemed reasonable. If something doesn't make sense, it's because it may be a vestige from [Twenty Fifteen](https://github.com/WordPress/WordPress/tree/master/wp-content/themes/twentyfifteen).
 - The [Tachyons](https://github.com/mrmrs/tachyons/) CSS framework I use reads a lot like inline HTML and should make sense when you see the HTML templates. The basic philosophy behind it is that cascading styles often try to do too much and cause cascading errors. As such, specifying inline styles in the templates ends up creating cleaner code and better performance. (Also, I used [my own fork of Tachyons](https://github.com/hongkonggong/tachyons).
-
-## Credits
-
-The Vanilla Milkshake theme is built on top of the [Twenty Fifteen](https://github.com/WordPress/WordPress/tree/master/wp-content/themes/twentyfifteen) theme, and incorporates a modified version of the [Tachyons](https://github.com/mrmrs/tachyons/) CSS framework.
+-
