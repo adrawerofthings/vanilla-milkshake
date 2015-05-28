@@ -37,7 +37,8 @@
 	        'default' => $color['default'],
 	        'type' => 'option', 
 	        'capability' => 
-	        'edit_theme_options'
+	        'edit_theme_options',
+	        'sanitize_callback' => 'sanitize_hex_color'
 	      )
 	    );
 	    // CONTROLS
