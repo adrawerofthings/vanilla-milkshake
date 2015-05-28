@@ -79,7 +79,7 @@ hr {
   border: 1px dotted #EEE;
   margin: 2rem 0;
 }
-code {
+pre, code {
   font-size: .790rem;
   padding: 0.5rem;
   background-color: #EEE;
@@ -92,9 +92,10 @@ ul {
     padding-left: 1em;
 }
 li {
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-ul li:before { 
+ul > li:before { 
     content: "\25AA";
     display: block;
     color: #999;
@@ -137,6 +138,9 @@ blockquote {
   margin-left: 0;
   padding-left: 0.75em;
   border-left: 0.25em solid #EEE;
+}
+dt {
+  margin: 0.5rem 0;
 }
 .aligncenter {
   margin-left: auto;
@@ -193,7 +197,7 @@ input, textarea {
 .pagination {
   margin-bottom: 2rem;
 }
-.page-numbers {
+.page-numbers, .page-links > a {
   padding: 0.5rem;
   border-radius: .3em;
   border: 1px solid #CCC;
@@ -203,11 +207,11 @@ input, textarea {
   text-align: center;
   transition: color .4s, background-color .4s, border .4s;
 }
-.page-numbers:hover {
+.page-numbers:hover, .page-links > a:hover {
   color: #999999;
   transition: background-color .3s, color .3s, border .3s;
 }
-.page-numbers:active {
+.page-numbers:active, .page-links > a:active {
   color: #0074D9;
   border: 1px solid #0074D9;
   transition: background-color .3s, color .3s, border .3s;
@@ -218,6 +222,11 @@ input, textarea {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
+// for current page in multi-page posts... no default class argh!
+.page-links > span:nth-child(n+2) {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .page-numbers.dots {
   border: 0;
   font-size: 0.889rem;
@@ -227,6 +236,25 @@ input, textarea {
 .prev, .next {
   display: none;
 }
+/* tables groan */
+thead {
+  border-bottom: 1px solid #333;
+}
+th, td {
+  padding: 0.25rem 1rem;
+  text-align: left;
+}
+.sticky:before {
+  content: '\2605';
+  display: block;
+  color: #FF0;
+  height: 0;
+  width: 0;
+  font-size: 0.889rem;
+  left: -1.5rem;
+  top: 0.125rem;
+  position: relative;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Personal styling! */
@@ -235,23 +263,33 @@ input, textarea {
 
   .button,
   .button:link,
-  .button:visited {
+  .button:visited,
+  .more-link,
+  .more-link:link,
+  .more-link:visited {
     border-radius: .3em;
     border: 1px solid #CCC;
     font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
     background-color: #FFF;
-    padding: 0.5em 0.8em;
+    padding: 0.75em 1em;
     text-transform: none;
     color: #333;
   }
 
-  .button:hover {
+  .button:hover, 
+  .more-link:hover {
     color: #999;
   }
 
-  .button:active {
+  .button:active, 
+  .more-link:active {
     color: #AAA;
     border: 1px solid #EEE;
+  }
+
+  // more link is auto-generated sometimes so have to apply button and button--xsmall class to it :( 
+  .more-link {
+    font-size: 0.694rem;
   }
 
 

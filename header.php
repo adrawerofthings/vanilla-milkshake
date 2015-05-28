@@ -17,7 +17,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class( $class ); ?>> 
 <div id="page" class="hfeed site container center padding-large">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'vanillamilkshake' ); ?></a>
 
