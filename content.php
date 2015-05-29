@@ -12,7 +12,7 @@
 		<h2 class="entry-title f4 b sans-serif margintop-none marginbottom-xsmall">
 			<?php
 				/* no title edge case */
-				if (empty(get_the_title())) : 
+				if (get_the_title() == "") : 
 				?>
 					<a href="<?php echo get_permalink(); ?>">
 						<?php printf( __( 'Untitled', 'vanillamilkshake' ) ); ?>
