@@ -166,7 +166,7 @@ img, figure {
   max-width: 100%;
   height: auto;
 }
-iframe {
+iframe, embed, object, video {
   max-width: 100%;
 }
 .maxwidth-100p {
