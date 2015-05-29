@@ -7,7 +7,7 @@
 ## Who this theme is for
 
 - Bloggers who just want a simple yet classic, two-column blog design that works just as well on mobile and tablet then it does on desktop.
-- WordPress theme developers who want a simple base theme with the bare minimum of template files and CSS styles.
+- WordPress theme developers who want a simple base theme with the bare minimum of template files and CSS styles for a blog, magazine or news site.
 - Frontend developers who want to see the [Tachyons](https://github.com/mrmrs/tachyons/) CSS framework in action.
 
 ## Theme features
