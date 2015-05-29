@@ -22,6 +22,19 @@
  */
 
 /**
+ * Set the content width based on the theme's design and stylesheet.
+ * 
+ * I don't like this setting (https://wycks.wordpress.com/2013/02/14/why-the-content_width-wordpress-global-kinda-sucks/)
+ * even with theme support (https://core.trac.wordpress.org/ticket/21256) as it
+ * penalizes responsive/fluid designs (not to mention the pixel-only metric).
+ * So am setting very high to basically ignore it
+ * since Wordpress requires it for theme uploads.
+ */
+if ( ! isset( $content_width ) ) {
+	$content_width = 1920;
+}
+
+/**
  * Theme only works in WordPress 4.1 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '4.1-alpha', '<' ) ) {
@@ -43,6 +56,9 @@ function vanillamilkshake_setup() {
 	 * Translations can be filed in the /languages/ directory.
 	 */
 	load_theme_textdomain( 'vanillamilkshake', get_template_directory() . '/languages' );
+
+	// Add default posts and comments RSS feed links to head.
+	add_theme_support( 'automatic-feed-links' );
 
 	/*
 	 * Let WordPress manage the document title.
