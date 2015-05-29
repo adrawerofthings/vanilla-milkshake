@@ -75,6 +75,11 @@ function vanillamilkshake_setup() {
 	add_theme_support( 'html5', array(
 		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
 	) );
+	/*
+	 * This theme styles the visual editor to resemble the theme style,
+	 * specifically font, colors, icons, and column width.
+	 */
+	add_editor_style( 'css/editor-style.css' );
 
 }
 endif; // vanillamilkshake_setup
