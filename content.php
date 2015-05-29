@@ -9,8 +9,21 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'clear-both clearfix marginbottom-large' ); ?>>
 
 	<header class="entry-header position-relative">
+		<h2 class="entry-title f4 b sans-serif margintop-none marginbottom-xsmall">
+			<?php
+				/* no title edge case */
+				if (empty(get_the_title())) : 
+				?>
+					<a href="<?php echo get_permalink(); ?>">
+						<?php printf( __( 'Untitled', 'vanillamilkshake' ) ); ?>
+					</a>
+				<?
+				else :
+					the_title( sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>' );
+				endif;
+			?>
+		</h2>
 		<?php
-			the_title( sprintf( '<h2 class="entry-title f4 b sans-serif margintop-none marginbottom-xsmall"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 
 			$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 
