@@ -30,7 +30,6 @@
 
 ## Notes for theme developers
 
-- *style.scss* actually doesn't use any SASS syntax; it's named such so that Codekit will minify them into *style.css*.
 - Vanilla Milkshake currently uses the default, WordPress-generated search and comment forms. (In case you were wondering where those were.)
 - There is a custom, media-rich excerpt function (see inc/rich-excerpt.php), which has been tested with my blog and the theme test blog but may still have a bug or two.
 - To build this theme, I used the [Twenty Fifteen](https://github.com/WordPress/WordPress/tree/master/wp-content/themes/twentyfifteen) theme as my starting point, and then stripped out as many custom functions and templates as I deemed reasonable. If something doesn't make sense, it's because it may be a vestige from [Twenty Fifteen](https://github.com/WordPress/WordPress/tree/master/wp-content/themes/twentyfifteen).

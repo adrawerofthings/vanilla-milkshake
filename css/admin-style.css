@@ -1,0 +1,17 @@
+/* Optional! */
+/* Some styles to make writing a post a little cleaner */
+
+/* making the toolbars less prominent, especially in distraction-free mode */
+#postdivrich div.mce-toolbar-grp, #postdivrich .quicktags-toolbar {
+	border: 0;
+	background: #FFF;
+	padding-bottom: 0.5rem;
+}
+/* setting the title-during-writing to look more like the final thing */
+#titlediv #title {
+	font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
+	padding: 0 1rem;
+	height: 3rem;
+	font-weight: bold;
+	font-size: 150%;
+}
