@@ -6,6 +6,8 @@
 
 [See the theme in action and read about its features on its project page](http://hongkonggong.github.io/vanilla-milkshake/).
 
+---
+
 ### Notes for theme developers ###
 
 - Vanilla Milkshake currently uses the default, WordPress-generated search and comment forms. (In case you were wondering where those were.)
