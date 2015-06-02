@@ -4,7 +4,7 @@
 
 ![Screenshot of Vanilla Milkshake theme on desktop and mobile](screenshot.png)
 
-[See the theme in action and read about its features on its project page](http://hongkonggong.github.io/vanilla-milkshake/).
+**[See the theme in action and read about its features on its project page](http://hongkonggong.github.io/vanilla-milkshake/).**
 
 ---
 
