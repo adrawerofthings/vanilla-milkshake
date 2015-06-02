@@ -1,34 +1,17 @@
-# Vanilla Milkshake
+# Vanilla Milkshake #
 
 **A minimalist WordPress theme built with elegant typography and responsive design for simple weblogs. Allows for easy customization and extension.**
 
 ![Screenshot of Vanilla Milkshake theme on desktop and mobile](screenshot.png)
 
-## Who this theme is for
+[Read about this theme's features on its project page](http://hongkonggong.github.io/vanilla-milkshake/).
 
-- Bloggers who just want a simple yet classic, two-column blog design that works just as well on mobile and tablet then it does on desktop.
-- WordPress theme developers who want a simple base theme with the bare minimum of template files and CSS styles for a blog, magazine or news site.
-- Frontend developers who want to see the [Tachyons](https://github.com/mrmrs/tachyons/) CSS framework in action.
-
-## Theme features
-
-- Responsive design
-- Customizable colors
-- Best-of-class typography defaults
-- Treats text and images equally (the latter doesn't dominate)
-- Media-rich excerpts
-- Short loading times
-- No external font or Javascript dependencies (works behind the Great Firewall)
-- Accessibility enhanced
-- Translation ready
-- Easy to extend and build upon
-
-## See the theme in action
+## See the theme in action ##
 
 - [88 Bar](http://88-bar.com/): a group blog about Chinese tech, media and design.
 - [MBA Mondays Illustrated](http://www.mba-mondays-illustrated.com): business 101 for startups by Fred Wilson.
 
-## Notes for theme developers
+## Notes for theme developers ##
 
 - Vanilla Milkshake currently uses the default, WordPress-generated search and comment forms. (In case you were wondering where those were.)
 - There is a custom, media-rich excerpt function (see inc/rich-excerpt.php), which has been tested with my blog and the theme test blog but may still have a bug or two.
