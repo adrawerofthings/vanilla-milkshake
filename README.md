@@ -1,8 +1,8 @@
 # Vanilla Milkshake #
 
-**A minimalist WordPress theme built with elegant typography and responsive design for simple weblogs. Allows for easy customization and extension.**
-
 ![Screenshot of Vanilla Milkshake theme on desktop and mobile](screenshot.png)
+
+A minimalist WordPress theme built with elegant typography and responsive design for simple weblogs. Allows for easy customization and extension.
 
 **[See the theme in action and read about its features on its project page](http://hongkonggong.github.io/vanilla-milkshake/).**
 
