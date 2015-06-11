@@ -37,6 +37,7 @@ if ( ! function_exists( 'vanillamilkshake_entry_meta' ) ) :
  * Prints HTML with meta information for the categories, tags.
  */
 function vanillamilkshake_entry_meta() {
+
 	if ( is_sticky() && is_home() && ! is_paged() ) {
 		printf( '<span class="sticky-post">%s</span>', __( 'Featured', 'vanillamilkshake' ) );
 	}
@@ -52,12 +53,15 @@ function vanillamilkshake_entry_meta() {
 
 	if ( 'post' == get_post_type() ) {
 		if ( is_singular() || is_multi_author() ) {
-			printf( '<div class="byline marginbottom-medium"><span class="author vcard"><span class="screen-reader-text">%1$s </span><span class="light-gray">&#9670;</span> <a class="url fn n" href="%2$s">%3$s</a></span></div><div class="marginvertical-medium height-00125 backgroundcolor-light-gray"></div>',
+			printf( '<div class="byline marginbottom-medium"><span class="author vcard"><span class="screen-reader-text">%1$s </span><span class="light-gray">&#9670;</span> <a class="url fn n" href="%2$s">%3$s</a></span></div>',
 				_x( 'Author', 'Used before post author name.', 'vanillamilkshake' ),
 				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 				get_the_author()
 			);
 		}
+
+		/* divider between author & categories/tags */
+		printf('<div class="marginvertical-medium height-000625 backgroundcolor-light-gray"></div>');
 
 		$categories_list = get_the_category_list( _x( ' <span class="light-gray">&#9656;</span> ', 'Used between list items, there is a space after the comma.', 'vanillamilkshake' ) );
 		if ( $categories_list && vanillamilkshake_categorized_blog() ) {

@@ -1976,6 +1976,10 @@ code {
 
 /* Height Scale */
 
+.height-000625 {
+  height: 0.0625rem;
+}
+
 .height-00125 {
   height: 0.125rem;
 }

@@ -105,12 +105,22 @@ ul > li:before {
     top: 0;
     position: relative;
 }
-.comment-body {
-  margin-bottom: 1rem;
+/* COMMENTS */
+.comments-area {
+  margin: 1rem 0;
+  border-top: 0.0736rem solid #EEE; /* height = .0625 / .85 */
+  border-bottom: 0.0736rem solid #EEE;
+  padding: 1rem 0;
+  font-size: 0.85rem;
 }
 .comment-respond {
   margin-top: 2rem;
 }
+.comments-title {
+  font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
+  font-size: 0.85rem;
+}
+/**/
 .entry-content {
   color: #333;
   position: relative; /* fix embed floats that have absolute positions */

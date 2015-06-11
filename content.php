@@ -6,7 +6,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'clear-both clearfix marginbottom-large' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'clear-both clearfix marginbottom-medium' ); ?>>
 
 	<header class="entry-header position-relative">
 		<h2 class="entry-title f4 b sans-serif margintop-none marginbottom-xsmall">
