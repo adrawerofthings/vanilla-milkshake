@@ -1,7 +1,14 @@
-/* then importing custom styles, including:
- * - h1, h2, h3... which don't use default sizes
- * - responsive font-sizes so text scales with window size
- */
+
+/* font defaults; can't just import because of odd class selectors */
+
+body#tinymce.wp-editor { 
+    font-family: "Garamond", "Calisto MT", georgia, serif;
+    font-size: 150%; /* Scaling to mimic words per column as in output */
+    padding-left: 2rem !important; /* unfortunate defaults are !important so need to override them to give some breathing room! */ 
+    padding-right: 2.5rem !important;
+}
+
+/* h1, h2, h3... which don't use default sizes */
 h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
 }
@@ -11,13 +18,4 @@ h1, h2 {
 h3 {
   font-weight: normal;
   font-style: italic;
-}
-
-/* font defaults; can't just import because of odd class selectors */
-
-body#tinymce.wp-editor { 
-    font-family: "Garamond", "Calisto MT", georgia, serif;
-    font-size: 150%; /* Scaling to mimic words per column as in output */
-    padding-left: 2rem !important; /* unfortunate defaults are !important so need to override them to give some breathing room! */ 
-    padding-right: 2.5rem !important;
 }
