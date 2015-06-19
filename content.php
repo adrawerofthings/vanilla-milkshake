@@ -17,11 +17,11 @@
 					<a href="<?php echo get_permalink(); ?>">
 						<?php printf( __( 'Untitled', 'vanillamilkshake' ) ); ?>
 					</a>
-				<?
+				<?php
 				else :
 					the_title( sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>' );
 				endif;
-			?>
+				?>
 		</h2>
 		<?php
 
