@@ -132,6 +132,7 @@ ul > li:before {
   font-size: 0.889rem;
   padding-left: 1.25em;
   color: #666;
+  min-width: 12rem; /* for really skinny images */
 }
 .wp-caption-text:before {
   content: "\21B3";
