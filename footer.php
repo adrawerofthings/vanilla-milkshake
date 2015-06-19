@@ -15,7 +15,9 @@
 
 	<footer id="colophon" class="site-footer clear-both paddingtop-xlarge" role="contentinfo">
 		<div class="site-info small">
-			<a href="<?php echo esc_url( __( 'http://hongkonggong.github.io/vanilla-milkshake/', 'vanillamilkshake' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'vanillamilkshake' ), 'a Vanilla Milkshake.' ); ?></a>
+			<a href="http://hongkonggong.github.io/vanilla-milkshake/">
+				<?php echo __( 'Proudly powered by a Vanilla Milkshake', 'vanillamilkshake' ); ?>
+			</a>
 		</div><!-- .site-info -->
 	</footer><!-- .site-footer -->
 

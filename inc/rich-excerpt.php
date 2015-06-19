@@ -26,7 +26,7 @@
 	    $link = sprintf( '<p class="clear-both"><a href="%1$s" class="more-link">%2$s</a><p>',
 			esc_url( get_permalink( get_the_ID() ) ),
 			/* translators: %s: Name of current post */
-			sprintf( __( $readmorestring . ' %s', 'vanillamilkshake' ), '<span class="screen-reader-text">' . get_the_title( get_the_ID() ) . '</span>' )
+			sprintf( $readmorestring . ' %s', 'vanillamilkshake', '<span class="screen-reader-text">' . get_the_title( get_the_ID() ) . '</span>' )
 			);
 	    if ( (count($words) > $excerpt_length) ) {
 	      array_pop($words);

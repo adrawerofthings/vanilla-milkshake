@@ -105,22 +105,6 @@ ul > li:before {
     top: 0;
     position: relative;
 }
-/* COMMENTS */
-.comments-area {
-  margin: 1rem 0;
-  border-top: 0.0736rem solid #EEE; /* height = .0625 / .85 */
-  border-bottom: 0.0736rem solid #EEE;
-  padding: 1rem 0;
-  font-size: 0.85rem;
-}
-.comment-respond {
-  margin-top: 2rem;
-}
-.comments-title {
-  font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
-  font-size: 0.85rem;
-}
-/**/
 .entry-content {
   color: #333;
   position: relative; /* fix embed floats that have absolute positions */
@@ -184,16 +168,14 @@ iframe, embed, object, video {
   max-width: 100%;
 }
 
-/* Relying on default Wordpress-generated search and comment forms, so styling them using their native classes */
-input, textarea {
-  padding: 0.25rem 0.5rem;
-  border-radius: 3px;
-  border-style: inset;
-  border-width: 1px;
-  background-color: #F5F5F5;
-  max-width: 100%;
+/* Relying on default Wordpress-generated search forms, so styling them using their native classes */
+/* COMMENTS */
+.comment-metadata {
+  font-size: 0.6141rem;
+  margin-top: 0.25rem;
 }
-#submit {
+/* comment form buttons: submit comment, reply within thread(s), comment pagination */
+#submit, .comment-reply-link {
   border-radius: .3em;
   border: 1px solid #CCC;
   font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
@@ -203,7 +185,20 @@ input, textarea {
   text-decoration: none;
   padding: 0.5em 0.8em;
   transition: color .4s, background-color .4s, border .4s;
-  font-size: 0.80rem;
+  font-size: 0.7225rem;
+}
+.comment-reply-link, .comment-reply-link:link, .comment-reply-link:visited {
+  color: #666;
+  font-size: 0.522rem;
+  margin-bottom: 1rem;
+}
+input, textarea {
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  border-style: inset;
+  border-width: 1px;
+  background-color: #F5F5F5;
+  max-width: 100%;
 }
 .pagination {
   margin-bottom: 2rem;

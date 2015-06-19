@@ -63,7 +63,7 @@ function vanillamilkshake_entry_meta() {
 		/* divider between author & categories/tags */
 		printf('<div class="marginvertical-medium height-000625 backgroundcolor-light-gray"></div>');
 
-		$categories_list = get_the_category_list( _x( ' <span class="light-gray">&#9656;</span> ', 'Used between list items, there is a space after the comma.', 'vanillamilkshake' ) );
+		$categories_list = get_the_category_list( ' <span class="light-gray">&#9656;</span> ' );
 		if ( $categories_list && vanillamilkshake_categorized_blog() ) {
 			printf( '<span class="cat-links xsmall"><span class="screen-reader-text">%1$s </span><span class="light-gray"> &#9656;</span> %2$s</span>',
 				_x( 'Categories', 'Used before category names.', 'vanillamilkshake' ),
@@ -71,7 +71,7 @@ function vanillamilkshake_entry_meta() {
 			);
 		}
 
-		$tags_list = get_the_tag_list( '', _x( ' <span class="light-gray">&#9656;</span> ', 'Used between list items, there is a space after the comma.', 'vanillamilkshake' ) );
+		$tags_list = get_the_tag_list( '', ' <span class="light-gray">&#9656;</span> ' );
 		if ( $tags_list ) {
 			printf( '<span class="tags-links xsmall"><span class="screen-reader-text">%1$s </span><span class="light-gray"> &#9656;</span> %2$s</span>',
 				_x( 'Tags', 'Used before tag names.', 'vanillamilkshake' ),
