@@ -23,10 +23,9 @@
 	    // $text = strip_tags($text, '<p><img><img/><i><em><strong><figure><figcaption><blockquote><a><iframe><sub><sup><pre><code>');
 	    $excerpt_length = 72;
 	    $words = explode(' ', $text, $excerpt_length + 1);
-	    $link = sprintf( '<p class="clear-both"><a href="%1$s" class="more-link">%2$s</a><p>',
+	    $link = sprintf( '<p class="clear-both"><a href="%1$s#s" class="more-link">%2$s</a><p>',
 			esc_url( get_permalink( get_the_ID() ) ),
-			/* translators: %s: Name of current post */
-			sprintf( $readmorestring . ' %s', 'vanillamilkshake', '<span class="screen-reader-text">' . get_the_title( get_the_ID() ) . '</span>' )
+			$readmorestring . '<span class="screen-reader-text">' . get_the_title( get_the_ID() ) . '</span>'
 			);
 	    if ( (count($words) > $excerpt_length) ) {
 	      array_pop($words);
