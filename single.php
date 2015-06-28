@@ -26,11 +26,11 @@ get_header(); ?>
 
 			// Previous/next post navigation.
 			the_post_navigation( array(
-				'next_text' => '<div class="button button--xsmall width-100p margintop-small"><span class="meta-nav" aria-hidden="true"><div class="i serif marginbottom-small">' . __( 'Next post', 'twentyfifteen' ) . '</div></span> ' .
-					'<span class="screen-reader-text">' . __( 'Next post', 'twentyfifteen' ) . '</span> ' .
+				'next_text' => '<div class="button button--xsmall width-100p margintop-small"><span class="meta-nav" aria-hidden="true"><div class="i serif marginbottom-small">' . __( 'Next post', 'vanillamilkshake' ) . '</div></span> ' .
+					'<span class="screen-reader-text">' . __( 'Next post', 'vanillamilkshake' ) . '</span> ' .
 					'<span class="post-title">%title</span></div>',
-				'prev_text' => '<div class="button button--xsmall width-100p margintop-small"><span class="meta-nav" aria-hidden="true"><div class="i serif marginbottom-small">' . __( 'Previous post', 'twentyfifteen' ) . '</div></span> ' .
-					'<span class="screen-reader-text">' . __( 'Previous post', 'twentyfifteen' ) . '</span> ' .
+				'prev_text' => '<div class="button button--xsmall width-100p margintop-small"><span class="meta-nav" aria-hidden="true"><div class="i serif marginbottom-small">' . __( 'Previous post', 'vanillamilkshake' ) . '</div></span> ' .
+					'<span class="screen-reader-text">' . __( 'Previous post', 'vanillamilkshake' ) . '</span> ' .
 					'<span class="post-title">%title</span></div>',
 			) );
 

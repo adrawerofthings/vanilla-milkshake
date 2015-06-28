@@ -11,7 +11,7 @@
 	 * | plus bits and pieces from template-tags.php in 2015 theme
 	 * | updated bugs by applying: https://web.archive.org/web/20100123185020/http://palehorseinformation.com/2009/12/23/fixing-the-wordpress-excerpt
 	 */
-	function improved_trim_excerpt($text) { // Fakes an excerpt if needed
+	function vanillamilkshake_improved_trim_excerpt($text) { // Fakes an excerpt if needed
 	  global $post;
 	  if ( '' == $text ) {
 	  	$readmorestring =  __( 'Continue reading', 'vanillamilkshake' );
@@ -38,8 +38,5 @@
 	  return $text;
 	}
 	remove_filter('get_the_excerpt', 'wp_trim_excerpt');
-	add_filter('get_the_excerpt', 'improved_trim_excerpt');
-
-
-
+	add_filter('get_the_excerpt', 'vanillamilkshake_improved_trim_excerpt');
 ?>

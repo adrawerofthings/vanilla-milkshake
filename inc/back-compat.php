@@ -12,7 +12,7 @@
  *
  * Switches to the default theme.
  */
-function twentyfifteen_switch_theme() {
+function vanillamilkshake_switch_theme() {
 	switch_theme( WP_DEFAULT_THEME, WP_DEFAULT_THEME );
 	unset( $_GET['activated'] );
 	add_action( 'admin_notices', 'vanillamilkshake_upgrade_notice' );
@@ -43,7 +43,7 @@ add_action( 'load-customize.php', 'vanillamilkshake_customize' );
 /**
  * Prevent the Theme Preview from being loaded on WordPress versions prior to 4.1.
  */
-function twentyfifteen_preview() {
+function vanillamilkshake_preview() {
 	if ( isset( $_GET['preview'] ) ) {
 		wp_die( sprintf( __( 'Vanilla Milkshake requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again.', 'vanillamilkshake' ), $GLOBALS['wp_version'] ) );
 	}

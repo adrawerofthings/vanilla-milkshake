@@ -8,27 +8,27 @@
 	 * Customizer additions.
 	 * | http://www.smashingmagazine.com/2013/03/05/the-wordpress-theme-customizer-a-developers-guide/
 	 */
-	function theme_customize_register( $wp_customize ) {
+	function vanillamilkshake_theme_customize_register( $wp_customize ) {
 	  $colors = array();
 	  $colors[] = array(
 	    'slug'=>'title_bar_color', 
 	    'default' => '#FFFF00',
-	    'label' => __('Title header bar', 'Theme')
+	    'label' => __('Title header bar', 'vanillamilkshake')
 	  );
 	  $colors[] = array(
 	    'slug'=>'link_color', 
 	    'default' => '#1E73BE',
-	    'label' => __('Link color', 'Theme')
+	    'label' => __('Link color', 'vanillamilkshake')
 	  );
 	  $colors[] = array(
 	    'slug'=>'hover_link_color', 
 	    'default' => '#3b9cf1',
-	    'label' => __('Hover & focus link color', 'Theme') // cuz focus is like a keyboard hover!
+	    'label' => __('Hover & focus link color', 'vanillamilkshake') // cuz focus is like a keyboard hover!
 	  );
 	  $colors[] = array(
 	    'slug'=>'visited_link_color', 
 	    'default' => '#134775',
-	    'label' => __('Visited link color', 'Theme')
+	    'label' => __('Visited link color', 'vanillamilkshake')
 	  );
 	  foreach( $colors as $color ) {
 	    // SETTINGS
@@ -53,12 +53,12 @@
 	    );
 	  }
 	}
-	add_action( 'customize_register', 'theme_customize_register' );
+	add_action( 'customize_register', 'vanillamilkshake_theme_customize_register' );
 
 	/* Adds colors as inline styles to the HTML's <head> and also falls back to defaults
 	 * to minimize CSS overrides */
 
-	function theme_customizer_styles()
+	function vanillamilkshake_theme_customizer_styles()
 	{
 		$title_bar_color = get_option('title_bar_color');
 		$link_color = get_option('link_color');
@@ -102,6 +102,6 @@
 	 	echo "a:active { text-decoration: underline; }";
 	 	echo "</style>";
 	}
-	add_action('wp_head', 'theme_customizer_styles', 100);
+	add_action('wp_head', 'vanillamilkshake_theme_customizer_styles', 100);
 
 ?>

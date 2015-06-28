@@ -175,8 +175,8 @@ require get_template_directory() . '/inc/rich-excerpt.php';
 /**
  * Dashboard styling for post editing, feel free to delete
  */
-function load_custom_wp_admin_style() {
-        wp_register_style( 'custom_wp_admin_css', get_template_directory_uri() . '/css/admin-style.css', false, '1.0.0' );
+function vanillamilkshake_load_custom_wp_admin_style() {
+        wp_register_style( 'custom_wp_admin_css', get_template_directory_uri() . '/css/admin-style.css' );
         wp_enqueue_style( 'custom_wp_admin_css' );
 }
-add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_style' );
+add_action( 'admin_enqueue_scripts', 'vanillamilkshake_load_custom_wp_admin_style' );
