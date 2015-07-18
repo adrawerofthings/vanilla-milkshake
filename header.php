@@ -23,7 +23,19 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-			<h1 class="f3 texttransform-uppercase sans-serif marginbottom-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<?php
+			if ( is_home() ) {
+				echo '<h1 class="margintop-0 marginbottom-0">';
+			} else {
+				echo '<h2 class="margintop-0 marginbottom-0">';
+			} ?>
+			<span class="f3 texttransform-uppercase sans-serif"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
+			<?php
+			if ( is_home() ) {
+				echo '</h1>';
+			} else {
+				echo '</h2>';
+			} ?>
 
 				<?php 
 				$description = get_bloginfo( 'description', 'display' );

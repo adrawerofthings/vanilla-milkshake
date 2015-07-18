@@ -19,7 +19,7 @@ get_header(); ?>
 
 			<header class="page-header margintop-none marginbottom-large ">
 				<?php
-					the_archive_title( '<h1 class="page-title margintop-none sans-serif f3 black-30">', '</h1>' );
+					the_archive_title( '<h1 class="page-title margintop-none sans-serif f3 black-54">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
