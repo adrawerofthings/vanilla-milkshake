@@ -255,12 +255,12 @@ th, td {
 [data-icon]:before {
   content: attr(data-icon);
   display: block;
-  color: #fcfc00;
+  color: #000;
   height: 0;
   width: 0;
-  font-size: 0.889rem;
+  font-size: 0.70rem;
   left: -1.5rem;
-  top: 0;
+  top: 0.20rem;
   position: relative;
   speak: none; /* Not to be trusted, but hey. */
 }
@@ -536,6 +536,7 @@ select:focus
 input:focus,
 textarea:focus {
   background-color: #fff;
+  border: 1px solid #ccc;
 }
 button:hover,
 input[type="button"]:hover,

@@ -12,9 +12,9 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h2 class="page-title f4 b sans-serif margintop-none">
+		<h1 class="page-title f4 b sans-serif margintop-none">
 			<?php _e( 'Nothing Found', 'vanillamilkshake' ); ?>
-		</h2>
+		</h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">

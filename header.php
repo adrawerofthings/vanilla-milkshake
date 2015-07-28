@@ -23,25 +23,21 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-			<?php
-			if ( is_home() ) {
-				echo '<h1 class="margintop-0 marginbottom-0">';
-			} else {
-				echo '<h2 class="margintop-0 marginbottom-0">';
-			} ?>
-			<span class="f3 texttransform-uppercase sans-serif"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
-			<?php
-			if ( is_home() ) {
-				echo '</h1>';
-			} else {
-				echo '</h2>';
-			} ?>
-
-				<?php 
-				$description = get_bloginfo( 'description', 'display' );
-				if ( $description || is_customize_preview() ) : ?>
-					<p class="site-description margintop-small"><?php echo $description; ?></p>
-				<?php endif;
+			<?php if ( is_front_page() && is_home() ) : ?>
+				<h1 class="margintop-0 marginbottom-0">
+				<span class="f3 texttransform-uppercase sans-serif"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
+				</h1>
+			<?php else : ?>
+				<h2 class="margintop-0 marginbottom-0">
+				<span class="f3 texttransform-uppercase sans-serif"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
+				</h2>
+			<?php endif; ?>
+		
+			<?php 
+			$description = get_bloginfo( 'description', 'display' );
+			if ( $description || is_customize_preview() ) : ?>
+				<p class="site-description margintop-small"><?php echo $description; ?></p>
+			<?php endif;
 			?>
 		</div><!-- .site-branding -->
 	</header><!-- .site-header -->
