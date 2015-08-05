@@ -10,30 +10,36 @@
 	 * | code from: http://aaronrussell.co.uk/legacy/improving-wordpress-the_excerpt/
 	 * | plus bits and pieces from template-tags.php in 2015 theme
 	 * | updated bugs by applying: https://web.archive.org/web/20100123185020/http://palehorseinformation.com/2009/12/23/fixing-the-wordpress-excerpt
+	 * | updated unclosed tags edge case by using preg_match_all from: http://wordpress.stackexchange.com/questions/141125/allow-html-in-excerpt/141136#141136
 	 */
 	function vanillamilkshake_improved_trim_excerpt($text) { // Fakes an excerpt if needed
 	  global $post;
 	  if ( '' == $text ) {
 	  	$readmorestring =  __( 'Continue reading', 'vanillamilkshake' );
 	    $text = get_the_content($readmorestring);
-	    // $text = strip_shortcodes( $text ); have to disable, messes up on <figure>
 	    $text = apply_filters('the_content', $text);
-	    /* $text = preg_replace('@<script[^>]*?>.*?</script>@si', '', $text); */
 	    $text = str_replace('\]\]\>', ']]&gt;', $text);
-	    // $text = strip_tags($text, '<p><img><img/><i><em><strong><figure><figcaption><blockquote><a><iframe><sub><sup><pre><code>');
-	    $excerpt_length = 72;
-	    $words = explode(' ', $text, $excerpt_length + 1);
-	    $link = sprintf( '<p class="clear-both"><a href="%1$s#s" class="more-link">%2$s</a><p>',
+	    $excerpt_length = 65;
+
+        $link = sprintf( '<p class="clear-both"><a href="%1$s#s" class="more-link">%2$s</a><p>',
 			esc_url( get_permalink( get_the_ID() ) ),
 			$readmorestring . '<span class="screen-reader-text">' . get_the_title( get_the_ID() ) . '</span>'
 			);
-	    if ( (count($words) > $excerpt_length) ) {
-	      array_pop($words);
-	      $text = implode(' ', $words);
-	      $text = $text . '&hellip;';
-	      $text = force_balance_tags( $text );
-	      $text = $text . $link;
-	    }
+
+	    preg_match_all('/(<[^>]+>|[^<>\s]+)\s*/u', $text, $words);
+	    foreach ($words[0] as $word) { 
+            if ($count >= $excerpt_length) { 
+                $excerptoutput .= trim($word);
+                $excerptoutput .= '&hellip;';
+                $excerptoutput = trim(force_balance_tags($excerptoutput));
+                $excerptoutput .= $link;
+                $text = $excerptoutput;
+                break;
+            }
+            $count++;
+            $excerptoutput .= $word;
+        }
+
 	  }
 	  return $text;
 	}
