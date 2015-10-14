@@ -6,3 +6,18 @@
 
 .fontstyle-normal     	{ font-style: normal; }
 .fontstyle-italic, .i   { font-style: italic; }
+
+@media (--breakpoint-not-small) {
+  .fontstyle-normal-ns     { font-style: normal; }
+  .fontstyle-italic-ns       { font-style: italic; }
+}
+
+@media (--breakpoint-medium) {
+  .fontstyle-normal-m     { font-style: normal; }
+  .fontstyle-italic-m       { font-style: italic; }
+}
+
+@media (--breakpoint-large) {
+  .fontstyle-normal-l     { font-style: normal; }
+  .fontstyle-italic-l       { font-style: italic; }
+}

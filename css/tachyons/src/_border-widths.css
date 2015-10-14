@@ -27,3 +27,30 @@
 .borderwidth-4 { border-width: .75rem; }
 .borderwidth-5 { border-width: 1rem; }
 
+
+@media (--breakpoint-not-small) {
+  .borderwidth-0-ns { border-width: 0; }
+  .borderwidth-1-ns { border-width: .125rem; }
+  .borderwidth-2-ns { border-width: .25rem; }
+  .borderwidth-3-ns { border-width: .5rem; }
+  .borderwidth-4-ns { border-width: .75rem; }
+  .borderwidth-5-ns { border-width: 1rem; }
+}
+
+@media (--breakpoint-medium) {
+  .borderwidth-0-m { border-width: 0; }
+  .borderwidth-1-m { border-width: .125rem; }
+  .borderwidth-2-m { border-width: .25rem; }
+  .borderwidth-3-m { border-width: .5rem; }
+  .borderwidth-4-m { border-width: .75rem; }
+  .borderwidth-5-m { border-width: 1rem; }
+}
+
+@media (--breakpoint-large) {
+  .borderwidth-0-l { border-width: 0; }
+  .borderwidth-1-l { border-width: .125rem; }
+  .borderwidth-2-l { border-width: .25rem; }
+  .borderwidth-3-l { border-width: .5rem; }
+  .borderwidth-4-l { border-width: .75rem; }
+  .borderwidth-5-l { border-width: 1rem; }
+}

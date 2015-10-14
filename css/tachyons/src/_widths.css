@@ -3,7 +3,7 @@
    WIDTHS
 
    Base:
-     w = width
+     width
 
    Modifiers
      1 = 1st step in width scale
@@ -12,7 +12,7 @@
      4 = 4th step in width scale
      5 = 5th step in width scale
 
-     -10p  = literal value 10%
+     10p  = literal value 10%
      20p  = literal value 20%
      25p  = literal value 25%
      33p  = literal value 33%
@@ -22,7 +22,7 @@
      60p  = literal value 60%
      75p  = literal value 75%
      80p  = literal value 80%
-     -10p0 = literal value 100%
+     100p = literal value 100%
 
 
    Media Query Extensions:

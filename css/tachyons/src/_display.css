@@ -6,15 +6,15 @@
     display = display
 
    Modifiers:
-    n     = none
-    b     = block
-    ib    = inline-block
-    it    = inline-table
-    t     = table
-    tc    = table-cell
-    tr    = table-row
-    tcol  = table-column
-    tcolg = table-column-group
+    none           = none
+    block          = block
+    inlineblock    = inline-block
+    inlinetable    = inline-table
+    table          = table
+    tablecell      = table-cell
+    tablerow       = table-row
+    tablecolumn    = table-column
+    tablecolumngroup = table-column-group
 
    Media Query Extensions:
      -ns = not-small

@@ -4,21 +4,55 @@ Theme URI: http://hongkonggong.github.io/vanilla-milkshake/
 Author:  Jason Li
 Author URI: http://www.hongkonggong.com/
 Description: A minimalist WordPress theme built with elegant typography and responsive design for simple weblogs. Allows for easy customization and extension.
-Version: 1.18
+Version: 1.20
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: light, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-colors, rtl-language-support, translation-ready
 Text Domain: vanillamilkshake
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-
-/* Custom styles */
+/* VANILLA MILKSHAKE CORE STYLES */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* Tachyons Add-ons */
+/* Media: responsive images & embeds! */
+img, figure {
+  max-width: 100%;
+  height: auto;
+}
+iframe, embed, object, video {
+  max-width: 100%;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Accessibility: imported from WordPress 2015 theme
+ */
+/* must have higher specificity than alternative color schemes inline styles */
+.site .skip-link {
+  background-color: #f1f1f1;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+  color: #21759b;
+  display: block;
+  font: bold 14px/normal sans-serif;
+  left: -9999em;
+  outline: none;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  text-transform: none;
+  top: -9999em;
+}
+.logged-in .site .skip-link {
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  font: bold 14px/normal sans-serif;
+}
+.site .skip-link:focus {
+  clip: auto;
+  height: auto;
+  left: 6px;
+  top: 7px;
+  width: auto;
+  z-index: 100000;
+}
 
+/* CUSTOM STYLING! */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Scaling type for large screens */
 
 .container {
@@ -28,22 +62,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
   .container {max-width: 45em;}
 }
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  html {font-size: 120%;}
+  html {font-size: 112.5%;}
 }
 @media screen and (min-width: 64em) and (max-width: 86em) {
-  html {font-size: 150%;}
+  html {font-size: 126.6%;}
 }
 @media screen and (min-width: 86em) and (max-width: 108em) {
-  html {font-size: 180%;}
+  html {font-size: 142.4%;}
 }
 @media screen and (min-width: 108em) and (max-width: 130em) {
-  html {font-size: 210%;}
+  html {font-size: 160.2%;}
 }
 @media screen and (min-width: 130em) and (max-width: 152em) {
-  html {font-size: 240%;}
+  html {font-size: 180.2%;}
 }
 @media screen and (min-width: 152em) {
-  html {font-size: 270%;}
+  html {font-size: 202.7%;}
 }
 @media screen and (min-width: 86em) {
   .paddinghorizontal-xxxlarge-xl {
@@ -51,10 +85,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
     padding-right: 8rem;
   }
 }
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* Tachyons-Wordpress adapations */
 
 /* Font resets */
 h1, h2, h3, h4, h5, h6 {
@@ -85,25 +115,6 @@ pre, code {
   background-color: #EEE;
   display: block;
   color: #666;
-}
-/* To format the classless post contents and/or widgets without having to make PHP code injections */
-ul {
-    list-style: none;
-    padding-left: 1em;
-}
-li {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-ul > li:before { 
-    content: "\25AA";
-    display: block;
-    color: #999;
-    height: 0;
-    width: 0;
-    left: -1em;
-    top: 0;
-    position: relative;
 }
 .entry-content {
   color: #333;
@@ -155,21 +166,28 @@ dt {
   margin-left: 1rem;
   clear: both;
 }
-/* Responsive images & media! */
-
-img, figure {
-  max-width: 100%;
-  height: auto;
+/* To format the classless post contents and/or widgets without having to make PHP code injections */
+ul {
+    list-style: none;
+    padding-left: 1em;
 }
-iframe, embed, object, video {
-  max-width: 100%;
+li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
-.maxwidth-100p {
-  max-width: 100%;
+ul > li:before { 
+    content: "\25AA";
+    display: block;
+    color: #999;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0;
+    position: relative;
 }
-
-/* Relying on default Wordpress-generated search forms, so styling them using their native classes */
-/* COMMENTS */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Relying on default Wordpress-generated search/comment forms, so styling them using their native classes */
+/* Comments! */
 .comment-metadata {
   font-size: 0.6141rem;
   margin-top: 0.25rem;
@@ -200,6 +218,9 @@ input, textarea {
   background-color: #F5F5F5;
   max-width: 100%;
 }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Pagination */
+
 .pagination {
   margin-bottom: 2rem;
 }
@@ -242,7 +263,7 @@ input, textarea {
 .prev, .next {
   display: none;
 }
-/* tables groan */
+/* tables */
 thead {
   border-bottom: 1px solid #333;
 }
@@ -266,11 +287,7 @@ th, td {
 }
 .sticky {} /* required by WordPress but no longer used */
 
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* Personal styling! */
-  
-  /* BUTTONS */
+  /* Buttons */
 
   .button,
   .button:link,
@@ -285,17 +302,20 @@ th, td {
     padding: 0.75em 1em;
     text-transform: none;
     color: #333;
+    transition: color .4s, background-color .4s, border .4s;
   }
 
   .button:hover, 
   .more-link:hover {
     color: #757575; /* lightest grey for accesibility */
+    transition: background-color .3s, color .3s, border .3s;
   }
 
   .button:active, 
   .more-link:active {
     color: #AAA;
     border: 1px solid #EEE;
+    transition: background-color .3s, color .3s, border .3s;
   }
 
   /* more link is auto-generated sometimes so have to apply button and button--xsmall class to it :( */
@@ -303,34 +323,53 @@ th, td {
     font-size: 0.694rem;
   }
 
+  /* legacy button styles */
+  .button--xsmall { font-size: 0.694rem; }
+  .button--small { font-size: 0.833rem; }
+  .button--medium { font-size: 1rem; }
+  .button--large { font-size: 1.2rem; border-radius: .25em!important; }
+  .button--xlarge { font-size: 1.44rem; border-radius: .25em!important; }
 
-  /*
-     LINKS
-  */
+  /* Dimming custom class */
+  @media screen and (min-width: 42em) {
+    .display-none-ns {
+      display: none;
+    }
+    /* dimmed is for hovering if on desktop */
+    .dimmed-ns {
+      opacity: 0.75;
+      transition: opacity .25s ease-in;
+    }
+    .dimmed-ns:hover {
+      opacity: 1;
+      transition: opacity .25s ease-in;
+    }
+    .dimmed-ns:active,
+    .dimmed-ns:focus {
+      opacity: 1;
+      transition: opacity .25s ease-out;
+    }
+  }
 
+  /* Links */
   a, .link {
     text-decoration: none;
     transition: color .15s ease-in;
   }
-
   a:link, .link:link {
     color: #30BBDB;
   }
-
   a:visited, .link:visited {
     color: #177185;
   }
-
   a:hover,
   .link:hover {
     color: #7bcde0;
   }
-
   a:active,
   .link:active {
     text-decoration: underline;
   }
-
   h1 a:link, 
   h2 a:link, 
   h3 a:link, 
@@ -347,26 +386,20 @@ th, td {
   h6 a:visited {
     color: #000;
   }
-
-
   /* 
-     TYPE SCALE
+     Type scale
   */
-
   /* JL: toning down Tachyons font sizes based on a "major second" progression from: http://type-scale.com/ */
 
   .mega {
     font-size: 2rem;
   }
-
   .f1 {
     font-size: 1.424rem;
   }
-
   .f2 {
     font-size: 1.266rem;
   }
-
   .f3 {
     font-size: 1.125rem;
   }
@@ -385,28 +418,22 @@ th, td {
   .xxsmall {
     font-size: .702rem
   }
-
   @media screen and (min-width: 42em) {
     .mega-ns {
       font-size: 4rem;
     }
-
     .f1-ns {
       font-size: 3rem;
     }
-
     .f2-ns {
       font-size: 2rem;
     }
-
     .f3-ns {
       font-size: 1.5em;
     }
-
     .f4-ns {
       font-size: 1rem;
     }
-
     .f5-ns {
       font-size: .85rem;
     }
@@ -419,28 +446,22 @@ th, td {
       font-size: .702rem
     }
   }
-
   @media screen and (min-width: 42em) and (max-width: 64em) {
     .mega-m {
       font-size: 4rem;
     }
-
     .f1-m {
       font-size: 3rem;
     }
-
     .f2-m {
       font-size: 2rem;
     }
-
     .f3-m {
       font-size: 1.5rem;
     }
-
     .f4-m {
       font-size: 1rem;
     }
-
     .f5-m {
       font-size: .85rem;
     }
@@ -453,28 +474,22 @@ th, td {
       font-size: .702rem
     }
   }
-
   @media screen and (min-width: 64em) {
     .mega-l {
       font-size: 4rem;
     }
-
     .f1-l {
       font-size: 3rem;
     }
-
     .f2-l {
       font-size: 2rem;
     }
-
     .f3-l {
       font-size: 1.5rem;
     }
-
     .f4-l {
       font-size: 1rem;
     }
-
     .f5-l {
       font-size: .85rem;
     }
@@ -488,122 +503,3 @@ th, td {
     }
   }
 
-
-  /* Dimmed custom class! */
-
-  @media screen and (min-width: 42em) {
-    .display-none-ns {
-      display: none;
-    }
-    /* dimmed is for hovering if on desktop */
-    .dimmed-ns {
-      opacity: 0.75;
-      transition: opacity .25s ease-in;
-    }
-
-    .dimmed-ns:hover {
-      opacity: 1;
-      transition: opacity .25s ease-in;
-    }
-
-    .dimmed-ns:active,
-    .dimmed-ns:focus {
-      opacity: 1;
-      transition: opacity .25s ease-out;
-    }
-  }
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ACCESSIBILITY */
-
-/* Lightest grey text on white background to satisfy 4.5:1 AA contrast requirements */
-
-.black-54 {
-  color: rgba(0, 0, 0, .54);
-}
-
-/* Focus states for keyboard navigation, derived from the Twentyfiften theme */
-
-a:focus,
-.link:focus,
-input:focus,
-textarea:focus,
-select:focus
-   {
-    outline: 1px dashed #c1c1c1;
-  }
-
-input:focus,
-textarea:focus {
-  background-color: #fff;
-  border: 1px solid #ccc;
-}
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus {
-  background-color: #707070;
-  background-color: rgba(51, 51, 51, 0.7);
-  outline: 0;
-}
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-textarea:focus {
-  outline: 0;
-}
-
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/**
- * Accessibility continued - imported from WordPress 2015 theme
- */
-
-/* Text meant only for screen readers */
-.says,
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-  width: 1px;
-}
-
-/* must have higher specificity than alternative color schemes inline styles */
-.site .skip-link {
-  background-color: #f1f1f1;
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
-  color: #21759b;
-  display: block;
-  font: bold 14px/normal sans-serif;
-  left: -9999em;
-  outline: none;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  text-transform: none;
-  top: -9999em;
-}
-
-.logged-in .site .skip-link {
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  font: bold 14px/normal sans-serif;
-}
-
-.site .skip-link:focus {
-  clip: auto;
-  height: auto;
-  left: 6px;
-  top: 7px;
-  width: auto;
-  z-index: 100000;
-}

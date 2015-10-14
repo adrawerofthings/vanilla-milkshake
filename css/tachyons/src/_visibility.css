@@ -1,24 +1,32 @@
 /*
 
-   VISIBILITY
+   ACCESSBILITY
 
 */
 
+/* Lightest grey text allowed on white background to satisfy 4.5:1 AA contrast requirement */
+.black-54, .lightest-grey-text, .lightest-gray-text {
+  color: rgba(0, 0, 0, .54);
+}
 
 /*
     Text that is hidden but accessible
     Ref: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 */
-
-.clip {
-  position: fixed !important;
-  _position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+.clip, 
+.says, 
+.screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
 }
 
 @media (--breakpoint-not-small) {
-  .clip-ns {
+  .clip-ns,
+  .says-ns,
+  .screen-reader-text-ns {
     position: fixed !important;
     _position: absolute !important;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -27,7 +35,9 @@
 }
 
 @media (--breakpoint-medium) {
-  .clip-m {
+  .clip-m,
+  .says-m,
+  .screen-reader-text-m {
     position: fixed !important;
     _position: absolute !important;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -36,10 +46,56 @@
 }
 
 @media (--breakpoint-large) {
-  .clip-l {
+  .clip-l,
+  .says-l,
+  .screen-reader-text-l {
     position: fixed !important;
     _position: absolute !important;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
   }
 }
+
+/* Focus states for keyboard navigation
+/* Derived from the Wordpress Twentyfiften theme: https://github.com/WordPress/WordPress/blob/master/wp-content/themes/twentyfifteen/style.css
+/* Not tested on sites with dark background colors
+ */
+
+a:focus,
+.link:focus,
+input:focus,
+textarea:focus,
+select:focus
+   {
+    outline: 1px dashed #c1c1c1;
+  }
+
+input:focus,
+textarea:focus {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {
+  background-color: #707070;
+  background-color: rgba(51, 51, 51, 0.7);
+  outline: 0;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  outline: 0;
+}
+

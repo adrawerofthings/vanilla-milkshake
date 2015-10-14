@@ -10,7 +10,7 @@
 .clear-both { clear: both; }
 
 /* Nicolas Gallaghers Clearfix solution
-   Ref: http://nicolasgallagher.clear-om/micro-clearfix-hack/ */
+   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
 
 .clearfix:before,
 .clearfix:after { content: " "; display: table; }

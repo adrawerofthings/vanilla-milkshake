@@ -6,7 +6,7 @@
       Setting floats to display inline will fix the double margin bug in
       ie6. You know... just in case.
 
-   2. Don't forget to clearfix your floats with .cf
+   2. Don't forget to clearfix your floats with .clearfix
 
    Base:
      f = float

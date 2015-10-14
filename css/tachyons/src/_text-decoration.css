@@ -4,21 +4,27 @@
 
 */
 
-.under, .textdecoration-underline  { text-decoration: underline; }
-.none, .textdecoration-none   { text-decoration: none; }
+/*
+
+   TEXT DECORATION
+
+*/
+
+.underline, .textdecoration-underline  { text-decoration: underline; }
+.no-underline, .textdecoration-none   { text-decoration: none; }
 
 
 @media (--breakpoint-not-small) {
-  .under-ns, .textdecoration-underline-ns  { text-decoration: underline; }
-  .none-ns, .textdecoration-none-ns   { text-decoration: none; }
+  .underline-ns, .textdecoration-underline-ns  { text-decoration: underline; }
+  .no-underline-ns, .textdecoration-none-ns   { text-decoration: none; }
 }
 
 @media (--breakpoint-medium) {
-  .under-m, .textdecoration-underline-m  { text-decoration: underline; }
-  .none-m, .textdecoration-none-m   { text-decoration: none; }
+  .underline-m, .textdecoration-underline-m  { text-decoration: underline; }
+  .no-underline-m, .textdecoration-none-m   { text-decoration: none; }
 }
 
 @media (--breakpoint-large) {
-  .under-l, .textdecoration-underline-l  { text-decoration: underline; }
-  .none-l, .textdecoration-none-l   { text-decoration: none; }
+  .underline-l, .textdecoration-underline-l  { text-decoration: underline; }
+  .no-underline-l, .textdecoration-none-l   { text-decoration: none; }
 }

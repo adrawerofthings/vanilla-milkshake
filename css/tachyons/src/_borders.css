@@ -1,19 +1,27 @@
 /*
 
-   BORDER borderSE
+   BORDER BASE
 
-   Use border-borderse in combination with setting text color
+   Use border-base in combination with setting text color
    or by using extensions from border-color module.
 
    Examples:
-   To set a border of borderleftue on all sides:
-   <div class="border bordercolor--borderleftue"></div>
+   To set a border of blue on all sides:
+   <div class="border bordercolor--blue"></div>
 
    To set a border on top of orange
    <div class="bordertop bordercolor--orange"></div>
 
-   borderse:
-    b = border
+   Base:
+    border = border
+
+   Modifiers:
+     n = none, no border-style or border-width
+     a = all
+     t = top
+     r = right
+     b = bottom
+     l = left
 
    Media Query Extensions:
      -ns = not-small
@@ -37,7 +45,7 @@
   .borderbottom-dotted { border-bottom-style: dotted; border-bottom-width: 1px; }
   .borderleft-dotted { border-left-style: dotted; border-left-width: 1px; }
 
-@media (--borderrighteakpoint-not-small) {
+@media (--breakpoint-not-small) {
   .border-none-ns { border-style: solid; border-width: 0; }
   .border-ns { border-style: solid; border-width: 1px; }
   .borderleft-ns { border-top-style: solid; border-top-width: 1px; }
@@ -51,7 +59,7 @@
   .borderleft-dotted-ns { border-left-style: dotted; border-left-width: 1px; }
 }
 
-@media (--borderrighteakpoint-medium) {
+@media (--breakpoint-medium) {
   .border-none-m { border-style: solid; border-width: 0; }
   .border-m { border-style: solid; border-width: 1px; }
   .bordertop-m { border-top-style: solid; border-top-width: 1px; }
@@ -65,7 +73,7 @@
   .borderleft-dotted-m { border-left-style: dotted; border-left-width: 1px; }
 }
 
-@media (--borderrighteakpoint-large) {
+@media (--breakpoint-large) {
   .border-none-l { border-style: solid; border-width: 0; }
   .border-l { border-style: solid; border-width: 1px; }
   .bordertop-l { border-top-style: solid; border-top-width: 1px; }

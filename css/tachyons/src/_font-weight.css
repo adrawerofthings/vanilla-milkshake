@@ -8,16 +8,20 @@
 .b, .fontweight-bold          { font-weight: bold; }
 .thin, .fontweight-100        { font-weight: 100; }
 .book, .fontweight-400        { font-weight: 400; }
-.bold, .fontweight-700        { font-weight: 700; }
-.heavy, .fontweight-900       { font-weight: 900; }
+.semibold, .fontweight-500    { font-weight: 500; }
+.bold, .fontweight-600        { font-weight: 600; }
+.heavy, .fontweight-700       { font-weight: 700; }
+.ultrabold, .fontweight-900   { font-weight: 900; }
 
 @media (--breakpoint-not-small) {
   .normal-ns, .fontweight-normal-ns  { font-weight: normal; }
   .b-ns, .fontweight-bold-ns         { font-weight: bold; }
   .thin-ns, .fontweight-100-ns       { font-weight: 100; }
   .book-ns, .fontweight-400-ns       { font-weight: 400; }
-  .bold-ns, .fontweight-700-ns       { font-weight: 700; }
-  .heavy-ns, .fontweight-900-ns      { font-weight: 900; }
+  .semibold-ns, .fontweight-500-ns   { font-weight: 500; }
+  .bold-ns, .fontweight-700-ns       { font-weight: 600; }
+  .heavy-ns, .fontweight-900-ns      { font-weight: 700; }
+  .ultrabold-ns, .fontweight-900-ns  { font-weight: 900; }
 }
 
 @media (--breakpoint-medium) {
@@ -25,8 +29,10 @@
   .b-m, .fontweight-bold-m           { font-weight: bold; }
   .thin-m, .fontweight-100-m         { font-weight: 100; }
   .book-m, .fontweight-400-m         { font-weight: 400; }
-  .bold-m, .fontweight-700-m         { font-weight: 700; }
-  .heavy-m, .fontweight-900-m        { font-weight: 900; }
+  .semibold-m, .fontweight-500-m     { font-weight: 500; }
+  .bold-m, .fontweight-700-m         { font-weight: 600; }
+  .heavy-m, .fontweight-900-m        { font-weight: 700; }
+  .ultrabold-m, .fontweight-900-m    { font-weight: 900; }
 }
 
 @media (--breakpoint-large) {
@@ -34,6 +40,8 @@
   .b-l, .fontweight-bold-l           { font-weight: bold; }
   .thin-l, .fontweight-100-l         { font-weight: 100; }
   .book-l, .fontweight-400-l         { font-weight: 400; }
-  .bold-l, .fontweight-700-l         { font-weight: 700; }
-  .heavy-l, .fontweight-900-l        { font-weight: 900; }
+  .semibold-l, .fontweight-500-l     { font-weight: 500; }
+  .bold-l, .fontweight-700-l         { font-weight: 600; }
+  .heavy-l, .fontweight-900-l        { font-weight: 700; }
+  .ultrabold-l, .fontweight-900-l    { font-weight: 900; }
 }

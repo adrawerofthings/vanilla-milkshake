@@ -1,5 +1,7 @@
 /*
+
    VERTICAL ALIGN
+
 */
 
 .verticalalign-baseline     { vertical-align: baseline; }
@@ -10,6 +12,7 @@
 .verticalalign-middle      { vertical-align: middle; }
 .verticalalign-top      { vertical-align: top; }
 .verticalalign-bottom      { vertical-align: bottom; }
+
 
 @media (--breakpoint-not-small) {
   .verticalalign-baseline-ns     { vertical-align: baseline; }

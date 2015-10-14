@@ -71,6 +71,10 @@ input[type="number"]:after,
 input[type="password"]:after,
 .border-box,
 .border-box:before,
-.border-box:after {
+.border-box:after,
+.boxsizing-borderbox,
+.boxsizing-borderbox:before, 
+.boxsizing-borderbox:after {
   box-sizing: border-box;
 }
+
