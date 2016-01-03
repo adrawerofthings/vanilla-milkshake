@@ -337,17 +337,14 @@ th, td {
     }
     /* dimmed is for hovering if on desktop */
     .dimmed-ns {
-      opacity: 0.75;
+      opacity: 0.8;
       transition: opacity .25s ease-in;
+      -webkit-transform: translate3d(0, 0, 0); /* Safari OSX fix for flickering */
     }
-    .dimmed-ns:hover {
-      opacity: 1;
-      transition: opacity .25s ease-in;
-    }
+    .dimmed-ns:hover,
     .dimmed-ns:active,
     .dimmed-ns:focus {
       opacity: 1;
-      transition: opacity .25s ease-out;
     }
   }
 
