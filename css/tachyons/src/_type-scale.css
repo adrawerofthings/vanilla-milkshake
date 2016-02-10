@@ -11,6 +11,10 @@
 .f4    { font-size: 1rem; }
 .f5,
 .small { font-size: .85rem; }
+.f6,
+.xsmall { font-size: .790rem; }
+.f7,
+.xxsmall { font-size: .702rem }
 
 @media (--breakpoint-not-small){
  .mega-ns { font-size: 4rem; }
@@ -18,7 +22,12 @@
  .f2-ns {   font-size: 1.5rem; }
  .f3-ns {   font-size: 1.25em; }
  .f4-ns {   font-size: 1rem; }
- .f5-ns {   font-size: .85rem; }
+ .f5-ns,
+ .small-ns { font-size: .85rem; }
+ .f6-ns,
+ .xsmall-ns { font-size: .790rem; }
+ .f7-ns,
+ .xxsmall-ns { font-size: .702rem }
 }
 
 @media (--breakpoint-medium) {
@@ -27,7 +36,12 @@
  .f2-m {   font-size: 1.5rem; }
  .f3-m {   font-size: 1.25rem; }
  .f4-m {   font-size: 1rem; }
- .f5-m {   font-size: .85rem; }
+ .f5-m,
+ .small-m { font-size: .85rem; }
+ .f6-m,
+ .xsmall-m { font-size: .790rem; }
+ .f7-m,
+ .xxsmall-m { font-size: .702rem }
 }
 
 @media (--breakpoint-large) {
@@ -36,5 +50,10 @@
  .f2-l   { font-size: 1.5rem; }
  .f3-l   { font-size: 1.25rem; }
  .f4-l   { font-size: 1rem; }
- .f5-l   { font-size: .85rem; }
+ .f5-l,
+ .small-l { font-size: .85rem; }
+ .f6-l,
+ .xsmall-l { font-size: .790rem; }
+ .f7-l,
+ .xxsmall-l { font-size: .702rem }
 }

@@ -93,3 +93,27 @@
   --dark-purple: #7b00a9;
   --darkest-purple: #5f008e;
 }
+
+/*
+
+   SPACES VARIABLES
+
+   Variables to set spacings for
+   height, spacing
+
+*/
+
+/* variables */
+:root {
+
+  --xxxsmall: 0.0625rem;
+  --xxsmall: 0.125rem;
+  --xsmall: 0.25rem;
+  --small: 0.5rem;
+  --medium: 1rem;
+  --large: 2rem;
+  --xlarge: 4rem;
+  --xxlarge: 8rem;
+  --xxxlarge: 16rem;
+
+}

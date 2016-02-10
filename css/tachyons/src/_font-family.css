@@ -4,8 +4,9 @@
 
 */
 
-.sans-serif {
-  font-family: 'helvetica neue', helvetica, 
+.sans-serif, .sansserif {
+  font-family: 'helvetica neue',
+                helvetica, 
                 arial,
                 sans-serif;
 }
@@ -13,7 +14,9 @@
 body, .serif {
   font-family: "Garamond",
                "Calisto MT",
-               times, TimesNewRoman, "Times New Roman",
+               times, 
+               TimesNewRoman, 
+               "Times New Roman",
                georgia,
                serif;
 }

@@ -16,20 +16,20 @@
 
 */
 
-  .backgroundsize-cover  {               background-size: cover; }
-  .backgroundsize-contain  {               background-size: contain; }
+  .backgroundsize-cover  { background-size: cover; }
+  .backgroundsize-contain  { background-size: contain; }
 
 @media (--breakpoint-not-small) {
-  .backgroundsize-cover-ns {             background-size: cover; }
-  .backgroundsize-contain-ns {             background-size: contain; }
+  .backgroundsize-cover-ns { background-size: cover; }
+  .backgroundsize-contain-ns { background-size: contain; }
 }
 
 @media (--breakpoint-medium) {
-  .backgroundsize-cover-m {              background-size: cover; }
-  .backgroundsize-contain-m {              background-size: contain; }
+  .backgroundsize-cover-m { background-size: cover; }
+  .backgroundsize-contain-m { background-size: contain; }
 }
 
 @media (--breakpoint-large) {
-  .backgroundsize-cover-l {              background-size: cover; }
-  .backgroundsize-contain-l {              background-size: contain; }
+  .backgroundsize-cover-l { background-size: cover; }
+  .backgroundsize-contain-l { background-size: contain; }
 }

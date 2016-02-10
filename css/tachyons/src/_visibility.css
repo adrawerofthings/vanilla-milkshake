@@ -5,7 +5,7 @@
 */
 
 /* Lightest grey text allowed on white background to satisfy 4.5:1 AA contrast requirement */
-.black-54, .lightest-grey-text, .lightest-gray-text {
+.black54, .lightestgreytext, .lightestgraytext {
   color: rgba(0, 0, 0, .54);
 }
 

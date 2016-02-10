@@ -57,7 +57,7 @@
 
 			$author = get_the_author();
 
-			printf( '<div class="posted-on small black-54 marginbottom-medium"><span class="screen-reader-text">%1$s </span>%2$s by %3$s</div>',
+			printf( '<div class="posted-on small lightestgreytext marginbottom-medium"><span class="screen-reader-text">%1$s </span>%2$s by %3$s</div>',
 				_x( 'Posted on', 'Used before publish date.', 'vanillamilkshake' ),
 				$time_string,
 				$author

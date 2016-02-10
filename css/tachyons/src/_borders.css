@@ -40,7 +40,7 @@
   .borderleft { border-left-style: solid; border-left-width: 1px; }
 
   .border-dotted { border-style: dotted; border-width: 1px; }
-  .borderleft-dotted { border-top-style: dotted; border-top-width: 1px; }
+  .bordertop-dotted { border-top-style: dotted; border-top-width: 1px; }
   .borderright-dotted { border-right-style: dotted; border-right-width: 1px; }
   .borderbottom-dotted { border-bottom-style: dotted; border-bottom-width: 1px; }
   .borderleft-dotted { border-left-style: dotted; border-left-width: 1px; }
@@ -48,7 +48,7 @@
 @media (--breakpoint-not-small) {
   .border-none-ns { border-style: solid; border-width: 0; }
   .border-ns { border-style: solid; border-width: 1px; }
-  .borderleft-ns { border-top-style: solid; border-top-width: 1px; }
+  .bordertop-ns { border-top-style: solid; border-top-width: 1px; }
   .borderright-ns { border-right-style: solid; border-right-width: 1px; }
   .borderbottom-ns { border-bottom-style: solid; border-bottom-width: 1px; }
   .borderleft-ns { border-left-style: solid; border-left-width: 1px; }

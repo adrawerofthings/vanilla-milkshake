@@ -19,11 +19,11 @@ get_header(); ?>
 
 			<header class="page-header margintop-none marginbottom-large ">
 				<?php
-					the_archive_title( '<h1 class="page-title margintop-none sans-serif f3 black-54">', '</h1>' );
+					the_archive_title( '<h1 class="page-title margintop-none sans-serif f3 lightestgreytext">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-			<div class="height-0025 backgroundcolor-light-gray marginbottom-large"></div>
+			<div class="height-xsmall backgroundcolor-lightgray marginbottom-large"></div>
 
 			<?php if ( is_paged() ) :
 				// Previous/next page navigation.

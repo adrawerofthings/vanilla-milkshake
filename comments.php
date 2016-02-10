@@ -15,7 +15,7 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-<div class="marginvertical-medium height-000625 backgroundcolor-light-gray"></div>
+<div class="marginvertical-medium height-xxxsmall backgroundcolor-lightgray"></div>
 <div id="comments" class="comments-area marginvertical-medium small">
 
 	<?php // You can start editing here -- including this comment! ?>
@@ -57,8 +57,8 @@ if ( post_password_required() ) {
 			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'vanillamilkshake' ); ?></h2>
 			<div class="nav-links">
 
-				<div class="nav-previous xxsmall marginvertical-xsmall"><?php previous_comments_link( '<span class="light-gray">&#9656;</span> ' . esc_html__( 'Older comments', 'vanillamilkshake' ) ); ?></div>
-				<div class="nav-next xxsmall marginvertical-xsmall"><?php next_comments_link( '<span class="light-gray">&#9656;</span> ' . esc_html__( 'Newer comments', 'vanillamilkshake' ) ); ?></div>
+				<div class="nav-previous xxsmall marginvertical-xsmall"><?php previous_comments_link( '<span class="lightgray">&#9656;</span> ' . esc_html__( 'Older comments', 'vanillamilkshake' ) ); ?></div>
+				<div class="nav-next xxsmall marginvertical-xsmall"><?php next_comments_link( '<span class="lightgray">&#9656;</span> ' . esc_html__( 'Newer comments', 'vanillamilkshake' ) ); ?></div>
 
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-below -->
@@ -76,4 +76,4 @@ if ( post_password_required() ) {
 	<?php comment_form(); ?>
 
 </div><!-- #comments -->
-<div class="marginvertical-medium height-000625 backgroundcolor-light-gray"></div>
+<div class="marginvertical-medium height-xxxsmall backgroundcolor-lightgray"></div>

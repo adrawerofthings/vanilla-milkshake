@@ -28,38 +28,38 @@
   .borderradius-3 {        border-radius: .5rem; }
   .borderradius-4 {        border-radius: 1rem; }
   .borderradius-5 {        border-radius: 2rem; }
-  .borderradius--circle {    border-radius: 9999px; }
-  .borderradius-100p {     border-radius: 100p%; }
+  .borderradius-circle {    border-radius: 9999px; }
+  .borderradius-100p {     border-radius: 100%; }
 
-@media (--borderradius-eakpoint-not-small) {
+@media (--breakpoint-not-small) {
   .borderradius-none-ns {     border-radius: 0; }
   .borderradius-1-ns {     border-radius: .125rem; }
   .borderradius-2-ns {     border-radius: .25rem; }
   .borderradius-3-ns {     border-radius: .5rem; }
   .borderradius-4-ns {     border-radius: 1rem; }
   .borderradius-5-ns {     border-radius: 2rem; }
-  .borderradius--circlele-ns { border-radius: 9999px; }
-  .borderradius-100p-ns {  border-radius: 100p%; }
+  .borderradius-circle-ns { border-radius: 9999px; }
+  .borderradius-100p-ns {  border-radius: 100%; }
 }
 
-@media (--borderradius-eakpoint-medium) {
+@media (--breakpoint-medium) {
   .borderradius-none-m {     border-radius: 0; }
   .borderradius-1-m {     border-radius: .125rem; }
   .borderradius-2-m {     border-radius: .25rem; }
   .borderradius-3-m {     border-radius: .5rem; }
   .borderradius-4-m {     border-radius: 1rem; }
   .borderradius-5-m {     border-radius: 2rem; }
-  .borderradius--circle-m { border-radius: 9999px; }
-  .borderradius-100p-m {  border-radius: 100p%; }
+  .borderradius-circle-m { border-radius: 9999px; }
+  .borderradius-100p-m {  border-radius: 100%; }
 }
 
-@media (--borderradius-eakpoint-large) {
+@media (--breakpoint-large) {
   .borderradius-none-l {     border-radius: 0; }
   .borderradius-1-l {     border-radius: .125rem; }
   .borderradius-2-l {     border-radius: .25rem; }
   .borderradius-3-l {     border-radius: .5rem; }
   .borderradius-4-l {     border-radius: 1rem; }
   .borderradius-5-l {     border-radius: 2rem; }
-  .borderradius--circle-l { border-radius: 9999px; }
-  .borderradius-100p-l {  border-radius: 100p%; }
+  .borderradius-circle-l { border-radius: 9999px; }
+  .borderradius-100p-l {  border-radius: 100%; }
 }

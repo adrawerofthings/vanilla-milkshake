@@ -25,7 +25,7 @@
   overflow-y: scroll;
 }
 
-.center {
+.center, .marginhorizontal-auto {
   margin-right: auto;
   margin-left: auto;
 }
