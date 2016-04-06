@@ -90,9 +90,6 @@ iframe, embed, object, video {
 .sans-serif, .sansserif {
   font-family: 'helvetica neue', helvetica, roboto, 'noto sans', 'gill sans', Ubuntu, 'segoe ui', arial, sans-serif; 
 }
-.serif {
-  font-family: Garamond, TimesNewRoman, "Times New Roman", georgia, times, serif;
-}
 h1, h2 {
   font-size: 1.5rem;
   font-weight: bold;

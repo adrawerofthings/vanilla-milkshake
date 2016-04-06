@@ -2,7 +2,7 @@
 /* font defaults; can't just import because of odd class selectors */
 
 body#tinymce.wp-editor { 
-    font-family: "Garamond", "Calisto MT", georgia, serif;
+    font-family: serif;
     font-size: 150%; /* Scaling to mimic words per column as in output */
     padding-left: 2rem !important; /* unfortunate defaults are !important so need to override them to give some breathing room! */ 
     padding-right: 2.5rem !important;
