@@ -1,3 +1,10 @@
+
+/* Media Query Variables */
+
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
 /*
 
    FLOATS
@@ -6,10 +13,10 @@
       Setting floats to display inline will fix the double margin bug in
       ie6. You know... just in case.
 
-   2. Don't forget to clearfix your floats with .clearfix
+   2. Don't forget to clearfix your floats with .cf
 
    Base:
-     f = float
+     float = float
 
    Modifiers:
      l = left
@@ -32,7 +39,7 @@
 @media (--breakpoint-not-small) {
   .float-left-ns { float: left; display: inline; }
   .float-right-ns { float: right;display: inline; }
-  .float-none-ns { float: none; }
+  .float-none-ns { float: none!important; }
 }
 
 @media (--breakpoint-medium) {

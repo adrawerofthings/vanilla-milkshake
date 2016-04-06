@@ -15,7 +15,6 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-<div class="marginvertical-medium height-xxxsmall backgroundcolor-lightgray"></div>
 <div id="comments" class="comments-area marginvertical-medium small">
 
 	<?php // You can start editing here -- including this comment! ?>
@@ -72,7 +71,6 @@ if ( post_password_required() ) {
 	?>
 		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'vanillamilkshake' ); ?></p>
 	<?php endif; ?>
-
 	<?php comment_form(); ?>
 
 </div><!-- #comments -->

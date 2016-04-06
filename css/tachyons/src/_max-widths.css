@@ -1,13 +1,21 @@
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
 /*
 
    MAX WIDTHS
 
 */
 
+/* Max Width Percentages */
+
 .maxwidth-100p  { max-width: 100%; }
 .maxwidth-75p   { max-width: 75%; }
 .maxwidth-50p   { max-width: 50%; }
 .maxwidth-25p   { max-width: 25%; }
+
+/* Max Width Scale */
 
 .maxwidth-medium  {  max-width: var(--medium); }
 .maxwidth-large  {  max-width: var(--large); }
@@ -18,13 +26,10 @@
 .maxwidth-xxxxxlarge  {  max-width: 48rem; }
 .maxwidth-xxxxxxlarge  {  max-width: 64rem; }
 .maxwidth-xxxxxxxlarge  {  max-width: 96rem; }
-.maxwidth-xxxxxxxxlarge {  max-width: 128rem; }
+
+/* Max Width String Properties */
 
 .maxwidth-none { max-width: none; }
-.maxwidth-maxcontent  { max-width: max-content; }
-.maxwidth-mincontent  { max-width: min-content; }
-.maxwidth-fitcontent  { max-width: fit-content; }
-.maxwidth-fillavailable { max-width: fill-available; }
 
 @media (--breakpoint-not-small) {
   .maxwidth-100p-ns  { max-width: 100%; }
@@ -41,13 +46,8 @@
   .maxwidth-xxxxxlarge-ns  {  max-width: 48rem; }
   .maxwidth-xxxxxxlarge-ns  {  max-width: 64rem; }
   .maxwidth-xxxxxxxlarge-ns  {  max-width: 96rem; }
-  .maxwidth-10-ns {  max-width: 128rem; }
 
   .maxwidth-none-ns { max-width: none; }
-  .maxwidth-maxcontent-ns  { max-width: max-content; }
-  .maxwidth-mincontent-ns  { max-width: min-content; }
-  .maxwidth-fitcontent-ns  { max-width: fit-content; }
-  .maxwidth-fillavailable-ns { max-width: fill-available; }
 }
 
 @media (--breakpoint-medium) {
@@ -65,13 +65,8 @@
   .maxwidth-xxxxxlarge-m  {  max-width: 48rem; }
   .maxwidth-xxxxxxlarge-m  {  max-width: 64rem; }
   .maxwidth-xxxxxxxlarge-m  {  max-width: 96rem; }
-  .maxwidth-xxxxxxxxlarge-m {  max-width: 128rem; }
 
   .maxwidth-none-m { max-width: none; }
-  .maxwidth-maxcontent-m  { max-width: max-content; }
-  .maxwidth-mincontent-m  { max-width: min-content; }
-  .maxwidth-fitcontent-m  { max-width: fit-content; }
-  .maxwidth-fillavailable-m { max-width: fill-available; }
 }
 
 @media (--breakpoint-large) {
@@ -89,11 +84,6 @@
   .maxwidth-xxxxxlarge-l  {  max-width: 48rem; }
   .maxwidth-xxxxxxlarge-l  {  max-width: 64rem; }
   .maxwidth-xxxxxxxlarge-l  {  max-width: 96rem; }
-  .maxwidth-xxxxxxxxlarge-l {  max-width: 128rem; }
 
   .maxwidth-none-l { max-width: none; }
-  .maxwidth-maxcontent-l  { max-width: max-content; }
-  .maxwidth-mincontent-l  { max-width: min-content; }
-  .maxwidth-fitcontent-l  { max-width: fit-content; }
-  .maxwidth-fillavailable-l { max-width: fill-available; }
 }

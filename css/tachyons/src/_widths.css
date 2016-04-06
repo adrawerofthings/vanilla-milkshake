@@ -1,29 +1,11 @@
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
 /*
 
    WIDTHS
 
-   Base:
-     width
-
-   Modifiers
-
-     10p  = literal value 10%
-     20p  = literal value 20%
-     25p  = literal value 25%
-     33p  = literal value 33%
-     34p  = literal value 34%
-     40p  = literal value 40%
-     50p  = literal value 50%
-     60p  = literal value 60%
-     75p  = literal value 75%
-     80p  = literal value 80%
-     100p = literal value 100%
-
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
 
 */
 

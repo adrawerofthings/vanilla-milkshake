@@ -17,26 +17,26 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>> 
+<body <?php body_class( 'serif' ); ?>> 
 <div id="page" class="hfeed site container center padding-large">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'vanillamilkshake' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<?php if ( is_front_page() && is_home() ) : ?>
-				<h1 class="margintop-0 marginbottom-0">
-				<span class="f3 texttransform-uppercase sans-serif"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
+				<h1 class="margintop-0 marginbottom-0 black f3 letterspacing-006 b texttransform-uppercase sansserif">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				</h1>
 			<?php else : ?>
-				<h2 class="margintop-0 marginbottom-0">
-				<span class="f3 texttransform-uppercase sans-serif"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
+				<h2 class="margintop-0 marginbottom-0 black f3 letterspacing-006 b texttransform-uppercase sansserif">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				</h2>
 			<?php endif; ?>
 		
 			<?php 
 			$description = get_bloginfo( 'description', 'display' );
 			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description margintop-small"><?php echo $description; ?></p>
+				<p class="site-description i f5 darkgrey margintop-small"><?php echo $description; ?></p>
 			<?php endif;
 			?>
 		</div><!-- .site-branding -->
@@ -44,4 +44,5 @@
 	<a name="s"></a>
 	<div class="titlebar height-xsmall margintop-large marginbottom-medium"></div>
 
-	<div id="content" class="site-content width-70p-ns maxwidth-100p paddingtop-medium paddingright-large-ns float-left">
+	<div class="clearfix"> <!-- content + sidebar -->
+		<div id="content" class="site-content width-70p-ns maxwidth-100p paddingtop-medium paddingright-large-ns float-left">

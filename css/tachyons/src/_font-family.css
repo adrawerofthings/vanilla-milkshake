@@ -3,31 +3,51 @@
    FONT FAMILY GROUPS
 
 */
-
+ 
 .sans-serif, .sansserif {
-  font-family: 'helvetica neue',
-                helvetica, 
-                arial,
-                sans-serif;
+  font-family: avenir,
+               'helvetica neue',
+               helvetica, 
+               roboto,
+               'noto sans',
+               'gill sans',  
+               Ubuntu, 
+               'segoe ui', 
+               arial, 
+               sans-serif;
 }
 
-body, .serif {
-  font-family: "Garamond",
-               "Calisto MT",
-               times, 
+.serif {
+  font-family: "Palatino Linotype", 
+               "Book Antiqua", 
+               Palatino, 
                TimesNewRoman, 
-               "Times New Roman",
-               georgia,
+               "Times New Roman", 
+               georgia, 
+               times, 
                serif;
 }
 
-/* From http://cssfontstack.com */
+.system-sans-serif {
+  font-family: sans-serif;
+}
 
+.system-serif {
+  font-family: serif;
+}
+
+
+/* Monospaced Typefaces (for code) */
+
+/* From http://cssfontstack.com */
 code, .code {
   font-family: Consolas,
                monaco,
                monospace;
 }
+
+
+/* Sans-Serif Typefaces */
 
 .helvetica {
   font-family:  helvetica, 'helvetica neue',
@@ -35,39 +55,31 @@ code, .code {
                 sans-serif;
 }
 
+
+/* Serif Typefaces */
+
+.georgia {
+  font-family: georgia,
+               serif;
+}
+
+.times {
+  font-family: Times,
+               serif;
+}
+
 .bodoni {
   font-family: "Bodoni MT",
-                Didot,
-               "Didot LT STD",
-               "Hoefler Text",
-                Garamond,
-                Times,
-               "Times New Roman",
                 serif;
 }
 
 .calisto {
   font-family: "Calisto MT",
-               "Bookman Old Style", Bookman,
-               "Goudy Old Style",
-                Garamond,
-               "Hoefler Text",
-               "Bitstream Charter",
-                Georgia,
                 serif;
 }
 
 .garamond {
-  font-family: Garamond,
-               Baskerville, "Baskerville Old Face",
-              "Hoefler Text",
-              "Times New Roman",
+  font-family: garamond,
                serif;
 }
 
-.times {
-  font-family: Times, TimesNewRoman, "Times New Roman",
-               Baskerville,
-               Georgia,
-               serif;
-}

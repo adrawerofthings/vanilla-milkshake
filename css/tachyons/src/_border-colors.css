@@ -1,14 +1,8 @@
- /*
+/*
 
    BORDER COLORS
 
-   Use in cobmination with the _borders.css module
-   Or for more flexibility the _border-styles.css and _border-widths.css modules
-
-   Base:
-     bordercolor- = border-color
-
- */
+*/
 
 .bordercolor-black {        border-color: var(--black); }
 .bordercolor-nearblack {   border-color: var(--near-black); }
@@ -25,29 +19,31 @@
 .bordercolor-nearwhite {   border-color: var(--near-white); }
 .bordercolor-white {        border-color: var(--white); }
 
-.bordercolor-white10 {   border-color: hsla(0, 0, 100%, .1); }
-.bordercolor-white20 {   border-color: hsla(0, 0, 100%, .2); }
-.bordercolor-white25 {   border-color: hsla(0, 0, 100%, .25); }
-.bordercolor-white30 {   border-color: hsla(0, 0, 100%, .3); }
-.bordercolor-white40 {   border-color: hsla(0, 0, 100%, .4); }
-.bordercolor-white50 {   border-color: hsla(0, 0, 100%, .5); }
-.bordercolor-white60 {   border-color: hsla(0, 0, 100%, .6); }
-.bordercolor-white70 {   border-color: hsla(0, 0, 100%, .7); }
-.bordercolor-white75 {   border-color: hsla(0, 0, 100%, .75); }
-.bordercolor-white80 {   border-color: hsla(0, 0, 100%, .8); }
-.bordercolor-white90 {   border-color: hsla(0, 0, 100%, .9); }
+.bordercolor-white90 {   border-color: var(--white-90); }
+.bordercolor-white80 {   border-color: var(--white-80); }
+.bordercolor-white70 {   border-color: var(--white-70); }
+.bordercolor-white60 {   border-color: var(--white-60); }
+.bordercolor-white50 {   border-color: var(--white-50); }
+.bordercolor-white40 {   border-color: var(--white-40); }
+.bordercolor-white30 {   border-color: var(--white-30); }
+.bordercolor-white20 {   border-color: var(--white-20); }
+.bordercolor-white10 {   border-color: var(--white-10); }
+.bordercolor-white05 {   border-color: var(--white-05); }
+.bordercolor-white025 {   border-color: var(--white-025); }
+.bordercolor-white0125 {   border-color: var(--white-0125); }
 
-.bordercolor-black10 {   border-color: hsla(0, 0, 0,    .1); }
-.bordercolor-black20 {   border-color: hsla(0, 0, 0,    .2); }
-.bordercolor-black25 {   border-color: hsla(0, 0, 0,    .25); }
-.bordercolor-black30 {   border-color: hsla(0, 0, 0,    .3); }
-.bordercolor-black40 {   border-color: hsla(0, 0, 0,    .4); }
-.bordercolor-black50 {   border-color: hsla(0, 0, 0,    .5); }
-.bordercolor-black60 {   border-color: hsla(0, 0, 0,    .6); }
-.bordercolor-black70 {   border-color: hsla(0, 0, 0,    .7); }
-.bordercolor-black75 {   border-color: hsla(0, 0, 0,    .75); }
-.bordercolor-black80 {   border-color: hsla(0, 0, 0,    .8); }
-.bordercolor-black90 {   border-color: hsla(0, 0, 0,    .9); }
+.bordercolor-black90 {   border-color: var(--black-90); }
+.bordercolor-black80 {   border-color: var(--black-80); }
+.bordercolor-black70 {   border-color: var(--black-70); }
+.bordercolor-black60 {   border-color: var(--black-60); }
+.bordercolor-black50 {   border-color: var(--black-50); }
+.bordercolor-black40 {   border-color: var(--black-40); }
+.bordercolor-black30 {   border-color: var(--black-30); }
+.bordercolor-black20 {   border-color: var(--black-20); }
+.bordercolor-black10 {   border-color: var(--black-10); }
+.bordercolor-black05 {   border-color: var(--black-05); }
+.bordercolor-black025 {   border-color: var(--black-025); }
+.bordercolor-black0125 {   border-color: var(--black-0125); }
 
 .bordercolor-blue { border-color: var(--blue); }
 .bordercolor-lightblue { border-color: var(--light-blue); }
@@ -89,3 +85,5 @@
 .bordercolor-lightestpurple { border-color: var(--lightest-purple); }
 .bordercolor-darkpurple { border-color: var(--dark-purple); }
 .bordercolor-darkestpurple { border-color: var(--darkest-purple); }
+
+.bordercolor-transparent { border-color: var(--transparent); }

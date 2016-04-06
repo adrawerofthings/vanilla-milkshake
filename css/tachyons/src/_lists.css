@@ -4,7 +4,7 @@
 
 */
 
-.list {       list-style-type: none; }
+.list {         list-style-type: none; }
 
 @media (--breakpoint-not-small) {
   .list-ns {  list-style-type: none; }

@@ -1,3 +1,7 @@
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
 /*
 
    BORDER STYLES
@@ -19,22 +23,26 @@
 
 .borderstyle-none {   border-style: none; }
 .borderstyle-dotted { border-style: dotted; }
+.borderstyle-dashed { border-style: dashed; }
 .borderstyle-solid {  border-style: solid; }
 
-@media (--breakpoint-not-small) {
-  .borderstyle-none-ns {   border-style: none; }
-  .borderstyle-dotted-ns { border-style: dotted; }
-  .borderstyle-solid-ns {  border-style: solid; }
-}
+ @media (--breakpoint-not-small) {
+   .borderstyle-none-ns {   border-style: none; }
+   .borderstyle-dotted-ns { border-style: dotted; }
+   .borderstyle-dashed-ns { border-style: dashed; }
+   .borderstyle-solid-ns {  border-style: solid; }
+ }
 
-@media (--breakpoint-medium) {
-  .borderstyle-none-m {   border-style: none; }
-  .borderstyle-dotted-m { border-style: dotted; }
-  .borderstyle-solid-m {  border-style: solid; }
-}
+ @media (--breakpoint-medium) {
+   .borderstyle-none-m {   border-style: none; }
+   .borderstyle-dotted-m { border-style: dotted; }
+   .borderstyle-dashed-m { border-style: dashed; }
+   .borderstyle-solid-m {  border-style: solid; }
+ }
 
-@media (--breakpoint-large) {
-  .borderstyle-none-l {   border-style: none; }
-  .borderstyle-dotted-l { border-style: dotted; }
-  .borderstyle-solid-l {  border-style: solid; }
-}
+ @media (--breakpoint-large) {
+   .borderstyle-none-l {   border-style: none; }
+   .borderstyle-dotted-l { border-style: dotted; }
+   .borderstyle-dashed-l { border-style: dashed; }
+   .borderstyle-solid-l {  border-style: solid; }
+ }

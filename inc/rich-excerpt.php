@@ -21,7 +21,7 @@
 	    $text = str_replace('\]\]\>', ']]&gt;', $text);
 	    $excerpt_length = 65;
 
-        $link = sprintf( '<p class="clear-both"><a href="%1$s#s" class="more-link">%2$s</a><p>',
+        $link = sprintf( '<p class="margintop-large clear-both"><a href="%1$s#s" class="more-link">%2$s</a><p>',
 			esc_url( get_permalink( get_the_ID() ) ),
 			$readmorestring . '<span class="screen-reader-text">' . get_the_title( get_the_ID() ) . '</span>'
 			);

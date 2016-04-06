@@ -6,16 +6,14 @@ body#tinymce.wp-editor {
     font-size: 150%; /* Scaling to mimic words per column as in output */
     padding-left: 2rem !important; /* unfortunate defaults are !important so need to override them to give some breathing room! */ 
     padding-right: 2.5rem !important;
-    max-width: 30em; /* so text doesn't expand across the screen unduly */
+    max-width: 32em; /* so text doesn't expand across the screen unduly */
     margin-left: auto;
     margin-right: auto;
 }
 
 /* h1, h2, h3... which don't use default sizes */
-h1, h2, h3, h4, h5, h6 {
-  font-size: 1em;
-}
 h1, h2 {
+  font-size: 1.5rem;
   font-weight: bold;
 }
 h3 {

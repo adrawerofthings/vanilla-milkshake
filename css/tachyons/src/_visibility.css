@@ -1,11 +1,18 @@
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
 /*
 
-   ACCESSBILITY
+   VISIBILITY
 
 */
 
 /* Lightest grey text allowed on white background to satisfy 4.5:1 AA contrast requirement */
-.black54, .lightestgreytext, .lightestgraytext {
+.lightestgreytext, 
+.lightestgraytext, 
+.lightestgreytextcolor, 
+.lightestgraytext {
   color: rgba(0, 0, 0, .54);
 }
 
@@ -13,6 +20,7 @@
     Text that is hidden but accessible
     Ref: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 */
+
 .clip, 
 .says, 
 .screen-reader-text {
@@ -98,4 +106,6 @@ input[type="search"]:focus,
 textarea:focus {
   outline: 0;
 }
+
+
 

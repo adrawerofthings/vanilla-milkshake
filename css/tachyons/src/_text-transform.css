@@ -1,3 +1,7 @@
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
 /*
 
    TEXT TRANSFORM
@@ -6,42 +10,26 @@
 
 .texttransform-capitalize { text-transform: capitalize; }
 .texttransform-lowercase { text-transform: lowercase; }
+.texttransform-uppercase { text-transform: uppercase; }
 .texttransform-none { text-transform: none; }
-.texttransform-uppercase,
-.caps {
-  text-transform: uppercase;
-  letter-spacing: .05em;
-}
 
 @media (--breakpoint-not-small) {
   .texttransform-capitalize-ns { text-transform: capitalize; }
   .texttransform-lowercase-ns { text-transform: lowercase; }
+  .texttransform-uppercase-ns { text-transform: uppercase; }
   .texttransform-none-ns { text-transform: none; }
-  .texttransform-uppercase-ns,
-  .caps-ns {
-    text-transform: uppercase;
-    letter-spacing: .05em;
-  }
 }
 
 @media (--breakpoint-medium) {
   .texttransform-capitalize-m { text-transform: capitalize; }
   .texttransform-lowercase-m { text-transform: lowercase; }
+  .texttransform-uppercase-m { text-transform: uppercase; }
   .texttransform-none-m { text-transform: none; }
-  .texttransform-uppercase-m,
-  .caps-m {
-    text-transform: uppercase;
-    letter-spacing: .05em;
-  }
 }
 
 @media (--breakpoint-large) {
   .texttransform-capitalize-l { text-transform: capitalize; }
   .texttransform-lowercase-l { text-transform: lowercase; }
+  .texttransform-uppercase-l { text-transform: uppercase; }
   .texttransform-none-l { text-transform: none; }
-  .texttransform-uppercase-l,
-  .caps-l {
-    text-transform: uppercase;
-    letter-spacing: .05em;
-  }
 }
