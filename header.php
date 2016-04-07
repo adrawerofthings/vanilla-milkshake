@@ -24,11 +24,11 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<?php if ( is_front_page() && is_home() ) : ?>
-				<h1 class="margintop-0 marginbottom-0 black f3 letterspacing-006 b texttransform-uppercase sansserif">
+				<h1 class="margintop-0 marginbottom-0 black f2 letterspacing-006 b texttransform-uppercase sansserif">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				</h1>
 			<?php else : ?>
-				<h2 class="margintop-0 marginbottom-0 black f3 letterspacing-006 b texttransform-uppercase sansserif">
+				<h2 class="margintop-0 marginbottom-0 black f2 letterspacing-006 b texttransform-uppercase sansserif">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				</h2>
 			<?php endif; ?>
