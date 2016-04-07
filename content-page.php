@@ -10,7 +10,7 @@
 		<?php the_title( '<h1 class="entry-title f4 b sans-serif margintop-none marginbottom-xsmall">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content f4 lineheight-copy">
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(

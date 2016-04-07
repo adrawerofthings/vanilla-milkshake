@@ -72,7 +72,7 @@
 			    	if ($category->cat_name != 'Uncategorized') {
 						if($igc == 0) { echo ' in '; };
 						if($igc != 0) { echo ', '; }; $igc++;
-			    		echo '<a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a>';
+			    		echo '<a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s", 'vanillamilkshake' ), $category->name ) . '">' . $category->name.'</a>';
 					}
 				}
 			?>

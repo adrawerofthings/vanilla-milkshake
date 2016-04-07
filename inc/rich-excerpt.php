@@ -27,6 +27,10 @@
 			);
 
 	    preg_match_all('/(<[^>]+>|[^<>\s]+)\s*/u', $text, $words);
+	    
+	    $count = 0;
+	    $excerptoutput = "";
+
 	    foreach ($words[0] as $word) { 
             if ($count >= $excerpt_length) { 
                 $excerptoutput .= trim($word);
