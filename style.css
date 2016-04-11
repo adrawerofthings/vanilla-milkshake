@@ -353,7 +353,7 @@ th, td {
   width: 0;
   font-size: 0.70rem;
   left: -1.5rem;
-  top: 0.5rem;
+  top: 0.5em;
   position: relative;
   speak: none; /* Not to be trusted, but hey. */
 }
