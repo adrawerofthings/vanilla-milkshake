@@ -36,7 +36,7 @@
 			<?php 
 			$description = get_bloginfo( 'description', 'display' );
 			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description i f5 darkgrey margintop-small"><?php echo $description; ?></p>
+				<p class="site-description i f5 darkgrey margintop-small lineheight-1p3"><?php echo $description; ?></p>
 			<?php endif;
 			?>
 		</div><!-- .site-branding -->
