@@ -15,53 +15,44 @@
 }
 .f-5,
 .f-subheadline {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 /* Type Scale */
-.f1    { font-size: 2rem; }
-.f2    { font-size: 1.5rem; }
-.f3    { font-size: 1.25rem; }
-.f4    { font-size: 1rem; }
-.f5,
-.small { font-size: .85rem; }
-.f6,
-.xsmall { font-size: .790rem; }
-.f7,
-.xxsmall { font-size: .702rem }
+.f1 { font-size: 3rem; }
+.f2 { font-size: 2.25rem; }
+.f3 { font-size: 1.5rem; }
+.f4 { font-size: 1.25rem; }
+.f5 { font-size: 1rem; }
+.f6 { font-size: .875rem; }
+.f7 { font-size: 0.75rem; }
 
 @media (--breakpoint-not-small){
   .f-6-ns,
   .f-headline-ns { font-size: 6rem; }
   .f-5-ns,
-  .f-subheadline-ns { font-size: 4rem; }
-  .f1-ns {   font-size: 2rem; }
-  .f2-ns {   font-size: 1.5rem; }
-  .f3-ns {   font-size: 1.25em; }
-  .f4-ns {   font-size: 1rem; }
-  .f5-ns,
-  .small-ns { font-size: .85rem; }
-  .f6-ns,
-  .xsmall-ns { font-size: .790rem; }
-  .f7-ns,
-  .xxsmall-ns { font-size: .702rem }
+  .f-subheadline-ns { font-size: 5rem; }
+  .f1-ns { font-size: 3rem; }
+  .f2-ns { font-size: 2.25rem; }
+  .f3-ns { font-size: 1.5rem; }
+  .f4-ns { font-size: 1.25rem; }
+  .f5-ns { font-size: 1rem; }
+  .f6-ns { font-size: .875rem; }
+  .f7-ns { font-size: .75rem; }
 }
 
 @media (--breakpoint-medium) {
   .f-6-m,
   .f-headline-m { font-size: 6rem; }
   .f-5-m,
-  .f-subheadline-m { font-size: 4rem; }
-  .f1-m {   font-size: 2rem; }
-  .f2-m {   font-size: 1.5rem; }
-  .f3-m {   font-size: 1.25rem; }
-  .f4-m {   font-size: 1rem; }
-  .f5-m,
-  .small-m { font-size: .85rem; }
-  .f6-m,
-  .xsmall-m { font-size: .790rem; }
-  .f7-m,
-  .xxsmall-m { font-size: .702rem }
+  .f-subheadline-m { font-size: 5rem; }
+  .f1-m { font-size: 3rem; }
+  .f2-m { font-size: 2.25rem; }
+  .f3-m { font-size: 1.5rem; }
+  .f4-m { font-size: 1.25rem; }
+  .f5-m { font-size: 1rem; }
+  .f6-m { font-size: .875rem; }
+  .f7-m { font-size: .75rem; }
 }
 
 @media (--breakpoint-large) {
@@ -71,16 +62,13 @@
   }
   .f-5-l,
   .f-subheadline-l {
-    font-size: 4rem;
+    font-size: 5rem;
   }
-  .f1-l   { font-size: 2rem; }
-  .f2-l   { font-size: 1.5rem; }
-  .f3-l   { font-size: 1.25rem; }
-  .f4-l   { font-size: 1rem; }
-  .f5-l,
-  .small-l { font-size: .85rem; }
-  .f6-l,
-  .xsmall-l { font-size: .790rem; }
-  .f7-l,
-  .xxsmall-l { font-size: .702rem }
+  .f1-l { font-size: 3rem; }
+  .f2-l { font-size: 2.25rem; }
+  .f3-l { font-size: 1.5rem; }
+  .f4-l { font-size: 1.25rem; }
+  .f5-l { font-size: 1rem; }
+  .f6-l { font-size: .875rem; }
+  .f7-l { font-size: .75rem; }
 }

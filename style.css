@@ -4,27 +4,18 @@ Theme URI: http://hongkonggong.github.io/vanilla-milkshake/
 Author:  Jason Li
 Author URI: http://www.hongkonggong.com/
 Description: A minimalist WordPress theme built with elegant typography and responsive design for simple weblogs. Allows for easy customization and extension.
-Version: 1.50
+Version: 2.00
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: light, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-colors, rtl-language-support, translation-ready
 Text Domain: vanillamilkshake
 */
 
-/* VANILLA MILKSHAKE CORE STYLES */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* Media: responsive images & embeds! */
-img, figure {
-  max-width: 100%;
-  height: auto;
-}
-iframe, embed, object, video {
-  max-width: 100%;
-}
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* Accessibility: imported from WordPress 2015 theme
- */
+/* ACCESSIBILITY */
+/* imported from WordPress 2015 theme */
 /* must have higher specificity than alternative color schemes inline styles */
+
 .site .skip-link {
   background-color: #f1f1f1;
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -50,10 +41,34 @@ iframe, embed, object, video {
   width: auto;
   z-index: 100000;
 }
+/*
+  Manual focus state colors, including buttons/inputs
+*/
+input:focus,
+textarea:focus {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #ccc;
+  outline: 0;
+}
+a:focus,
+.link:focus,
+select:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="checkbox"]:focus,
+input[type="image"]:focus,
+input[type="radio"]:focus,
+input[type="range"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  outline: thin dotted;
+  outline-color: #aaa;
+  outline-offset: 1px;
+}
 
-/* CUSTOM STYLING! */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* Scaling type for large screens */
+/* SCALING LAYOUT FOR LARGER SCREENS */
 
 .container {
   max-width: 32em;
@@ -62,22 +77,22 @@ iframe, embed, object, video {
   .container {max-width: 50em;}
 }
 @media screen and (min-width: 48em) and (max-width: 64em) {
-  html {font-size: 107%;}
+  html {font-size: 100%;}
 }
 @media screen and (min-width: 64em) and (max-width: 86em) {
-  html {font-size: 114.49%;}
+  html {font-size: 107%;}
 }
 @media screen and (min-width: 86em) and (max-width: 108em) {
-  html {font-size: 122.50%;}
+  html {font-size: 114.49%;}
 }
 @media screen and (min-width: 108em) and (max-width: 130em) {
-  html {font-size: 131.08%;}
+  html {font-size: 122.50%;}
 }
 @media screen and (min-width: 130em) and (max-width: 152em) {
-  html {font-size: 140.25%;}
+  html {font-size: 131.08%;}
 }
 @media screen and (min-width: 152em) {
-  html {font-size: 141.85%;}
+  html {font-size: 140.25%;}
 }
 @media screen and (min-width: 86em) {
   .paddinghorizontal-xxxlarge-xl {
@@ -85,69 +100,90 @@ iframe, embed, object, video {
     padding-right: 8rem;
   }
 }
+
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* Typography */
-.sans-serif, .sansserif {
-  font-family: 'helvetica neue', helvetica, roboto, 'noto sans', 'gill sans', Ubuntu, 'segoe ui', arial, sans-serif; 
+/* CUSTOM MISCELLANEOUS CLASSES */
+
+a {
+  text-decoration: none;
 }
-h1, h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
+.letterspacing-003 {
+  letter-spacing: 0.03em;  
 }
-h3 {
-  font-weight: normal;
-  font-style: italic;
+
+.lightestgreytext, .lightest-grey-text,
+.lightestgraytext, .lightest-gray-text {
+  color: #545454;
 }
-.letterspacing-006 {
-  letter-spacing: 0.06em;  
+body { /* for long single strings that stretch beyond window */
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
 }
-hr {
-  border: 1px dotted #EEE;
-  margin: 2rem 0;
-}
-pre, code {
-  font-size: .790rem;
-  padding: 0.5rem;
-  background-color: #EEE;
-  display: block;
-  color: #666;
-}
-.entry-content {
-  color: #333;
-  position: relative; /* fix embed floats that have absolute positions */
-}
-/* images */
 figure {
   margin: 0; /* reset tachyons default margins */
 }
-.wp-caption {
-  margin-bottom: 1rem;
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* EXTENDING TACHYONS-CMS */
+/* To target styles within posts/widgets */
+
+.nested-hr hr {
+  border: 1px dotted #EEE;
+  margin: 2rem 0;
 }
-.wp-caption-text {
-  font-size: 0.889rem;
-  padding-left: 1.25em;
-  color: #666;
-  min-width: 12rem; /* for really skinny images */
-}
-.wp-caption-text:before {
-  content: "\21B3";
+.nested-code pre,
+.nested-code code {
+  font-size: .875em;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  background-color: #EEE;
   display: block;
-  font-size: 0.889em;
-  color: #CCC;
-  height: 0;
-  width: 0;
-  left: -1.5em;
-  top: 0.25em;
-  position: relative;
+  color: #444444;
 }
-blockquote {
+.entry-content {
+  position: relative; /* fix embed floats that have absolute positions */
+}
+.nested-copy-color p, 
+.nested-copy-color ul,
+.nested-copy-color ol {
+  color: #333;
+}
+.nested-headline-sansserif h1,
+.nested-headline-sansserif h2,
+.nested-headline-sansserif h3,
+.nested-headline-sansserif h4,
+.nested-headline-sansserif h5,
+.nested-headline-sansserif h6
+ {
+  font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+}
+.nested-blockquote blockquote {
   margin-left: 0;
   padding-left: 0.75em;
-  border-left: 0.25em solid #EEE;
+  border-left: 0.25em solid #FFFFFF;
 }
-dt {
+.nested-list ul {
+    list-style: none;
+    padding-left: 1em;
+}
+.nested-list li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.nested-list ul > li:before { 
+    content: "\25AA";
+    display: block;
+    color: #999;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0;
+    position: relative;
+}
+.nested-dt dt {
   margin: 0.5rem 0;
 }
+/* Image styles only used within Wordpress posts */
 .aligncenter {
   margin-left: auto;
   margin-right: auto;
@@ -166,77 +202,132 @@ dt {
   margin-left: 1rem;
   clear: both;
 }
-/* To format the classless post contents and/or widgets without having to make PHP code injections */
-ul {
-    list-style: none;
-    padding-left: 1em;
+.wp-caption {
+  margin-bottom: 1rem;
 }
-li {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.wp-caption-text {
+  font-size: 0.889em;
+  padding-left: 1.25em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  color: #545454;
+  min-width: 12rem; /* for really skinny images */
 }
-ul > li:before { 
-    content: "\25AA";
-    display: block;
-    color: #999;
-    height: 0;
-    width: 0;
-    left: -1em;
-    top: 0;
-    position: relative;
+.wp-caption-text:before {
+  content: "\21B3";
+  display: block;
+  font-size: 0.889em;
+  color: #CCC;
+  height: 0;
+  width: 0;
+  left: -1.5em;
+  top: 0.25em;
+  position: relative;
 }
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* WIDGETS */
-.widget {
-    margin-bottom: 1.5rem;
+/* Media: responsive images & embeds! */
+.nested-img img {
+  height: auto;  
+  width: inherit;
 }
-.widget-title {
-    font-size: 1rem;
-    font-weight: normal;
-    font-style: italic;
-    margin-top: 0.5rem;
+.nested-figure figure {
+  max-width: 100%;
+  height: auto;
 }
-.textwidget {
+.nested-embeds iframe,
+.nested-embeds embed,
+.nested-embeds object, 
+.nested-embeds video {
+  max-width: 100%;
+}
+/*  Widget line height tighter */
+.nested-widget-line-height p, 
+.nested-widget-line-height ul,
+.nested-widget-line-height ol {
   line-height: 1.33;
+}
+/* Tables */
+.nested-table table {
+  border-collapse: collapse;
+}
+.nested-table thead {
+  border-bottom: 2px solid #333;
+}
+.nested-table th, 
+.nested-table td {
+  padding: 0.67rem 0.5rem;
+  text-align: left;
+}
+/* Links */
+.nested-link a, .link {
+  text-decoration: none;
+}
+.nested-link a, .link,
+.nested-link a:link, .link:link,
+.nested-link a:visited, .link:visited,
+.nested-link a:hover, .link:hover,
+.nested-link a:active, .link:active {
+  color: #000;
+}
+.nested-link a:link, .link:link {
+  border-bottom: 1px solid #aaa;
+}
+.nested-link a:visited, .link:visited {
+  border-bottom: 1px solid #ddd;
+}
+.nested-link a:hover, .link:hover {
+  border-bottom: none;
+}
+.nested-link a:active, .link:active {
+  border-bottom: 1px solid #333;
+}
+.nested-headline-link h1 a:link, 
+.nested-headline-link h2 a:link, 
+.nested-headline-link h3 a:link, 
+.nested-headline-link h4 a:link,
+.nested-headline-link h5 a:link, 
+.nested-headline-link h6 a:link,
+.nested-headline-link h1 a:visited,
+.nested-headline-link h2 a:visited,
+.nested-headline-link h3 a:visited,
+.nested-headline-link h4 a:visited,
+.nested-headline-link h5 a:visited,
+.nested-headline-link h6 a:visited {
+  color: #000;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* COMMENT FORMS */
 /* Relying on default Wordpress-generated search/comment forms, so styling them using their native classes */
 .comment-metadata {
-  font-size: 0.6141rem;
-  margin-top: 0.25rem;
+  font-size: 0.75em;
+  margin-top: 0.5em;
 }
 /* comment form buttons: submit comment, reply within thread(s), comment pagination */
-#submit, .comment-reply-link {
+#submit, a.comment-reply-link, a.comment-reply-link:link, a.comment-reply-link:hover, a.comment-reply-link:visited {
   border-radius: .3em;
   border: 1px solid #CCC;
-  color: #111;
-  background-color: #FFF;
+  color: #000;
   display: inline-block;
   text-decoration: none;
   padding: 0.5em 0.8em;
   transition: color .4s, background-color .4s, border .4s;
-  font-size: 0.7225rem;
+  font-size: 0.875em;
 }
-.comment-reply-link, .comment-reply-link:link, .comment-reply-link:visited {
-  color: #666;
-  font-size: 0.522rem;
+.comment-reply-link {
   margin-bottom: 1rem;
 }
 .comment-form-comment > label {
   vertical-align: top;
   margin-right: 0.5rem;
 }
-input, textarea {
-  padding: 0.25rem 0.5rem;
-  border-radius: 3px;
-  border-style: inset;
-  border-width: 1px;
-  background-color: #F5F5F5;
+.nested-form input,
+.nested-form textarea {
+  padding: 0.67rem;
+  border: 2px solid #eee;
+  background-color: #fff;
   max-width: 100%;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* BUTTON */
+/* BUTTONS */
 
   .button,
   .button:link,
@@ -246,10 +337,9 @@ input, textarea {
   .more-link:visited {
     border-radius: .3em;
     border: 1px solid #CCC;
-    background-color: #FFF;
     padding: 0.75em 1em;
     text-transform: none;
-    color: #333;
+    color: #000;
     transition: color .4s, background-color .4s, border .4s;
   }
 
@@ -268,15 +358,15 @@ input, textarea {
 
   /* more link is auto-generated sometimes so have to apply button and button--xsmall class to it :( */
   .more-link {
-    font-size: 0.694rem;
+    font-size: 0.875em;
   }
 
   /* legacy button styles */
-  .button--xsmall { font-size: 0.694rem; }
-  .button--small { font-size: 0.833rem; }
-  .button--medium { font-size: 1rem; }
-  .button--large { font-size: 1.2rem; border-radius: .25em!important; }
-  .button--xlarge { font-size: 1.44rem; border-radius: .25em!important; }
+  .button--xsmall { font-size: 0.694em; }
+  .button--small { font-size: 0.833em; }
+  .button--medium { font-size: 1em; }
+  .button--large { font-size: 1.2em; border-radius: .25em!important; }
+  .button--xlarge { font-size: 1.44em; border-radius: .25em!important; }
 
   /* auto-generated so can't apply .sansserif inline */
   .more-link, 
@@ -284,50 +374,42 @@ input, textarea {
   .comment-reply-link, 
   .page-numbers, 
   .page-links > a {
-    font-family: 'helvetica neue', helvetica, roboto, 'noto sans', 'gill sans', Ubuntu, 'segoe ui', arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
   }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Pagination */
 
 .pagination {
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
 }
-.page-numbers, .page-links > a {
-  padding: 0.5rem;
+.page-numbers, .page-links > a, 
+.nested-link .page-links > a {
+  padding: 0.75rem;
+  color: #000;
   border-radius: .3em;
   border: 1px solid #CCC;
   margin-right: 0.125rem;
   min-width: 1.25rem;
   display: inline-block;
   text-align: center;
-  transition: color .4s, background-color .4s, border .4s;
 }
 .page-numbers:hover, .page-links > a:hover {
-  color: #999999;
-  transition: background-color .3s, color .3s, border .3s;
+  color: #666;
 }
 .page-numbers:active, .page-links > a:active {
-  color: #0074D9;
-  border: 1px solid #0074D9;
-  transition: background-color .3s, color .3s, border .3s;
+  border: 1px solid #000;
 }
-.page-numbers.current {
+.page-numbers.current, .page-numbers.dots {
   border: 0;
   font-weight: bold;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  padding-left: 0.33rem;
+  padding-right: 0.33rem;
 }
 /* for current page in multi-page posts... no default class argh! */
 .page-links > span:nth-child(n+2) {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-.page-numbers.dots {
-  border: 0;
-  font-size: 0.889rem;
-  padding-left: 0;
-  padding-right: 0;
 }
 .prev, .next {
   display: none;
@@ -335,14 +417,6 @@ input, textarea {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* OTHER */
 
-/* tables */
-thead {
-  border-bottom: 1px solid #333;
-}
-th, td {
-  padding: 0.25rem 1rem;
-  text-align: left;
-}
 /* featured/sticky posts */
 /* see: https://css-tricks.com/html-for-icon-font-usage/ */
 [data-icon]:before {
@@ -359,39 +433,3 @@ th, td {
 }
 .sticky {} /* required by WordPress but no longer used */
 
-
-/* Links */
-a, .link {
-  text-decoration: none;
-  transition: color .15s ease-in;
-}
-a:link, .link:link {
-  color: #30BBDB;
-}
-a:visited, .link:visited {
-  color: #177185;
-}
-a:hover,
-.link:hover {
-  color: #7bcde0;
-}
-a:active,
-.link:active {
-  text-decoration: underline;
-}
-h1 a:link, 
-h2 a:link, 
-h3 a:link, 
-h4 a:link,
-h5 a:link, 
-h6 a:link {
-  color: #222;
-}
-h1 a:visited,
-h2 a:visited,
-h3 a:visited,
-h4 a:visited,
-h5 a:visited,
-h6 a:visited {
-  color: #222;
-}

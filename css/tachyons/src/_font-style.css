@@ -8,20 +8,21 @@
 
 */
 
-.fontstyle-normal     	{ font-style: normal; }
 .fontstyle-italic, .i   { font-style: italic; }
+.fontstyle-normal     	{ font-style: normal; }
 
 @media (--breakpoint-not-small) {
-  .fontstyle-normal-ns     			{ font-style: normal; }
-  .fontstyle-italic-ns, .i-ns   	{ font-style: italic; }
+	.fontstyle-italic-ns, .i-ns   { font-style: italic; }
+  	.fontstyle-normal-ns     	  { font-style: normal; }
 }
 
 @media (--breakpoint-medium) {
-  .fontstyle-normal-m     		{ font-style: normal; }
-  .fontstyle-italic-m, .i-m     { font-style: italic; }
+	.fontstyle-italic-m, .i-m     { font-style: italic; }
+	.fontstyle-normal-m     	  { font-style: normal; }
+  
 }
 
 @media (--breakpoint-large) {
-  .fontstyle-normal-l     		{ font-style: normal; }
-  .fontstyle-italic-l, .i-l     { font-style: italic; }
+	.fontstyle-italic-l, .i-l     { font-style: italic; }
+    .fontstyle-normal-l     	  { font-style: normal; }
 }

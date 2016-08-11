@@ -9,7 +9,6 @@
 }
 /* setting the title-during-writing to look more like the final thing */
 #titlediv #title {
-	font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
 	padding: 0 1rem;
 	height: 3rem;
 	font-weight: bold;

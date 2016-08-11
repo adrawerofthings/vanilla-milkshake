@@ -7,7 +7,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'clear-both clearfix marginbottom-xlarge' ); ?>>
-	<header class="entry-header position-relative">
+	<header class="entry-header nested-headline-link nested-headline-line-height position-relative">
 
 		<?php
 		if ( is_home() ) {
@@ -38,7 +38,7 @@
 			echo '</h1>';
 		} ?>
 
-		<div class="posted-on i small lightestgreytext marginvertical-medium paddingvertical-xsmall">
+		<div class="posted-on i small lightestgreytext nested-link marginvertical-medium paddingvertical-xsmall">
 			<?php
 
 				$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
@@ -81,7 +81,7 @@
 
 	</header><!-- .entry-header -->
 
-	<div class="entry-content f4 lineheight-copy">
+	<div class="entry-content f5 nested-copy-line-height nested-headline-sansserif nested-headline-line-height nested-img nested-figure nested-embeds nested-hr nested-code nested-list nested-blockquote nested-dt nested-table nested-link nested-form">
 		<?php
 			if ( is_single() ) :
 				/* translators: %s: Name of current post */
@@ -129,7 +129,7 @@
 		endif;
 	?> -->
 	<?php if ( is_single() ) : ?>
-		<footer class="entry-footer clear-both">
+		<footer class="entry-footer margintop-xlarge clear-both">
 			<?php vanillamilkshake_entry_meta(); ?>
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>

@@ -6,18 +6,16 @@
 
    BACKGROUND SIZE
 
-   Base:
-    backgroundsize = background-size
-
-   Modifiers:
-    cover = cover
-    contain = contain
-
    Media Query Extensions:
      -ns = not-small
      -m  = medium
      -l  = large
 
+*/
+
+/*
+  Often used in combination with background image set as an inline style
+  on an html element.
 */
 
   .backgroundsize-cover  { background-size: cover; }
@@ -37,3 +35,4 @@
   .backgroundsize-cover-l { background-size: cover; }
   .backgroundsize-contain-l { background-size: contain; }
 }
+

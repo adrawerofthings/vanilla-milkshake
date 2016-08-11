@@ -11,24 +11,9 @@
 	function vanillamilkshake_theme_customize_register( $wp_customize ) {
 	  $colors = array();
 	  $colors[] = array(
-	    'slug'=>'title_bar_color', 
-	    'default' => '#FFFF00',
+	    'slug'=>'theme_color', 
+	    'default' => '#006CCC',
 	    'label' => __('Title header bar', 'vanillamilkshake')
-	  );
-	  $colors[] = array(
-	    'slug'=>'link_color', 
-	    'default' => '#1E73BE',
-	    'label' => __('Link color', 'vanillamilkshake')
-	  );
-	  $colors[] = array(
-	    'slug'=>'hover_link_color', 
-	    'default' => '#3b9cf1',
-	    'label' => __('Hover & focus link color', 'vanillamilkshake') // cuz focus is like a keyboard hover!
-	  );
-	  $colors[] = array(
-	    'slug'=>'visited_link_color', 
-	    'default' => '#134775',
-	    'label' => __('Visited link color', 'vanillamilkshake')
 	  );
 	  foreach( $colors as $color ) {
 	    // SETTINGS
@@ -60,46 +45,25 @@
 
 	function vanillamilkshake_theme_customizer_styles()
 	{
-		$title_bar_color = get_option('title_bar_color');
-		$link_color = get_option('link_color');
-		$visited_link_color = get_option('visited_link_color');
-		$hover_link_color = get_option('hover_link_color');
+		$theme_color = get_option('theme_color');
+		if (empty($theme_color)) { $theme_color = "#006CCC"; }
+		$hsl_theme_color = hex2hsl($theme_color);
+
+		$theme_color = hsl2hex(array($hsl_theme_color[0], 0.9, 0.4));
+		$theme_color_lightest = hsl2hex(array($hsl_theme_color[0], 0.6, 0.97));
 
 	 	echo "<style>";
-	 	
-	 	echo ".titlebar { background-color: ";
-	 	if (empty($title_bar_color)) {
-	 		echo "#FFFF00";
- 		} else {
- 			echo $title_bar_color;
- 		}
-	 	echo "; }";
-
-	 	echo "a:link, .link:link { color:";
-	 	if (empty($link_color)) {
-	 		echo "#1E73BE";
- 		} else {
- 			echo $link_color;
- 		}
-	 	echo "; }";
-
-	 	echo "a:visited, .link:visited { color: ";
-	 	if (empty($visited_link_color)) {
-	 		echo "#134775";
- 		} else {
- 			echo $visited_link_color;
- 		}
-	 	echo "; }";
-
-	 	echo "a:hover, .link:hover, a:focus, .link:focus { color: ";
-	 	if (empty($hover_link_color)) {
-	 		echo "#3b9cf1";
- 		} else {
- 			echo $hover_link_color;
- 		}
-	 	echo "; }";
-
-	 	echo "a:active { text-decoration: underline; }";
+	 	echo ".backgroundcolor-themecolor { background-color: ".$theme_color.";}";
+	 	echo ".backgroundcolor-themecolorlightest { background-color: ".$theme_color_lightest.";}";
+	 	echo ".nested-list ul > li:before,
+	 		  .wp-caption-text:before,
+	 		  .themecolor { color:".$theme_color.";}";
+	 	echo ".page-numbers, 
+	 			.page-links > a,
+				a.more-link,
+  				a.more-link:link,
+  				a.more-link:visited 
+  				{ border: 1px solid ".$theme_color.";}";
 	 	echo "</style>";
 	}
 	add_action('wp_head', 'vanillamilkshake_theme_customizer_styles', 100);

@@ -9,25 +9,26 @@
 
 */
 
-.lineheight-solid, .lineheight-1       { line-height: 1; }
-.lineheight-title, .lineheight-1p3 { line-height: 1.3; }
-.lineheight-copy, .lineheight-1p5  { line-height: 1.5; }
+  .lineheight-solid, .lineheight-1       { line-height: 1; }
+  .lineheight-title, .lineheight-1p3 { line-height: 1.3; }
+  .lineheight-copy, .lineheight-1p6  { line-height: 1.6; }
 
 @media (--breakpoint-not-small) {
   .lineheight-solid, .lineheight-1-ns       { line-height: 1; }
   .lineheight-title-ns, .lineheight-1p3-ns { line-height: 1.3; }
-  .lineheight-copy-ns, .lineheight-1p5-ns  { line-height: 1.5; }
+  .lineheight-copy-ns, .lineheight-1p6-ns  { line-height: 1.6; }
 }
 
 @media (--breakpoint-medium) {
   .lineheight-solid, .lineheight-1-m       { line-height: 1; }
   .lineheight-title-m, .lineheight-1p3-m { line-height: 1.3; }
-  .lineheight-copy-m, .lineheight-1p5-m  { line-height: 1.5; }
+  .lineheight-copy-m, .lineheight-1p6-m  { line-height: 1.6; }
 }
 
 @media (--breakpoint-large) {
   .lineheight-solid, .lineheight-1-l       { line-height: 1; }
   .lineheight-title-l, .lineheight-1p3-l { line-height: 1.3; }
-  .lineheight-copy-l, .lineheight-1p5-l  { line-height: 1.5; }
+  .lineheight-copy-l, .lineheight-1p6-l  { line-height: 1.6; }
 }
+
 

@@ -6,56 +6,40 @@
 
    BORDER BASE
 
-   Base:
-    border = border
-
-   Modifiers:
-     n = none, no border-style or border-width
-     N/A = assumes all
-     t = top
-     r = right
-     b = bottom
-     l = left
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
 */
 
- /* The extra `.border-none` is required to boost the specificity, which is needed
- * sometimes if you are setting the border to 0. */
-  .border-none.border-none { border-style: solid; border-width: 0; }
-  .border { border-style: solid; border-width: 1px; }
-  .bordertop { border-top-style: solid; border-top-width: 1px; }
-  .borderright { border-right-style: solid; border-right-width: 1px; }
-  .borderbottom { border-bottom-style: solid; border-bottom-width: 1px; }
-  .borderleft { border-left-style: solid; border-left-width: 1px; }
+ .border, .border-all { border-style: solid; border-width: 1px; }
+ .border-top { border-top-style: solid; border-top-width: 1px; }
+ .border-right { border-right-style: solid; border-right-width: 1px; }
+ .border-bottom { border-bottom-style: solid; border-bottom-width: 1px; }
+ .border-left { border-left-style: solid; border-left-width: 1px; }
+ .border-none { border-style: solid; border-width: 0; }
+
 
 @media (--breakpoint-not-small) {
+  .border-ns, .border-all-ns { border-style: solid; border-width: 1px; }
+  .border-top-ns { border-top-style: solid; border-top-width: 1px; }
+  .border-right-ns { border-right-style: solid; border-right-width: 1px; }
+  .border-bottom-ns { border-bottom-style: solid; border-bottom-width: 1px; }
+  .border-left-ns { border-left-style: solid; border-left-width: 1px; }
   .border-none-ns { border-style: solid; border-width: 0; }
-  .border-ns { border-style: solid; border-width: 1px; }
-  .bordertop-ns { border-top-style: solid; border-top-width: 1px; }
-  .borderright-ns { border-right-style: solid; border-right-width: 1px; }
-  .borderbottom-ns { border-bottom-style: solid; border-bottom-width: 1px; }
-  .borderleft-ns { border-left-style: solid; border-left-width: 1px; }
 }
 
 @media (--breakpoint-medium) {
+  .border-m, .border-all-m { border-style: solid; border-width: 1px; }
+  .border-top-m { border-top-style: solid; border-top-width: 1px; }
+  .border-right-m { border-right-style: solid; border-right-width: 1px; }
+  .border-bottom-m { border-bottom-style: solid; border-bottom-width: 1px; }
+  .border-left-m { border-left-style: solid; border-left-width: 1px; }
   .border-none-m { border-style: solid; border-width: 0; }
-  .border-m { border-style: solid; border-width: 1px; }
-  .bordertop-m { border-top-style: solid; border-top-width: 1px; }
-  .borderright-m { border-right-style: solid; border-right-width: 1px; }
-  .borderbottom-m { border-bottom-style: solid; border-bottom-width: 1px; }
-  .borderleft-m { border-left-style: solid; border-left-width: 1px; }
 }
 
 @media (--breakpoint-large) {
+  .border-l, .border-all-l { border-style: solid; border-width: 1px; }
+  .border-top-l { border-top-style: solid; border-top-width: 1px; }
+  .border-right-l { border-right-style: solid; border-right-width: 1px; }
+  .border-bottom-l { border-bottom-style: solid; border-bottom-width: 1px; }
+  .border-left-l { border-left-style: solid; border-left-width: 1px; }
   .border-none-l { border-style: solid; border-width: 0; }
-  .border-l { border-style: solid; border-width: 1px; }
-  .bordertop-l { border-top-style: solid; border-top-width: 1px; }
-  .borderright-l { border-right-style: solid; border-right-width: 1px; }
-  .borderbottom-l { border-bottom-style: solid; border-bottom-width: 1px; }
-  .borderleft-l { border-left-style: solid; border-left-width: 1px; }
 }
+

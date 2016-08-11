@@ -20,7 +20,7 @@ if ( post_password_required() ) {
 	<?php // You can start editing here -- including this comment! ?>
 
 	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title f5 b sans-serif ">
+		<h2 class="comments-title f4 b sansserif ">
 			<?php
 				printf( // WPCS: XSS OK.
 					esc_html( _nx( 'One comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'vanillamilkshake' ) ),
@@ -33,31 +33,33 @@ if ( post_password_required() ) {
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
 			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'vanillamilkshake' ); ?></h2>
-			<div class="nav-links">
+			<div class="nav-links marginvertical-medium nested-link">
 
-				<div class="nav-previous xxsmall marginvertical-xsmall"><?php previous_comments_link( '<span class="light-gray">&#9656;</span> ' . esc_html__( 'Older comments', 'vanillamilkshake' ) ); ?></div>
-				<div class="nav-next xxsmall marginvertical-xsmall"><?php next_comments_link( '<span class="light-gray">&#9656;</span> ' . esc_html__( 'Newer comments', 'vanillamilkshake' ) ); ?></div>
+				<div class="nav-previous xxsmall marginvertical-xsmall"><?php previous_comments_link( '<span class="themecolor">&#9656;</span> ' . esc_html__( 'Older comments', 'vanillamilkshake' ) ); ?></div>
+				<div class="nav-next xxsmall marginvertical-xsmall"><?php next_comments_link( '<span class="themecolor">&#9656;</span> ' . esc_html__( 'Newer comments', 'vanillamilkshake' ) ); ?></div>
 
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-above -->
 		<?php endif; // Check for comment navigation. ?>
 
-		<ol class="comment-list">
-			<?php
-				wp_list_comments( array(
-					'style'      => 'ol',
-					'short_ping' => true,
-				) );
-			?>
-		</ol><!-- .comment-list -->
+		<div class="nested-copy-line-height">
+			<ol class="marginleft-none comment-list nested-headline-line-height nested-hr nested-code nested-list nested-blockquote nested-dt nested-table nested-link">
+				<?php
+					wp_list_comments( array(
+						'style'      => 'ol',
+						'short_ping' => true,
+					) );
+				?>
+			</ol><!-- .comment-list -->
+		</div>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
 			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'vanillamilkshake' ); ?></h2>
-			<div class="nav-links">
+			<div class="nav-links marginvertical-medium nested-link">
 
-				<div class="nav-previous xxsmall marginvertical-xsmall"><?php previous_comments_link( '<span class="lightgray">&#9656;</span> ' . esc_html__( 'Older comments', 'vanillamilkshake' ) ); ?></div>
-				<div class="nav-next xxsmall marginvertical-xsmall"><?php next_comments_link( '<span class="lightgray">&#9656;</span> ' . esc_html__( 'Newer comments', 'vanillamilkshake' ) ); ?></div>
+				<div class="nav-previous xxsmall marginvertical-xsmall"><?php previous_comments_link( '<span class="themecolor">&#9656;</span> ' . esc_html__( 'Older comments', 'vanillamilkshake' ) ); ?></div>
+				<div class="nav-next xxsmall marginvertical-xsmall"><?php next_comments_link( '<span class="themecolor">&#9656;</span> ' . esc_html__( 'Newer comments', 'vanillamilkshake' ) ); ?></div>
 
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-below -->
@@ -71,7 +73,9 @@ if ( post_password_required() ) {
 	?>
 		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'vanillamilkshake' ); ?></p>
 	<?php endif; ?>
-	<?php comment_form(); ?>
+	<div class="nested-form nested-headline-sansserif nested-link margintop-large">
+		<?php comment_form(); ?>
+	</div>
 
 </div><!-- #comments -->
-<div class="marginvertical-medium height-xxxsmall backgroundcolor-lightgray"></div>
+<div class="marginvertical-medium height-xsmall backgroundcolor-white"></div>

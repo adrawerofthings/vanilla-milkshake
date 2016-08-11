@@ -16,3 +16,5 @@
 .opacity-10p  { opacity: .1;   }
 .opacity-5p  { opacity: .05;  }
 .opacity-2p5p { opacity: .025; }
+.opacity-0, 
+.opacity-0p { opacity: 0; }

@@ -17,18 +17,18 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class( 'serif' ); ?>> 
+<body <?php body_class( 'serif backgroundcolor-themecolorlightest' ); ?>> 
 <div id="page" class="hfeed site container center margintop-medium-ns padding-large">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'vanillamilkshake' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
+		<div class="site-branding nested-headline-link">
 			<?php if ( is_front_page() && is_home() ) : ?>
-				<h1 class="margintop-0 marginbottom-0 black f2 letterspacing-006 b texttransform-uppercase sansserif">
+				<h1 class="margintop-0 marginbottom-0 f2 letterspacing-003 b texttransform-uppercase sansserif">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				</h1>
 			<?php else : ?>
-				<h2 class="margintop-0 marginbottom-0 black f2 letterspacing-006 b texttransform-uppercase sansserif">
+				<h2 class="margintop-0 marginbottom-0 f2 letterspacing-003 b texttransform-uppercase sansserif">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				</h2>
 			<?php endif; ?>
@@ -42,7 +42,7 @@
 		</div><!-- .site-branding -->
 	</header><!-- .site-header -->
 	<a name="s"></a>
-	<div class="titlebar height-xsmall margintop-large marginbottom-medium"></div>
+	<div class="backgroundcolor-themecolor height-xsmall margintop-large marginbottom-medium"></div>
 
 	<div class="clearfix"> <!-- content + sidebar -->
 		<div id="content" class="site-content width-70p-ns maxwidth-100p paddingtop-medium paddingright-large-ns float-left">

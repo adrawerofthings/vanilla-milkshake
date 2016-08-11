@@ -13,7 +13,7 @@ get_header(); ?>
 			<header class="page-header margintop-none marginbottom-large ">
 				<h1 class="page-title margintop-none sans-serif f3 lightestgreytext"><?php printf( __( 'Search Results for: %s', 'vanillamilkshake' ), get_search_query() ); ?></h1>
 			</header><!-- .page-header -->
-			<div class="height-xsmall backgroundcolor-lightgray marginbottom-large"></div>
+			<div class="height-xsmall backgroundcolor-white marginbottom-large"></div>
 
 			<?php if ( is_paged() ) :
 				// Previous/next page navigation.

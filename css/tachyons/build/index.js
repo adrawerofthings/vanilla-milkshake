@@ -1,4 +1,6 @@
-var pkg = require('./package.json')
+var fs = require('fs')
+var path = require('path')
+var pkg = require('../package.json')
 var tachyonsModules = require('tachyons-modules')
 var copy = require('copy-files')
 
@@ -8,7 +10,9 @@ tachyonsModules().then(function (cssModules) {
       // TODO: Fix me : (
       'tachyons-colors',
       'tachyons-base',
-      'tachyons-display-verbose'
+      'tachyons-webpack',
+      'tachyons-display-verbose',
+      'tachyons-build-css'
     ].indexOf(module.name) == -1
   }).map(function (cssModule) {
     return cssModule.name
@@ -19,7 +23,7 @@ tachyonsModules().then(function (cssModules) {
 
   copy({
     files: files,
-    dest: __dirname + '/src',
+    dest: path.join(__dirname, '../src'),
     overwrite: true
   }, function (err) {
     if (err) {
@@ -28,6 +32,11 @@ tachyonsModules().then(function (cssModules) {
       process.exit(1)
     }
   })
+
+  var srcCss = fs.readFileSync('./build/_tachyons.css', 'utf8')
+  var banner = '/* TACHYONS v' + pkg.version + '| github.com/tachyons-css/tachyons */\n\n'
+  console.log(banner)
+  fs.writeFileSync(path.join(__dirname, '../src/tachyons.css'), banner + srcCss)
 })
 
 function constructFiles (modules) {
@@ -53,7 +62,7 @@ function isNormalizeModule (module) {
 function getModuleCssLocation (module) {
   try {
     if (isTachyonsModule(module)) {
-      return 'node_modules/' + module + '/' + require('./node_modules/' + module + '/package.json').style
+      return 'node_modules/' + module + '/' + require('../node_modules/' + module + '/package.json').style
     } else if (isNormalizeModule(module)) {
       return 'node_modules/' + module + '/' + module
     } else {

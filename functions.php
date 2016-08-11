@@ -95,9 +95,9 @@ function vanillamilkshake_widgets_init() {
 		'name'          => __( 'Widget Area', 'vanillamilkshake' ),
 		'id'            => 'sidebar-1',
 		'description'   => __( 'Add widgets here to appear in your sidebar.', 'vanillamilkshake' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'before_widget' => '<aside id="%1$s" class="marginbottom-large %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
+		'before_title'  => '<h2 class="f5 fontstyle-italic fontweight-normal margintop-small black">',
 		'after_title'   => '</h2>',
 	) );
 }
@@ -118,8 +118,9 @@ add_action( 'wp_head', 'vanillamilkshake_javascript_detection', 0 );
  */
 function vanillamilkshake_scripts() {
 
-	// Load Tachyons
+	// Load Tachyons & Tachyons CMS
 	wp_enqueue_style( 'tachyons', get_template_directory_uri() . '/css/tachyons/css/tachyons.min.css' );
+	wp_enqueue_style( 'tachyons-cms', get_template_directory_uri() . '/css/tachyons-cms/css/tachyons-cms.min.css' );
 
 	// Load our custom stylesheet.
 	wp_enqueue_style( 'vanillamilkshake-style', get_stylesheet_uri() );
@@ -164,6 +165,10 @@ add_filter( 'get_search_form', 'vanillamilkshake_search_form_modify' );
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
+/**
+ * RGB-Hex converter.
+ */
+require get_template_directory() . '/inc/rgb_hsl_converter.inc.php';
 /**
  * Customizer colors.
  */

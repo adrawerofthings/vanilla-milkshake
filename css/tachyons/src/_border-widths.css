@@ -6,9 +6,6 @@
 
    BORDER WIDTHS
 
-   Base:
-     borderwidth = border-width
-
    Modifiers:
      0 = 0 width border
      1 = 1st step in border-width scale
@@ -31,6 +28,10 @@
 .borderwidth-4 { border-width: .75rem; }
 .borderwidth-5 { border-width: 1rem; }
 
+.bordertopwidth-0 { border-top-width: 0; }
+.borderrightwidth-0 { border-right-width: 0; }
+.borderbottomwidth-0 { border-bottom-width: 0; }
+.borderleftwidth-0 { border-left-width: 0; }
 
 @media (--breakpoint-not-small) {
   .borderwidth-0-ns { border-width: 0; }
@@ -39,6 +40,10 @@
   .borderwidth-3-ns { border-width: .5rem; }
   .borderwidth-4-ns { border-width: .75rem; }
   .borderwidth-5-ns { border-width: 1rem; }
+  .bordertopwidth-0-ns { border-top-width: 0; }
+  .borderrightwidth-0-ns { border-right-width: 0; }
+  .borderbottomwidth-0-ns { border-bottom-width: 0; }
+  .borderleftwidth-0-ns { border-left-width: 0; }
 }
 
 @media (--breakpoint-medium) {
@@ -48,6 +53,10 @@
   .borderwidth-3-m { border-width: .5rem; }
   .borderwidth-4-m { border-width: .75rem; }
   .borderwidth-5-m { border-width: 1rem; }
+  .bordertopwidth-0-m { border-top-width: 0; }
+  .borderrightwidth-0-m { border-right-width: 0; }
+  .borderbottomwidth-0-m { border-bottom-width: 0; }
+  .borderleftwidth-0-m { border-left-width: 0; }
 }
 
 @media (--breakpoint-large) {
@@ -57,4 +66,8 @@
   .borderwidth-3-l { border-width: .5rem; }
   .borderwidth-4-l { border-width: .75rem; }
   .borderwidth-5-l { border-width: 1rem; }
+  .bordertopwidth-0-l { border-top-width: 0; }
+  .borderrightwidth-0-l { border-right-width: 0; }
+  .borderbottomwidth-0-l { border-bottom-width: 0; }
+  .borderleftwidth-0-l { border-left-width: 0; }
 }

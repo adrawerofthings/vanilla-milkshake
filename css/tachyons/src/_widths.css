@@ -6,8 +6,25 @@
 
    WIDTHS
 
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
 
 */
+
+/* Size variables */
+:root {
+  --xxxsmall: 0.0625rem;
+  --xxsmall: 0.125rem;
+  --xsmall: 0.25rem;
+  --small: 0.5rem;
+  --medium: 1rem;
+  --large: 2rem;
+  --xlarge: 4rem;
+  --xxlarge: 8rem;
+  --xxxlarge: 16rem;
+}
 
 /* Width Scale */
 
@@ -62,7 +79,7 @@
   .width-80p-ns { width:  80%; }
   .width-90p-ns { width:  90%; }
   .width-100p-ns { width: 100%; }
-  .width--at-ns { width: auto; }
+  .width-auto-ns { width: auto; }
 }
 
 @media (--breakpoint-medium) {
@@ -89,7 +106,7 @@
   .width-80p-m { width:  80%; }
   .width-90p-m { width:  90%; }
   .width-100p-m { width: 100%; }
-  .width--at-m {    width: auto; }
+  .width-auto-m {    width: auto; }
 }
 
 @media (--breakpoint-large) {
@@ -115,6 +132,6 @@
   .width-75p-l {    width:  75%; }
   .width-80p-l {    width:  80%; }
   .width-90p-l {    width:  90%; }
-  .width--100p-l {   width: 100%; }
-  .width--at-l {    width: auto; }
+  .width-100p-l {   width: 100%; }
+  .width-auto-l {    width: auto; }
 }

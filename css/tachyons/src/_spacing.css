@@ -1,16 +1,6 @@
-@custom-media --breakpoint-not-small screen and (min-width: 48em);
-@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
-@custom-media --breakpoint-large screen and (min-width: 64em);
+/* Variables */
 
-/*
-
-   SPACES VARIABLES
-
-   Variables used here and elsewhere in project
-
-*/
-
-/* variables */
+/* Spacing Scale - based on a ratio of 1:2 */
 :root {
   --xxxsmall: 0.0625rem;
   --xxsmall: 0.125rem;
@@ -23,9 +13,20 @@
   --xxxlarge: 16rem;
 }
 
+/* Media Queries */
+
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
 /*
    SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+   Namespaces are composable and thus highly grockable - check the legend below
+
 */
+
 
 .padding-none, .padding-0 {  padding: 0; }
 .padding-xxxsmall { padding: var(--xxxsmall); }
