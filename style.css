@@ -45,10 +45,11 @@ Text Domain: vanillamilkshake
   Manual focus state colors, including buttons/inputs
 */
 input:focus,
-textarea:focus {
-  background-color: #fff;
-  color: #333;
-  border: 2px solid #ccc;
+textarea:focus,
+.nested-form input:focus,
+.nested-form textarea:focus {
+  color: #000;
+  border: 2px solid #aaa;
   outline: 0;
 }
 a:focus,
@@ -63,7 +64,7 @@ input[type="range"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus {
   outline: thin dotted;
-  outline-color: #aaa;
+  outline-color: #999;
   outline-offset: 1px;
 }
 
@@ -274,9 +275,6 @@ figure {
 .nested-link a:visited, .link:visited {
   border-bottom: 1px solid #ddd;
 }
-.nested-link a:hover, .link:hover {
-  border-bottom: none;
-}
 .nested-link a:active, .link:active {
   border-bottom: 1px solid #333;
 }
@@ -304,13 +302,14 @@ figure {
 /* comment form buttons: submit comment, reply within thread(s), comment pagination */
 #submit, a.comment-reply-link, a.comment-reply-link:link, a.comment-reply-link:hover, a.comment-reply-link:visited {
   border-radius: .3em;
-  border: 1px solid #CCC;
+  border: 1px solid #999;
   color: #000;
+  background-color: inherit;
   display: inline-block;
   text-decoration: none;
   padding: 0.5em 0.8em;
-  transition: color .4s, background-color .4s, border .4s;
   font-size: 0.875em;
+  cursor: pointer;
 }
 .comment-reply-link {
   margin-bottom: 1rem;
@@ -320,7 +319,8 @@ figure {
   margin-right: 0.5rem;
 }
 .nested-form input,
-.nested-form textarea {
+.nested-form textarea,
+.search-field {
   padding: 0.67rem;
   border: 2px solid #eee;
   background-color: #fff;
@@ -332,44 +332,34 @@ figure {
   .button,
   .button:link,
   .button:visited,
-  .more-link,
-  .more-link:link,
-  .more-link:visited {
+  a.more-link,
+  a.more-link:link,
+  a.more-link:visited {
     border-radius: .3em;
-    border: 1px solid #CCC;
+    border-width: 1px;
+    border-style: solid;
     padding: 0.75em 1em;
     text-transform: none;
     color: #000;
-    transition: color .4s, background-color .4s, border .4s;
   }
-
-  .button:hover, 
-  .more-link:hover {
-    color: #757575; /* lightest grey for accesibility */
-    transition: background-color .3s, color .3s, border .3s;
+  .button:visited,
+  a:visited > .button,
+  a.more-link:visited {
+    border-color: #000000;
   }
-
   .button:active, 
-  .more-link:active {
-    color: #AAA;
+  a:active > .button,
+  a.more-link:active {
     border: 1px solid #EEE;
-    transition: background-color .3s, color .3s, border .3s;
   }
 
   /* more link is auto-generated sometimes so have to apply button and button--xsmall class to it :( */
-  .more-link {
+  a.more-link {
     font-size: 0.875em;
   }
 
-  /* legacy button styles */
-  .button--xsmall { font-size: 0.694em; }
-  .button--small { font-size: 0.833em; }
-  .button--medium { font-size: 1em; }
-  .button--large { font-size: 1.2em; border-radius: .25em!important; }
-  .button--xlarge { font-size: 1.44em; border-radius: .25em!important; }
-
   /* auto-generated so can't apply .sansserif inline */
-  .more-link, 
+  a.more-link, 
   #submit, 
   .comment-reply-link, 
   .page-numbers, 
@@ -393,9 +383,6 @@ figure {
   min-width: 1.25rem;
   display: inline-block;
   text-align: center;
-}
-.page-numbers:hover, .page-links > a:hover {
-  color: #666;
 }
 .page-numbers:active, .page-links > a:active {
   border: 1px solid #000;

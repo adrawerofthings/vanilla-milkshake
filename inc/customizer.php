@@ -52,19 +52,18 @@
 		$theme_color = hsl2hex(array($hsl_theme_color[0], 0.9, 0.4));
 		$theme_color_lightest = hsl2hex(array($hsl_theme_color[0], 0.6, 0.97));
 
-	 	echo "<style>";
-	 	echo ".backgroundcolor-themecolor { background-color: ".$theme_color.";}";
-	 	echo ".backgroundcolor-themecolorlightest { background-color: ".$theme_color_lightest.";}";
-	 	echo ".nested-list ul > li:before,
-	 		  .wp-caption-text:before,
-	 		  .themecolor { color:".$theme_color.";}";
-	 	echo ".page-numbers, 
-	 			.page-links > a,
-				a.more-link,
-  				a.more-link:link,
-  				a.more-link:visited 
-  				{ border: 1px solid ".$theme_color.";}";
-	 	echo "</style>";
+	 	echo "<style>
+	 			.backgroundcolor-themecolor { background-color: ".$theme_color.";}
+	 			.backgroundcolor-themecolorlightest { background-color: ".$theme_color_lightest.";}
+	 			.nested-list ul > li:before,
+	 		  	 .wp-caption-text:before,
+	 		  	 .themecolor { color:".$theme_color.";}
+	 			.page-numbers, 
+	 			 .page-links > a,
+				 a.more-link, a > .button, 
+  				 a.more-link:link, a > .button:link 
+  				 { border-color: ".$theme_color.";}
+	 		 </style>";
 	}
 	add_action('wp_head', 'vanillamilkshake_theme_customizer_styles', 100);
 
