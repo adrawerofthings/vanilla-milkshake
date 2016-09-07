@@ -1,0 +1,422 @@
+/*!
+Theme Name: Vanilla Milkshake
+Theme URI: http://hongkonggong.github.io/vanilla-milkshake/
+Author:  Jason Li
+Author URI: http://www.hongkonggong.com/
+Description: A minimalist WordPress theme built with elegant typography and responsive design for simple weblogs. Allows for easy customization and extension.
+Version: 2.05
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl.html
+Tags: two-columns, right-sidebar, accessibility-ready, custom-colors, rtl-language-support, translation-ready
+Text Domain: vanillamilkshake
+*/
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ACCESSIBILITY */
+/* imported from WordPress 2015 theme */
+/* must have higher specificity than alternative color schemes inline styles */
+
+.site .skip-link {
+  background-color: #f1f1f1;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+  color: #21759b;
+  display: block;
+  font: bold 14px/normal sans-serif;
+  left: -9999em;
+  outline: none;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  text-transform: none;
+  top: -9999em;
+}
+.logged-in .site .skip-link {
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  font: bold 14px/normal sans-serif;
+}
+.site .skip-link:focus {
+  clip: auto;
+  height: auto;
+  left: 6px;
+  top: 7px;
+  width: auto;
+  z-index: 100000;
+}
+/*
+  Manual focus state colors, including buttons/inputs
+*/
+input:focus,
+textarea:focus,
+.nested-form input:focus,
+.nested-form textarea:focus {
+  color: #000;
+  border: 2px solid #aaa;
+  outline: 0;
+}
+a:focus,
+.link:focus,
+select:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="checkbox"]:focus,
+input[type="image"]:focus,
+input[type="radio"]:focus,
+input[type="range"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  outline: thin dotted;
+  outline-color: #999;
+  outline-offset: 1px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* SCALING LAYOUT FOR LARGER SCREENS */
+
+.container {
+  max-width: 32em;
+}
+@media screen and (min-width: 42em) {
+  .container {max-width: 50em;}
+}
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  html {font-size: 100%;}
+}
+@media screen and (min-width: 64em) and (max-width: 86em) {
+  html {font-size: 107%;}
+}
+@media screen and (min-width: 86em) and (max-width: 108em) {
+  html {font-size: 114.49%;}
+}
+@media screen and (min-width: 108em) and (max-width: 130em) {
+  html {font-size: 122.50%;}
+}
+@media screen and (min-width: 130em) and (max-width: 152em) {
+  html {font-size: 131.08%;}
+}
+@media screen and (min-width: 152em) {
+  html {font-size: 140.25%;}
+}
+@media screen and (min-width: 86em) {
+  .paddinghorizontal-xxxlarge-xl {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* CUSTOM MISCELLANEOUS CLASSES */
+
+a {
+  text-decoration: none;
+}
+.letterspacing-003 {
+  letter-spacing: 0.03em;  
+}
+
+.lightestgreytext, .lightest-grey-text,
+.lightestgraytext, .lightest-gray-text {
+  color: #545454;
+}
+body { /* for long single strings that stretch beyond window */
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+figure {
+  margin: 0; /* reset tachyons default margins */
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* EXTENDING TACHYONS-CMS */
+/* To target styles within posts/widgets */
+
+.nested-hr hr {
+  border: 1px solid #FFFFFF;
+  margin: 2rem 0;
+}
+.nested-code pre,
+.nested-code code {
+  font-size: .875em;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  background-color: #EEE;
+  display: block;
+  color: #444444;
+}
+.entry-content {
+  position: relative; /* fix embed floats that have absolute positions */
+}
+.nested-copy-color p, 
+.nested-copy-color ul,
+.nested-copy-color ol {
+  color: #333;
+}
+.nested-headline-sansserif h1,
+.nested-headline-sansserif h2,
+.nested-headline-sansserif h3,
+.nested-headline-sansserif h4,
+.nested-headline-sansserif h5,
+.nested-headline-sansserif h6
+ {
+  font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+}
+.nested-blockquote blockquote {
+  margin-left: 0;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #FFFFFF;
+}
+.nested-list ul {
+    list-style: none;
+    padding-left: 1em;
+}
+.nested-list li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.nested-list ul > li:before { 
+    content: "\25AA";
+    display: block;
+    color: #999;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0;
+    position: relative;
+}
+.nested-dt dt {
+  margin: 0.5rem 0;
+}
+/* Image styles only used within Wordpress posts */
+.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+.alignleft {
+  float: left;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+  clear: both;
+}
+.alignright {
+  float: right;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  clear: both;
+}
+.wp-caption {
+  margin-bottom: 1rem;
+}
+.wp-caption-text {
+  font-size: 0.889em;
+  padding-left: 1.25em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  color: #545454;
+  min-width: 12rem; /* for really skinny images */
+}
+.wp-caption-text:before {
+  content: "\21B3";
+  display: block;
+  font-size: 0.889em;
+  color: #CCC;
+  height: 0;
+  width: 0;
+  left: -1.5em;
+  top: 0.25em;
+  position: relative;
+}
+/* Media: responsive images & embeds! */
+.nested-img img {
+  height: auto;  
+  width: inherit;
+}
+.nested-figure figure {
+  max-width: 100%;
+  height: auto;
+}
+.nested-embeds iframe,
+.nested-embeds embed,
+.nested-embeds object, 
+.nested-embeds video {
+  max-width: 100%;
+}
+/*  Widget line height tighter */
+.nested-widget-line-height p, 
+.nested-widget-line-height ul,
+.nested-widget-line-height ol {
+  line-height: 1.33;
+}
+/* Tables */
+.nested-table table {
+  border-collapse: collapse;
+}
+.nested-table thead {
+  border-bottom: 2px solid #333;
+}
+.nested-table th, 
+.nested-table td {
+  padding: 0.67rem 0.5rem;
+  text-align: left;
+}
+/* Links */
+.nested-link a, .link {
+  text-decoration: none;
+}
+.nested-link a, .link,
+.nested-link a:link, .link:link,
+.nested-link a:visited, .link:visited,
+.nested-link a:hover, .link:hover,
+.nested-link a:active, .link:active {
+  color: #000;
+}
+.nested-link a:link, .link:link {
+  border-bottom: 1px solid #aaa;
+}
+.nested-link a:visited, .link:visited {
+  border-bottom: 1px solid #ddd;
+}
+.nested-link a:active, .link:active {
+  border-bottom: 1px solid #333;
+}
+.nested-headline-link h1 a:link, 
+.nested-headline-link h2 a:link, 
+.nested-headline-link h3 a:link, 
+.nested-headline-link h4 a:link,
+.nested-headline-link h5 a:link, 
+.nested-headline-link h6 a:link,
+.nested-headline-link h1 a:visited,
+.nested-headline-link h2 a:visited,
+.nested-headline-link h3 a:visited,
+.nested-headline-link h4 a:visited,
+.nested-headline-link h5 a:visited,
+.nested-headline-link h6 a:visited {
+  color: #000;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* COMMENT FORMS */
+/* Relying on default Wordpress-generated search/comment forms, so styling them using their native classes */
+.comment-metadata {
+  font-size: 0.75em;
+  margin-top: 0.5em;
+}
+/* comment form buttons: submit comment, reply within thread(s), comment pagination */
+#submit, a.comment-reply-link, a.comment-reply-link:link, a.comment-reply-link:hover, a.comment-reply-link:visited {
+  border-radius: .3em;
+  border: 1px solid #999;
+  color: #000;
+  background-color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5em 0.8em;
+  font-size: 0.875em;
+  cursor: pointer;
+}
+.comment-reply-link {
+  margin-bottom: 1rem;
+}
+.comment-form-comment > label {
+  vertical-align: top;
+  margin-right: 0.5rem;
+}
+.nested-form input,
+.nested-form textarea,
+.search-field {
+  padding: 0.67rem;
+  border: 2px solid #eee;
+  background-color: #fff;
+  max-width: 100%;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* BUTTONS */
+
+  .button,
+  .button:link,
+  .button:visited,
+  a.more-link,
+  a.more-link:link,
+  a.more-link:visited {
+    border-radius: .3em;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0.75em 1em;
+    text-transform: none;
+    color: #000;
+  }
+  .button:visited,
+  a:visited > .button,
+  a.more-link:visited {
+    border-color: #000000;
+  }
+  .button:active, 
+  a:active > .button,
+  a.more-link:active {
+    border: 1px solid #EEE;
+  }
+
+  /* more link is auto-generated sometimes so have to apply button and button--xsmall class to it :( */
+  a.more-link {
+    font-size: 0.875em;
+  }
+
+  /* auto-generated so can't apply .sansserif inline */
+  a.more-link, 
+  #submit, 
+  .comment-reply-link, 
+  .page-numbers, 
+  .page-links > a {
+    font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+  }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Pagination */
+
+.pagination {
+  margin-bottom: 2em;
+}
+.page-numbers, .page-links > a, 
+.nested-link .page-links > a {
+  padding: 0.75rem;
+  color: #000;
+  border-radius: .3em;
+  border: 1px solid #CCC;
+  margin-right: 0.125rem;
+  min-width: 1.25rem;
+  display: inline-block;
+  text-align: center;
+}
+.page-numbers:active, .page-links > a:active {
+  border: 1px solid #000;
+}
+.page-numbers.current, .page-numbers.dots {
+  border: 0;
+  font-weight: bold;
+  padding-left: 0.33rem;
+  padding-right: 0.33rem;
+}
+/* for current page in multi-page posts... no default class argh! */
+.page-links > span:nth-child(n+2) {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.prev, .next {
+  display: none;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* OTHER */
+
+/* featured/sticky posts */
+/* see: https://css-tricks.com/html-for-icon-font-usage/ */
+[data-icon]:before {
+  content: attr(data-icon);
+  display: block;
+  color: #000;
+  height: 0;
+  width: 0;
+  font-size: 0.70rem;
+  left: -1.5rem;
+  top: 0.5em;
+  position: relative;
+  speak: none; /* Not to be trusted, but hey. */
+}
+.sticky {} /* required by WordPress but no longer used */
+
