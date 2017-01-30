@@ -11,7 +11,7 @@
 	function vanillamilkshake_theme_customize_register( $wp_customize ) {
 	  $colors = array();
 	  $colors[] = array(
-	    'slug'=>'theme_color', 
+	    'slug'=>'theme_color',
 	    'default' => '#006CCC',
 	    'label' => __('Title header bar', 'vanillamilkshake')
 	  );
@@ -20,8 +20,8 @@
 	    $wp_customize->add_setting(
 	      $color['slug'], array(
 	        'default' => $color['default'],
-	        'type' => 'option', 
-	        'capability' => 
+	        'type' => 'option',
+	        'capability' =>
 	        'edit_theme_options',
 	        'sanitize_callback' => 'sanitize_hex_color'
 	      )
@@ -30,8 +30,8 @@
 	    $wp_customize->add_control(
 	      new WP_Customize_Color_Control(
 	        $wp_customize,
-	        $color['slug'], 
-	        array('label' => $color['label'], 
+	        $color['slug'],
+	        array('label' => $color['label'],
 	        'section' => 'colors',
 	        'settings' => $color['slug'])
 	      )
@@ -58,10 +58,10 @@
 	 			.nested-list ul > li:before,
 	 		  	 .wp-caption-text:before,
 	 		  	 .themecolor { color:".$theme_color.";}
-	 			.page-numbers, 
+	 			.page-numbers,
 	 			 .page-links > a,
-				 a.more-link, a > .button, 
-  				 a.more-link:link, a > .button:link 
+				 a.more-link, a > .button,
+  				 a.more-link:link, a > .button:link
   				 { border-color: ".$theme_color.";}
 	 		 </style>";
 	}

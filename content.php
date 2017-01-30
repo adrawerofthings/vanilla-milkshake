@@ -6,14 +6,24 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'clear-both clearfix marginbottom-xlarge' ); ?>>
-	<header class="entry-header nested-headline-link nested-headline-line-height position-relative">
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'clear-both clearfix marginbottom-xlarge marginbottom-xxlarge-l' ); ?>>
+	<header class="entry-header nested-headline-link position-relative">
+
+		<?php
+			$igc=0;
+			foreach((get_the_category()) as $category) {
+					if ($category->cat_name != 'Uncategorized') {
+					if($igc != 0) { echo ' &#903; '; }; $igc++;
+						echo '<a class="themecolor b texttransform-uppercase f7" href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s", 'vanillamilkshake' ), $category->name ) . '">' . $category->name.'</a>';
+				}
+			}
+		?>
 
 		<?php
 		if ( is_home() ) {
-			echo '<h2 class="margintop-none marginbottom-xsmall entry-title f3 b sans-serif">';
+			echo '<h2 class="marginvertical-medium lineheight-title f3 f2-ns b sans-serif">';
 		} else {
-			echo '<h1 class="margintop-none marginbottom-xsmall entry-title f3 b sans-serif">';
+			echo '<h1 class="marginvertical-medium lineheight-title f3 f2-ns b sans-serif">';
 		} ?>
 			<?php
 			if ( is_sticky() ) {
@@ -21,7 +31,7 @@
 			} ?>
 			<?php
 				/* no title edge case */
-				if (get_the_title() == "") : 
+				if (get_the_title() == "") :
 				?>
 					<a href="<?php echo get_permalink(); ?>">
 						<?php printf( __( 'Untitled', 'vanillamilkshake' ) ); ?>
@@ -38,12 +48,12 @@
 			echo '</h1>';
 		} ?>
 
-		<div class="posted-on i small lightestgreytext nested-link marginvertical-medium paddingvertical-xsmall">
+		<div class="posted-on serif i f6 black70 nested-link marginvertical-medium">
 			<?php
 
 				$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 
-				/* Can list both publish and last modified time... stick with just the former for now so commenting out 
+				/* Can list both publish and last modified time... stick with just the former for now so commenting out
 				if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 					$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 				}
@@ -66,22 +76,12 @@
 					$author
 				);
 			?>
-			<?php
-				$igc=0;
-				foreach((get_the_category()) as $category) {
-			    	if ($category->cat_name != 'Uncategorized') {
-						if($igc == 0) { echo ' in '; };
-						if($igc != 0) { echo ', '; }; $igc++;
-			    		echo '<a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s", 'vanillamilkshake' ), $category->name ) . '">' . $category->name.'</a>';
-					}
-				}
-			?>
 
 		</div>
 
 	</header><!-- .entry-header -->
 
-	<div class="entry-content f5 nested-copy-line-height nested-headline-sansserif nested-headline-line-height nested-img nested-figure nested-embeds nested-hr nested-code nested-list nested-blockquote nested-dt nested-table nested-link nested-form">
+	<div class="f5 f4-l measure nested-copy-line-height nested-headline-sansserif nested-headline-line-height nested-img nested-figure nested-embeds nested-hr nested-code nested-list nested-blockquote nested-dt nested-table nested-link nested-form">
 		<?php
 			if ( is_single() ) :
 				/* translators: %s: Name of current post */
@@ -113,21 +113,14 @@
 
 				/* link for manual excerpt, wish this was automatic and not manually added here :( */
 				if ( has_excerpt() ) {
-					$readmorestring =  __( 'Continue reading', 'vanillamilkshake' );					
-		         	printf( '<p class="clear-both margintop-large"><a href="' . esc_url( get_permalink() ) . '" class="more-link">' . $readmorestring . '<span class="screen-reader-text">' . get_the_title() . '</span></a><p>' );
+					$readmorestring =  __( 'Continue reading', 'vanillamilkshake' );
+		         	printf( '<p class="clear-both margintop-large margintop-xlarge-l"><a href="' . esc_url( get_permalink() ) . '" class="more-link">' . $readmorestring . '<span class="screen-reader-text">' . get_the_title() . '</span></a><p>' );
 				}
 			endif;
 		?>
 
 	</div><!-- .entry-content -->
 
-	<!-- disabling for V1; may tackle at a later stage
-	<?php
-		// Author bio.
-		if ( is_single() && get_the_author_meta( 'description' ) ) :
-			get_template_part( 'author-bio' );
-		endif;
-	?> -->
 	<?php if ( is_single() ) : ?>
 		<footer class="entry-footer margintop-xlarge clear-both">
 			<?php vanillamilkshake_entry_meta(); ?>

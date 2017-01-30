@@ -17,32 +17,32 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class( 'serif backgroundcolor-themecolorlightest' ); ?>> 
-<div id="page" class="hfeed site container center margintop-medium-ns padding-large">
+<body <?php body_class( 'sansserif backgroundcolor-themecolorlightest' ); ?>>
+<div id="page" class="hfeed site center padding-large padding-xlarge-l">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'vanillamilkshake' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header container center" role="banner">
 		<div class="site-branding nested-headline-link">
 			<?php if ( is_front_page() && is_home() ) : ?>
-				<h1 class="margintop-0 marginbottom-0 f2 letterspacing-003 b texttransform-uppercase sansserif">
+				<h1 class="margintop-0 marginbottom-0 f3 letterspacing-tracked b texttransform-uppercase sansserif">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				</h1>
 			<?php else : ?>
-				<h2 class="margintop-0 marginbottom-0 f2 letterspacing-003 b texttransform-uppercase sansserif">
+				<h2 class="margintop-0 marginbottom-0 f3 letterspacing-tracked b texttransform-uppercase sansserif">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				</h2>
 			<?php endif; ?>
-		
-			<?php 
+
+			<?php
 			$description = get_bloginfo( 'description', 'display' );
 			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description i f5 darkgrey margintop-small lineheight-1p3"><?php echo $description; ?></p>
+				<p class="site-description serif i f6 black70 margintop-xsmall lineheight-title"><?php echo $description; ?></p>
 			<?php endif;
 			?>
 		</div><!-- .site-branding -->
 	</header><!-- .site-header -->
 	<a name="s"></a>
-	<div class="backgroundcolor-themecolor height-xsmall margintop-large marginbottom-medium"></div>
+	<div class="backgroundcolor-themecolor height-xxsmall margintop-large marginbottom-medium marginhorizontal--large marginhorizontal--xlarge-l"></div>
 
-	<div class="clearfix"> <!-- content + sidebar -->
+	<div class="clearfix container center"> <!-- content + sidebar -->
 		<div id="content" class="site-content width-70p-ns maxwidth-100p paddingtop-medium paddingright-large-ns float-left">

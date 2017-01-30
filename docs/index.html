@@ -7,9 +7,8 @@
 	<meta name="description" content="A minimalist WordPress theme built with elegant typography and responsive design for simple weblogs.">
 	<meta name="author" content="Jason Li">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="tachyons.min.css" />
-	<link rel="stylesheet" href="tachyons-cms.min.css" />
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="../css/tachyons.min.css" />
+	<link rel="stylesheet" href="../style.css" />
 	<style>
 		.backgroundcolor-themecolor { background-color: #0A6BC2;}
 		.backgroundcolor-themecolorlightest { background-color: #F3F8FC;}
@@ -22,32 +21,32 @@
 		  	a.more-link:visited { border: 1px solid #0A6BC2;}
 	</style>
 </head>
-<body class="serif backgroundcolor-themecolorlightest">
+<body class="sansserif backgroundcolor-themecolorlightest">
 
-<div class="site container center margintop-medium-ns padding-large">
-	<header role="banner">
+<div class="site center padding-large padding-xlarge-l">
+	<header role="banner" class="site-header container center">
 		<div class="site-branding nested-headline-link">
-			<h1 class="margintop-0 marginbottom-0 f2 letterspacing-003 b texttransform-uppercase sansserif">Vanilla Milkshake</h1>
-				<p class="site-description i f5 darkgrey margintop-small lineheight-1p3">
+			<h1 class="margintop-0 marginbottom-0 f3 letterspacing-tracked b texttransform-uppercase sansserif">Vanilla Milkshake</h1>
+				<p class="site-description serif i f6 black70 margintop-xsmall lineheight-title">
 				  A minimalist WordPress theme built with elegant typography and responsive design for simple weblogs
 				</p>
 		</div>
 	</header>
-	<div class="backgroundcolor-themecolor height-xsmall margintop-large marginbottom-medium"></div>
-	<div class="clearfix">
-		<div class="site-content width-70p-ns maxwidth-100p paddingtop-medium paddingright-large-ns float-left">
+	<div class="backgroundcolor-themecolor height-xxsmall margintop-large marginbottom-medium marginhorizontal--large marginhorizontal--xlarge-l"></div>
+	<div class="clearfix container center"> <!-- content + sidebar -->
+		<div id="content" class="site-content width-70p-ns maxwidth-100p paddingtop-medium paddingright-large-ns float-left">
 	  		<main role="main">
     			<article class="clear-both clearfix marginbottom-xlarge">
 					<header class="position-relative">
-						<h2 class="margintop-none marginbottom-xsmall entry-title f3 b sans-serif">
+						<h2 class="marginvertical-medium lineheight-title f3 f2-ns b sans-serif">
 							Sample post
 						</h2>
-						<div class="posted-on i small lightestgreytext nested-link marginvertical-medium paddingvertical-xsmall">
+						<div class="posted-on serif i f6 black70 nested-link marginvertical-medium">
 							June 3, 2015 by <a href="http://www.hongkonggong.com">Jason Li</a> in <a href="">Category</a>
 						</div>
 					</header>
 					
-					<div class="entry-content f5 nested-copy-line-height nested-headline-sansserif nested-headline-line-height nested-img nested-figure nested-embeds nested-hr nested-code nested-list nested-blockquote nested-dt nested-table nested-link nested-form">						<figure class="wp-caption alignnone">
+					<div class="f5 f4-l measure nested-copy-line-height nested-headline-sansserif nested-headline-line-height nested-img nested-figure nested-embeds nested-hr nested-code nested-list nested-blockquote nested-dt nested-table nested-link nested-form">						<figure class="wp-caption alignnone">
 							<img src="BrianLeonPhoto.jpg" />
 							<figcaption class="wp-caption-text">
 								Photo by <a href="https://www.flickr.com/photos/ncbrian/1460135828/">Brian Leon</a>.
@@ -58,21 +57,21 @@
 							<p>Nullam quis finibus eros, a semper elit. In et pharetra ex, eu auctor odio. Integer odio ligula, tristique vel ex vel, laoreet sodales quam. Suspendisse potenti. Mauris laoreet ut ipsum id varius.</p>
 						</blockquote>
 						<p>Nulla viverra faucibus risus ac lobortis. Vestibulum eu mattis quam, vel ullamcorper lacus. Morbi feugiat vestibulum imperdiet. </p>
-						<p class="margintop-large clear-both"><a href="" class="more-link">Sample button</a><p>
+						<p class="margintop-large margintop-xlarge-l clear-both"><a href="" class="more-link">Sample button</a><p>
 					</div>
 				</article>
 				<article class="clear-both clearfix marginbottom-xlarge">
 
 					<header class="position-relative">
-						<h2 class="margintop-none marginbottom-xsmall entry-title f3 b sans-serif">
+						<h2 class="marginvertical-medium lineheight-title f3 f2-ns b sans-serif">
 							About the Vanilla Milkshake WordPress theme
 						</h2>
-						<div class="posted-on i small lightestgreytext nested-link marginvertical-medium paddingvertical-xsmall">
+						<div class="posted-on serif i f6 black70 nested-link marginvertical-medium">
 							June 3, 2015 by <a href="http://www.hongkonggong.com">Jason Li in <a href="">Category</a>
 						</div>
 					</header>
 					
-					<div class="entry-content f5 nested-copy-line-height nested-headline-sansserif nested-headline-line-height nested-img nested-figure nested-embeds nested-hr nested-code nested-list nested-blockquote nested-dt nested-table nested-link nested-form">
+					<div class="f5 f4-l measure nested-copy-line-height nested-headline-sansserif nested-headline-line-height nested-img nested-figure nested-embeds nested-hr nested-code nested-list nested-blockquote nested-dt nested-table nested-link nested-form">
 						<p><img src="../readme.jpg" /></p>
 						<h3>Who this theme is for</h3>
 						<ul>
@@ -102,7 +101,7 @@
 							<li><a href="http://www.mba-mondays-illustrated.com">MBA Mondays Illustrated</a>: business 101 for startups by Fred Wilson.</li>
 						</ul>
 						<hr />
-						<p class="clear-both"><a href="https://github.com/hongkonggong/vanilla-milkshake/archive/master.zip" class="more-link">Download .zip</a><p>
+						<p class="margintop-large margintop-xlarge-l clear-both"><a href="https://github.com/hongkonggong/vanilla-milkshake/archive/master.zip" class="more-link">Download .zip</a><p>
 						<p class="clear-both margintop-large"><a href="https://github.com/hongkonggong/vanilla-milkshake" class="more-link">View on GitHub</a><p>
 					</div>
 	            </article>
@@ -110,13 +109,13 @@
 		</div>
 
 		 <div class="clearfix clear-both display-none-ns"></div> <!-- not sure why the below line doesn't work without this line -->
-		 <div class="height-xxxsmall backgroundcolor-lightgray margintop-medium marginbottom-small display-none-ns"></div>
+		 <div class="height-xsmall backgroundcolor-white margintop-medium marginbottom-small display-none-ns"></div>
 
-		 <div id="sidebar" class="sidebar width-30p-ns paddingtop-medium paddingleft-large-ns float-left clear-right f7-ns">
+		 <div id="sidebar" class="sidebar width-30p-ns paddingtop-medium paddingleft-large-ns float-left clear-right f7-ns f6-l">
 			<div id="secondary" class="secondary">
 				<div class="widget-area nested-list nested-form nested-widget-line-height nested-link" role="complementary">
 				<aside class="widget widget_text marginbottom-large">
-					<h2 class="f5 fontstyle-italic fontweight-normal margintop-small black">Download theme</h2>
+					<h2 class="f5 serif fontstyle-italic fontweight-normal margintop-small black70">Download theme</h2>
 					<ul>
 						<li>
 							<a href="https://github.com/hongkonggong/vanilla-milkshake/archive/master.zip">Download as .zip</a>
@@ -130,13 +129,13 @@
 					</ul>
 				</aside>
 				  <aside class="widget widget_text marginbottom-large">
-				    <h2 class="f5 fontstyle-italic fontweight-normal margintop-small black">Sample text widget</h2>
+				    <h2 class="f5 serif fontstyle-italic fontweight-normal margintop-small black70">Sample text widget</h2>
 				      <div class="textwidget">
 				      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				      </div>
 				  </aside>
 				  <aside class="widget widget_text marginbottom-large">
-				    <h2 class="f5 fontstyle-italic fontweight-normal margintop-small black">Sample category list</h2>
+				    <h2 class="f5 serif fontstyle-italic fontweight-normal margintop-small black70">Sample category list</h2>
 				      <div class="textwidget">
 				        <ul>
 				          <li>
@@ -150,7 +149,7 @@
 	            </div>
 			      </aside>
 			      <aside class="widget widget_search marginbottom-large">
-			        <h2 class="f5 fontstyle-italic fontweight-normal margintop-small black">Sample search box</h2>
+			        <h2 class="f5 serif fontstyle-italic fontweight-normal margintop-small black70">Sample search box</h2>
 			          <form role="search" method="get" class="search-form" action="">
 	        			<label>
 	        				<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />
@@ -164,8 +163,8 @@
 	</div>
 
 	<footer id="colophon" role="contentinfo">
-			<div class="site-footer clear-both clearfix paddingtop-xlarge">
-				<div class="site-info small lineheight-1p3">
+			<div class="site-footer container center clear-both clearfix paddingtop-xlarge">
+				<div class="site-info small lineheight-title f7">
 					<a href="http://hongkonggong.github.io/vanilla-milkshake/" class="black border-bottom bordercolor-moongray">Proudly powered by a Vanilla Milkshake.</a>
 				</div>
 		</div>

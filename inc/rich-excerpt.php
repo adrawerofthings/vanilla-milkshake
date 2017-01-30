@@ -5,7 +5,7 @@
  */
 
 
-	/** 
+	/**
 	 * Allowing HTML (images!) in excerpts
 	 * | code from: http://aaronrussell.co.uk/legacy/improving-wordpress-the_excerpt/
 	 * | plus bits and pieces from template-tags.php in 2015 theme
@@ -21,18 +21,18 @@
 	    $text = str_replace('\]\]\>', ']]&gt;', $text);
 	    $excerpt_length = 65;
 
-        $link = sprintf( '<p class="margintop-large clear-both"><a href="%1$s#s" class="more-link">%2$s</a><p>',
+        $link = sprintf( '<p class="margintop-large margintop-xlarge-l clear-both"><a href="%1$s#s" class="more-link">%2$s</a><p>',
 			esc_url( get_permalink( get_the_ID() ) ),
 			$readmorestring . '<span class="screen-reader-text">' . get_the_title( get_the_ID() ) . '</span>'
 			);
 
 	    preg_match_all('/(<[^>]+>|[^<>\s]+)\s*/u', $text, $words);
-	    
+
 	    $count = 0;
 	    $excerptoutput = "";
 
-	    foreach ($words[0] as $word) { 
-            if ($count >= $excerpt_length) { 
+	    foreach ($words[0] as $word) {
+            if ($count >= $excerpt_length) {
                 $excerptoutput .= trim($word);
                 $excerptoutput .= '&hellip;';
                 $excerptoutput = trim(force_balance_tags($excerptoutput));

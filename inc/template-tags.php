@@ -52,13 +52,14 @@ function vanillamilkshake_entry_meta() {
 	}
 
 	if ( 'post' == get_post_type() ) {
-		if ( is_singular() || is_multi_author() ) {
-			printf( '<div class="byline marginbottom-medium"><span class="author vcard"><span class="screen-reader-text">%1$s </span><span class="themecolor marginright-xsmall">&#9670;</span> <a class="black border-bottom bordercolor-moongray" href="%2$s">%3$s</a></span></div>',
-				_x( 'Author', 'Used before post author name.', 'vanillamilkshake' ),
-				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-				get_the_author()
-			);
-		}
+
+		/* divider between author & categories/tags */
+		printf('<div class="marginvertical-medium height-xsmall backgroundcolor-white"></div>');
+		
+		// Author bio.
+		if ( is_single() && get_the_author_meta( 'description' ) ) :
+			get_template_part( 'author-bio' );
+		endif;
 
 		/* divider between author & categories/tags */
 		printf('<div class="marginvertical-medium height-xsmall backgroundcolor-white"></div>');

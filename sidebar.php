@@ -19,7 +19,7 @@ if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar(
 		<?php endif; ?>
 
 		<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-			<div id="widget-area" class="widget-area nested-list nested-form nested-widget-line-height nested-link" role="complementary">
+			<div id="widget-area" class="black90 widget-area nested-list nested-form nested-widget-line-height nested-link" role="complementary">
 				<?php dynamic_sidebar( 'sidebar-1' ); ?>
 			</div><!-- .widget-area -->
 		<?php endif; ?>

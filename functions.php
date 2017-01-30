@@ -23,7 +23,7 @@
 
 /**
  * Set the content width based on the theme's design and stylesheet.
- * 
+ *
  * I don't like this setting (https://wycks.wordpress.com/2013/02/14/why-the-content_width-wordpress-global-kinda-sucks/)
  * even with theme support (https://core.trac.wordpress.org/ticket/21256) as it
  * penalizes responsive/fluid designs (not to mention the pixel-only metric).
@@ -97,7 +97,7 @@ function vanillamilkshake_widgets_init() {
 		'description'   => __( 'Add widgets here to appear in your sidebar.', 'vanillamilkshake' ),
 		'before_widget' => '<aside id="%1$s" class="marginbottom-large %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="f5 fontstyle-italic fontweight-normal margintop-small black">',
+		'before_title'  => '<h2 class="f5 serif fontstyle-italic fontweight-normal margintop-small black70">',
 		'after_title'   => '</h2>',
 	) );
 }
@@ -119,8 +119,7 @@ add_action( 'wp_head', 'vanillamilkshake_javascript_detection', 0 );
 function vanillamilkshake_scripts() {
 
 	// Load Tachyons & Tachyons CMS
-	wp_enqueue_style( 'tachyons', get_template_directory_uri() . '/css/tachyons/css/tachyons.min.css' );
-	wp_enqueue_style( 'tachyons-cms', get_template_directory_uri() . '/css/tachyons-cms/css/tachyons-cms.min.css' );
+	wp_enqueue_style( 'tachyons', get_template_directory_uri() . '/css/tachyons.min.css' );
 
 	// Load our custom stylesheet.
 	wp_enqueue_style( 'vanillamilkshake-style', get_stylesheet_uri() );
