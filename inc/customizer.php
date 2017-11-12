@@ -13,7 +13,7 @@
 	  $colors[] = array(
 	    'slug'=>'theme_color',
 	    'default' => '#006CCC',
-	    'label' => __('Title header bar', 'vanillamilkshake')
+	    'label' => __('Main theme color', 'vanillamilkshake')
 	  );
 	  foreach( $colors as $color ) {
 	    // SETTINGS

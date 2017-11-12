@@ -226,7 +226,7 @@ figure {
   margin-bottom: 1rem;
 }
 .nested-list ul > li:before {
-    content: "\25AA";
+    content: "\25B8";
     display: block;
     color: #999;
     height: 0;
@@ -434,6 +434,7 @@ figure {
   min-width: 2.25rem;
   display: inline-block;
   text-align: center;
+  margin-bottom: 1rem;
 }
 .page-numbers:active, .page-links > a:active {
   border: 1px solid #000;
