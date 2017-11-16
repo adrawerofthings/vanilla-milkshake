@@ -4,7 +4,7 @@ Theme URI: http://hongkonggong.github.io/vanilla-milkshake/
 Author:  Jason Li
 Author URI: http://www.hongkonggong.com/
 Description: A minimalist WordPress theme built with elegant typography and responsive design for simple weblogs. Allows for easy customization and extension.
-Version: 2.50
+Version: 2.51
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: two-columns, right-sidebar, accessibility-ready, custom-colors, rtl-language-support, translation-ready
@@ -226,7 +226,7 @@ figure {
   margin-bottom: 1rem;
 }
 .nested-list ul > li:before {
-    content: "\25AA";
+    content: "\25B8";
     display: block;
     color: #999;
     height: 0;
@@ -434,6 +434,7 @@ figure {
   min-width: 2.25rem;
   display: inline-block;
   text-align: center;
+  margin-bottom: 1rem;
 }
 .page-numbers:active, .page-links > a:active {
   border: 1px solid #000;
