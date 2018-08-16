@@ -81,7 +81,7 @@
 
 	</header><!-- .entry-header -->
 
-	<div class="f5 f4-l measure nested-copy-line-height nested-headline-sansserif nested-headline-line-height nested-img nested-figure nested-embeds nested-hr nested-code nested-list nested-blockquote nested-dt nested-table nested-link nested-form">
+	<div class="f5 f4-l measure nested-copy-line-height nested-copy-font-weight nested-headline-sansserif nested-headline-line-height nested-img nested-figure nested-embeds nested-hr nested-code nested-list nested-blockquote nested-dt nested-table nested-link nested-form">
 		<?php
 			if ( is_single() ) :
 				/* translators: %s: Name of current post */

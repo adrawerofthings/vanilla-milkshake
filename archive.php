@@ -23,7 +23,7 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-			<div class="height-xsmall backgroundcolor-white marginbottom-large"></div>
+			<div class="height-xsmall backgroundcolor-hr marginbottom-large"></div>
 
 			<?php if ( is_paged() ) :
 				// Previous/next page navigation.

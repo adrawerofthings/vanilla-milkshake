@@ -42,7 +42,7 @@ if ( post_password_required() ) {
 		</nav><!-- #comment-nav-above -->
 		<?php endif; // Check for comment navigation. ?>
 
-		<div class="nested-copy-line-height">
+		<div class="nested-copy-line-height nested-copy-font-weight">
 			<ol class="marginleft-none comment-list nested-headline-line-height nested-hr nested-code nested-list nested-blockquote nested-dt nested-table nested-link">
 				<?php
 					wp_list_comments( array(
@@ -78,4 +78,4 @@ if ( post_password_required() ) {
 	</div>
 
 </div><!-- #comments -->
-<div class="marginvertical-medium height-xsmall backgroundcolor-white"></div>
+<div class="marginvertical-medium height-xsmall backgroundcolor-hr"></div>

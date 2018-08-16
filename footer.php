@@ -7,7 +7,7 @@
 ?>
 		</div><!-- .site-content -->
 		<div class="clearfix clear-both display-none-ns"></div> <!-- not sure why the below line doesn't work without this line -->
-		<div class="height-xsmall backgroundcolor-white margintop-medium marginbottom-small display-none-ns"></div>
+		<div class="height-xsmall backgroundcolor-hr margintop-medium marginbottom-small display-none-ns"></div>
 
 		<div id="sidebar" class="sidebar width-30p-ns paddingtop-medium paddingleft-large-ns float-left clear-right f7-ns f6-l">
 			<?php get_sidebar(); ?>
