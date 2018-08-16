@@ -1,24 +1,16 @@
-#, fuzzy
+# Copyright (C) 2018 Jason Li
+# This file is distributed under the GNU General Public License v3.
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"Project-Id-Version: Vanilla Milkshake\n"
-"POT-Creation-Date: 2016-04-07 13:22+0800\n"
-"PO-Revision-Date: 2016-04-07 13:22+0800\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"Project-Id-Version: Vanilla Milkshake 2.60\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/vanilla-milkshake\n"
+"POT-Creation-Date: 2018-08-16 16:04:02+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-WPHeader: style.css\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 
 #: 404.php:14
 msgid "Oops! That page can&rsquo;t be found."
@@ -47,32 +39,30 @@ msgstr ""
 msgid "Published by"
 msgstr ""
 
-#: author-bio.php:30
-#, php-format
+#: author-bio.php:32
 msgid "View all posts by %s"
 msgstr ""
 
 #: comments.php:26
-#, php-format
 msgctxt "comments title"
 msgid "One comment on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:35 comments.php:56 inc/template-tags.php:17
+#: comments.php:35 comments.php:58 inc/template-tags.php:17
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:38 comments.php:59
+#: comments.php:38 comments.php:61
 msgid "Older comments"
 msgstr ""
 
-#: comments.php:39 comments.php:60
+#: comments.php:39 comments.php:62
 msgid "Newer comments"
 msgstr ""
 
-#: comments.php:72
+#: comments.php:74
 msgid "Comments are closed."
 msgstr ""
 
@@ -81,43 +71,39 @@ msgid "Nothing Found"
 msgstr ""
 
 #: content-none.php:24
-#, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
 #: content-none.php:28
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr ""
 
 #: content-none.php:33
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
+
+#. translators: %s: Name of current post
 
 #: content-page.php:17 content.php:94 content.php:106
 msgid "Pages:"
 msgstr ""
 
-#: content.php:27
+#: content.php:17
+msgid "View all posts in %s"
+msgstr ""
+
+#: content.php:37
 msgid "Untitled"
 msgstr ""
 
-#: content.php:64
+#: content.php:74
 msgctxt "Used before publish date."
 msgid "Posted on"
 msgstr ""
 
-#: content.php:75
-#, php-format
-msgid "View all posts in %s"
-msgstr ""
+#. translators: %s: Name of current post
 
 #: content.php:89
-#, php-format
 msgid "Continue reading %s"
 msgstr ""
 
@@ -150,26 +136,15 @@ msgid "Skip to content"
 msgstr ""
 
 #: inc/back-compat.php:29 inc/back-compat.php:37 inc/back-compat.php:48
-#, php-format
-msgid ""
-"Vanilla Milkshake requires at least WordPress version 4.1. You are running "
-"version %s. Please upgrade and try again."
+msgid "Vanilla Milkshake requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again."
 msgstr ""
 
 #: inc/customizer.php:16
-msgid "Title header bar"
+msgid "Main theme color"
 msgstr ""
 
-#: inc/customizer.php:21
-msgid "Link color"
-msgstr ""
-
-#: inc/customizer.php:26
-msgid "Hover & focus link color"
-msgstr ""
-
-#: inc/customizer.php:31
-msgid "Visited link color"
+#: inc/customizer.php:48
+msgid "White background (less accessible)?"
 msgstr ""
 
 #: inc/template-tags.php:20
@@ -189,28 +164,22 @@ msgctxt "Used before post format."
 msgid "Format"
 msgstr ""
 
-#: inc/template-tags.php:57
-msgctxt "Used before post author name."
-msgid "Author"
-msgstr ""
-
-#: inc/template-tags.php:69
+#: inc/template-tags.php:70
 msgctxt "Used before category names."
 msgid "Categories"
 msgstr ""
 
-#: inc/template-tags.php:77
+#: inc/template-tags.php:78
 msgctxt "Used before tag names."
 msgid "Tags"
 msgstr ""
 
-#: inc/template-tags.php:88
+#: inc/template-tags.php:89
 msgctxt "Used before full size attachment link."
 msgid "Full size"
 msgstr ""
 
 #: search.php:14
-#, php-format
 msgid "Search Results for: %s"
 msgstr ""
 
@@ -221,7 +190,6 @@ msgstr ""
 #: single.php:32 single.php:33
 msgid "Previous post"
 msgstr ""
-
 #. Theme Name of the plugin/theme
 msgid "Vanilla Milkshake"
 msgstr ""
@@ -231,9 +199,7 @@ msgid "http://hongkonggong.github.io/vanilla-milkshake/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid ""
-"A minimalist WordPress theme built with elegant typography and responsive "
-"design for simple weblogs. Allows for easy customization and extension."
+msgid "A minimalist WordPress theme built with elegant typography and responsive design for simple weblogs. Allows for easy customization and extension."
 msgstr ""
 
 #. Author of the plugin/theme

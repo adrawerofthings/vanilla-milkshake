@@ -30,6 +30,7 @@
 	      'bg_color', array(
 	      'type' => 'option',
 	      'capability' => 'edit_theme_options'
+	      'sanitize_callback' => 'sanitize_key'
 	    ) );
 	    // CONTROLS
 	    $wp_customize->add_control(
@@ -45,7 +46,7 @@
 	      'bg_color', array(
 	      	'type' => 'checkbox',
 	      	'section' => 'colors', // Add a default or your own section
-	      	'label' => __( 'White background (less accessible)?' ),
+	      	'label' => __( 'White background (less accessible)?', 'vanillamilkshake' ),
 	    ) );
 
 	  }
