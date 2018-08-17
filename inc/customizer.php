@@ -29,7 +29,7 @@
 	    $wp_customize->add_setting( 
 	      'bg_color', array(
 	      'type' => 'option',
-	      'capability' => 'edit_theme_options'
+	      'capability' => 'edit_theme_options',
 	      'sanitize_callback' => 'sanitize_key'
 	    ) );
 	    // CONTROLS
