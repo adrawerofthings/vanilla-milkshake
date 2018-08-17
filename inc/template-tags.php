@@ -57,7 +57,7 @@ function vanillamilkshake_entry_meta() {
 		printf('<div class="marginvertical-medium height-xsmall backgroundcolor-white"></div>');
 		
 		// Author bio.
-		if ( is_single() && get_the_author_meta( 'description' ) ) :
+		if ( is_single() ) :
 			get_template_part( 'author-bio' );
 		endif;
 
