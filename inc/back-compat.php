@@ -26,7 +26,7 @@ add_action( 'after_switch_theme', 'vanillamilkshake_switch_theme' );
  * theme on WordPress versions prior to 4.1.
  */
 function vanillamilkshake_upgrade_notice() {
-	$message = sprintf( __( 'Vanilla Milkshake requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again.', 'vanillamilkshake' ), $GLOBALS['wp_version'] );
+	$message = sprintf( __( 'Vanilla Milkshake requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again.', 'vanilla-milkshake' ), $GLOBALS['wp_version'] );
 	printf( '<div class="error"><p>%s</p></div>', $message );
 }
 
@@ -34,7 +34,7 @@ function vanillamilkshake_upgrade_notice() {
  * Prevent the Customizer from being loaded on WordPress versions prior to 4.1.
  */
 function vanillamilkshake_customize() {
-	wp_die( sprintf( __( 'Vanilla Milkshake requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again.', 'vanillamilkshake' ), $GLOBALS['wp_version'] ), '', array(
+	wp_die( sprintf( __( 'Vanilla Milkshake requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again.', 'vanilla-milkshake' ), $GLOBALS['wp_version'] ), '', array(
 		'back_link' => true,
 	) );
 }
@@ -45,7 +45,7 @@ add_action( 'load-customize.php', 'vanillamilkshake_customize' );
  */
 function vanillamilkshake_preview() {
 	if ( isset( $_GET['preview'] ) ) {
-		wp_die( sprintf( __( 'Vanilla Milkshake requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again.', 'vanillamilkshake' ), $GLOBALS['wp_version'] ) );
+		wp_die( sprintf( __( 'Vanilla Milkshake requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again.', 'vanilla-milkshake' ), $GLOBALS['wp_version'] ) );
 	}
 }
 add_action( 'template_redirect', 'vanillamilkshake_preview' );

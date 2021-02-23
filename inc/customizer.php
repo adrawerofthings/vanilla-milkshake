@@ -13,7 +13,7 @@
 	  $colors[] = array(
 	    'slug'=>'theme_color',
 	    'default' => '#006CCC',
-	    'label' => __('Main theme color', 'vanillamilkshake')
+	    'label' => __('Main theme color', 'vanilla-milkshake')
 	  );
 	  foreach( $colors as $color ) {
 	    // SETTINGS
@@ -46,7 +46,7 @@
 	      'bg_color', array(
 	      	'type' => 'checkbox',
 	      	'section' => 'colors', // Add a default or your own section
-	      	'label' => __( 'White background (less accessible)?', 'vanillamilkshake' ),
+	      	'label' => __( 'White background (less accessible)?', 'vanilla-milkshake' ),
 	    ) );
 
 	  }

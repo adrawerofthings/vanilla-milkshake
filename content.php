@@ -14,7 +14,7 @@
 			foreach((get_the_category()) as $category) {
 					if ($category->cat_name != 'Uncategorized') {
 					if($igc != 0) { echo ' &#903; '; }; $igc++;
-						echo '<a class="themecolor b texttransform-uppercase f7" href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s", 'vanillamilkshake' ), $category->name ) . '">' . $category->name.'</a>';
+						echo '<a class="themecolor b texttransform-uppercase f7" href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s", 'vanilla-milkshake' ), $category->name ) . '">' . $category->name.'</a>';
 				}
 			}
 		?>
@@ -34,7 +34,7 @@
 				if (get_the_title() == "") :
 				?>
 					<a href="<?php echo get_permalink(); ?>">
-						<?php printf( __( 'Untitled', 'vanillamilkshake' ) ); ?>
+						<?php printf( __( 'Untitled', 'vanilla-milkshake' ) ); ?>
 					</a>
 				<?php
 				else :
@@ -71,7 +71,7 @@
 				$author = $authorlink.$authorname.'</a>';
 
 				printf( '<span class="screen-reader-text">%1$s </span>%2$s by %3$s',
-					_x( 'Posted on', 'Used before publish date.', 'vanillamilkshake' ),
+					_x( 'Posted on', 'Used before publish date.', 'vanilla-milkshake' ),
 					$time_string,
 					$author
 				);
@@ -86,16 +86,16 @@
 			if ( is_single() ) :
 				/* translators: %s: Name of current post */
 				the_content( sprintf(
-					__( 'Continue reading %s', 'vanillamilkshake' ),
+					__( 'Continue reading %s', 'vanilla-milkshake' ),
 					the_title( '<span class="screen-reader-text">', '</span>', false )
 				) );
 
 				wp_link_pages( array(
-					'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'vanillamilkshake' ) . '</span>',
+					'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'vanilla-milkshake' ) . '</span>',
 					'after'       => '</div>',
 					'link_before' => '<span>',
 					'link_after'  => '</span>',
-					'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'vanillamilkshake' ) . ' </span>%',
+					'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'vanilla-milkshake' ) . ' </span>%',
 					'separator'   => '<span class="screen-reader-text">, </span>',
 				) );
 			else :
@@ -103,17 +103,17 @@
 				the_excerpt();
 
 				wp_link_pages( array(
-					'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'vanillamilkshake' ) . '</span>',
+					'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'vanilla-milkshake' ) . '</span>',
 					'after'       => '</div>',
 					'link_before' => '<span>',
 					'link_after'  => '</span>',
-					'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'vanillamilkshake' ) . ' </span>%',
+					'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'vanilla-milkshake' ) . ' </span>%',
 					'separator'   => '<span class="screen-reader-text">, </span>',
 				) );
 
 				/* link for manual excerpt, wish this was automatic and not manually added here :( */
 				if ( has_excerpt() ) {
-					$readmorestring =  __( 'Continue reading', 'vanillamilkshake' );
+					$readmorestring =  __( 'Continue reading', 'vanilla-milkshake' );
 		         	printf( '<p class="clear-both margintop-large margintop-xlarge-l"><a href="' . esc_url( get_permalink() ) . '" class="more-link">' . $readmorestring . '<span class="screen-reader-text">' . get_the_title() . '</span></a><p>' );
 				}
 			endif;

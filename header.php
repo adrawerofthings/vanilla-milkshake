@@ -18,8 +18,9 @@
 </head>
 
 <body <?php body_class( 'sansserif backgroundcolor-themecolorlightest' ); ?>>
+<?php wp_body_open(); ?>
 <div id="page" class="hfeed site center padding-large padding-xlarge-l">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'vanillamilkshake' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'vanilla-milkshake' ); ?></a>
 
 	<header id="masthead" class="site-header container center" role="banner">
 		<div class="site-branding nested-headline-link">

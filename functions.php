@@ -55,7 +55,7 @@ function vanillamilkshake_setup() {
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 */
-	load_theme_textdomain( 'vanillamilkshake', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'vanilla-milkshake', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -92,9 +92,9 @@ add_action( 'after_setup_theme', 'vanillamilkshake_setup' );
  */
 function vanillamilkshake_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Widget Area', 'vanillamilkshake' ),
+		'name'          => __( 'Widget Area', 'vanilla-milkshake' ),
 		'id'            => 'sidebar-1',
-		'description'   => __( 'Add widgets here to appear in your sidebar.', 'vanillamilkshake' ),
+		'description'   => __( 'Add widgets here to appear in your sidebar.', 'vanilla-milkshake' ),
 		'before_widget' => '<aside id="%1$s" class="marginbottom-large %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="f5 serif fontstyle-italic fontweight-normal margintop-small black70">',
@@ -143,8 +143,8 @@ function vanillamilkshake_scripts() {
 	}
 
 	wp_localize_script( 'vanillamilkshake-script', 'screenReaderText', array(
-		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'vanillamilkshake' ) . '</span>',
-		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'vanillamilkshake' ) . '</span>',
+		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'vanilla-milkshake' ) . '</span>',
+		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'vanilla-milkshake' ) . '</span>',
 	) );
 }
 add_action( 'wp_enqueue_scripts', 'vanillamilkshake_scripts' );

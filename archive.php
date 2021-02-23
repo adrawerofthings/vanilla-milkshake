@@ -28,10 +28,10 @@ get_header(); ?>
 			<?php if ( is_paged() ) :
 				// Previous/next page navigation.
 				the_posts_pagination( array(
-					'prev_text'          => __( '&#8592;', 'vanillamilkshake' ),
-					'next_text'          => __( '&#8594;', 'vanillamilkshake' ),
+					'prev_text'          => __( '&#8592;', 'vanilla-milkshake' ),
+					'next_text'          => __( '&#8594;', 'vanilla-milkshake' ),
 					'mid_size'			 => 2,
-					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'vanillamilkshake' ) . ' </span>',
+					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'vanilla-milkshake' ) . ' </span>',
 				) );
 			endif; ?>
 
@@ -51,10 +51,10 @@ get_header(); ?>
 
 			// Previous/next page navigation.
 			the_posts_pagination( array(
-				'prev_text'          => __( '&#8592;', 'vanillamilkshake' ),
-				'next_text'          => __( '&#8594;', 'vanillamilkshake' ),
+				'prev_text'          => __( '&#8592;', 'vanilla-milkshake' ),
+				'next_text'          => __( '&#8594;', 'vanilla-milkshake' ),
 				'mid_size'			 => 2,
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'vanillamilkshake' ) . ' </span>',
+				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'vanilla-milkshake' ) . ' </span>',
 			) );
 
 		// If no content, include the "No posts found" template.

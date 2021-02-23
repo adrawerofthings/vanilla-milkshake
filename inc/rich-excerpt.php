@@ -16,7 +16,7 @@
 	  global $post;
 	  $link = '';
 	  if ( '' == $text ) {
-	  	$readmorestring =  __( 'Continue reading', 'vanillamilkshake' );
+	  	$readmorestring =  __( 'Continue reading', 'vanilla-milkshake' );
 	    $text = get_the_content($readmorestring);
 	    $text = apply_filters('the_content', $text);
 	    $text = str_replace('\]\]\>', ']]&gt;', $text);
