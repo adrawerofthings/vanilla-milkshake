@@ -2,11 +2,9 @@
 
 ![Screenshot of Vanilla Milkshake theme on desktop and mobile](readme.jpg)
 
-A minimalist WordPress theme built with elegant typography and responsive design for simple weblogs. Allows for easy customization and extension.
+A minimalist WordPress theme built with elegant typography and responsive design for simple weblogs. Allows for easy customization and extension. Built for the Wordpress [Classic Editor](https://wordpress.org/plugins/classic-editor/), which creates a more distraction-free writing environment.
 
-**New beta feature:** Off-white, pastel background colors to increase readability for people with dyslexia.
-
-**[See the theme in action and read about its features on its project page](http://hongkonggong.github.io/vanilla-milkshake/).**
+**[See the theme in action and read about its features on its project page](https://adrawerofthings.github.io/vanilla-milkshake/).**
 
 ---
 
@@ -15,7 +13,7 @@ A minimalist WordPress theme built with elegant typography and responsive design
 - Vanilla Milkshake currently uses the default, WordPress-generated search form. (In case you were wondering where that was.)
 - The custom, media-rich excerpt function (see inc/rich-excerpt.php), which has been tested on several blogs but may still have some quirks/bugs.
 - To build this theme, I used the [Twenty Fifteen](https://github.com/WordPress/WordPress/tree/master/wp-content/themes/twentyfifteen) theme as a starting point, and then stripped out as many custom functions and templates as I deemed reasonable. If something seems out of place, it may be a vestige from [Twenty Fifteen](https://github.com/WordPress/WordPress/tree/master/wp-content/themes/twentyfifteen).
-- The [Tachyons](https://github.com/tachyons-css/tachyons) CSS framework I use reads a lot like inline HTML - I wrote a little bit [here](http://notebook.hongkonggong.com/2016/04/21/is-tachyons-the-right-css-framework-for-me/) about why that is a good thing. The basic philosophy behind it is that cascading styles often try to do too much and cause cascading errors. As such, specifying inline styles in the templates ends up creating cleaner code and better performance. (Also, I used [the verbose edition of Tachyons](https://github.com/tachyons-css/tachyons-verbose).)
+- The [Tachyons](https://github.com/tachyons-css/tachyons) CSS framework I use reads a lot like inline HTML - I wrote a little bit [here](https://blog.byjasonli.com/is-tachyons-the-right-css-framework-for-me/) about why that is a good thing. The basic philosophy behind it is that cascading styles often try to do too much and cause cascading errors. As such, specifying inline styles in the templates ends up creating cleaner code and better performance. (Also, I used [the verbose edition of Tachyons](https://github.com/tachyons-css/tachyons-verbose).)
 
 ### Credits ###
 

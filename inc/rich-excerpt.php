@@ -14,6 +14,7 @@
 	 */
 	function vanillamilkshake_improved_trim_excerpt($text) { // Fakes an excerpt if needed
 	  global $post;
+	  $link = '';
 	  if ( '' == $text ) {
 	  	$readmorestring =  __( 'Continue reading', 'vanillamilkshake' );
 	    $text = get_the_content($readmorestring);
