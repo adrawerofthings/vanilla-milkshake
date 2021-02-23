@@ -17,7 +17,7 @@
 	<footer id="colophon" role="contentinfo">
 		<div class="site-footer container center clear-both clearfix paddingtop-xlarge">
 			<div class="site-info small lineheight-title f7">
-				<a href="http://hongkonggong.github.io/vanilla-milkshake/" class="black border-bottom bordercolor-moongray">
+				<a href="http://adrawerofthings.github.io/vanilla-milkshake/" class="black border-bottom bordercolor-moongray">
 					<?php echo __( 'Proudly powered by Vanilla Milkshake and Wordpress', 'vanillamilkshake' ); ?>
 				</a>
 			</div><!-- .site-info -->

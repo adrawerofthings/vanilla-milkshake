@@ -195,7 +195,7 @@ msgid "Vanilla Milkshake"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "http://hongkonggong.github.io/vanilla-milkshake/"
+msgid "http://adrawerofthings.github.io/vanilla-milkshake/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -207,5 +207,5 @@ msgid "Jason Li"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://www.hongkonggong.com/"
+msgid "http://www.byjasonli.com/"
 msgstr ""

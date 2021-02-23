@@ -2,7 +2,7 @@
 
 Contributors: Jason Li
 Tested up to: 5.6
-Version: 2.7.0
+Version: 2.70
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Tags: accessibility-ready, custom-colors, right-sidebar, rtl-language-support, translation-ready, two-columns
@@ -38,11 +38,11 @@ Source: https://tachyons.io/
 
 == Changelog ==
 
-= 2.7.0 - February 22 2021 =
+= 2.70 - February 22 2021 =
 * Maintenance update
 * Clarify support for Classic Editor
 
-= 2.0.5 - August 21, 2016 =
+= 2.05 - August 21, 2016 =
 * Updated with latest version of Tachyons Verbose
 * New support for dyslexia-friendly background color
 * Better CSS coding + visual design refinements

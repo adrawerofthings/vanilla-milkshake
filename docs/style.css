@@ -1,10 +1,10 @@
 /*!
 Theme Name: Vanilla Milkshake
-Theme URI: http://hongkonggong.github.io/vanilla-milkshake/
+Theme URI: http://adrawerofthings.github.io/vanilla-milkshake/
 Author:  Jason Li
-Author URI: http://www.hongkonggong.com/
+Author URI: http://www.byjasonli.com/
 Description: A minimalist WordPress theme built with elegant typography and responsive design for simple weblogs. Allows for easy customization and extension.
-Version: 2.51
+Version: 2.70
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: two-columns, right-sidebar, accessibility-ready, custom-colors, rtl-language-support, translation-ready
@@ -76,6 +76,11 @@ input[type="submit"]:focus {
 }
 @media screen and (min-width: 42em) {
   .container {max-width: 64em;}
+  .nested-copy-font-weight p,
+  .nested-copy-font-weight ul,
+  .nested-copy-font-weight ol {
+    font-weight: 300;
+  }
 }
 @media screen and (min-width: 48em) and (max-width: 64em) {
   html {font-size: 100%;}
@@ -145,7 +150,7 @@ figure {
 .nested-copy-line-height p,
 .nested-copy-line-height ul,
 .nested-copy-line-height ol {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .nested-headline-line-height h1,
@@ -260,7 +265,7 @@ figure {
 .wp-caption {
   margin-bottom: 1rem;
 }
-.wp-caption-text {
+.wp-caption-text, .wp-block-image figcaption {
   background-color: rgba(255,255,255,0.5);
   font-size: 0.889em;
   line-height: 1.5;
@@ -268,10 +273,13 @@ figure {
   padding-right: 0.75em;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
-  color: rgba(0,0,0,1);
+  color: rgba(0,0,0,0.8);
   min-width: 12rem; /* for really skinny images */
+  text-align: left; /* new classes here and below to override defaults */
+  margin-top: 0;
+  margin-bottom: 0;
 }
-.wp-caption-text:before {
+.wp-caption-text:before, .wp-block-image figcaption:before {
   content: "\21B3";
   display: block;
   font-size: 0.889em;
